@@ -1,0 +1,288 @@
+.ttcat-btn-header{
+	position: absolute; top: 0px; left: 0px;
+	display: block;
+	width: 680px;
+	height: 50px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border-width: 2px 2px 0px 2px;
+    border-style: solid;
+    border-color: #00a2db;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #F4F4F5;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+}
+.cls-wall-btn{
+	display: inline-block;
+	position: absolute; top: 7px; right: 5px;
+	width: 40px;
+	height: 40px;
+	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/cls_icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+.ttcat-list{
+	position: relative; top: 5px; right: 0px;
+}
+/* Andrew's part */
+div.wall-placeholder {
+    display: none;
+}
+
+div.wall-container {
+    font-family: Arial,Helvetica,sans-serif;
+    position: absolute;
+    border-color: #00a2db;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;  
+    border-radius: 0px 0px 13px 13px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background-color: #f7feff;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    z-index: 1;
+}
+
+div.wall-fader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 674px;
+    height: 100%;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+	/*behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);*/
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    filter: alpha(opacity = 75) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+/* Stores list */
+div.scrollable {
+    position: absolute;
+    height: 96%;
+    z-index: 20;
+}
+table.wall-products {
+    position: absolute;
+    border: none;
+    border-spacing: 10px;
+    border-collapse: expression('separate', cellSpacing = '10px');
+    margin: 0px;
+    z-index: 20;
+}
+td.wall-product {
+    border: #00a2db solid 1px;
+    background-color: white;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+img.wall-product {
+    z-index: 25;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+}
+div.wall-pager {
+    position: absolute;
+    top: 96%;
+    width: 100%;
+    height: 4%;
+    border: none;
+    border-spacing: 10px;
+    border-collapse: expression('separate', cellSpacing = '10px');
+    text-align: center;
+    z-index: 20;
+}
+table.wall-pager {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-spacing: 0px;
+}
+.wall-pager-item {
+    display: inline;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #00a2db;
+    color: darkblue;
+    text-align: center;
+    overflow: hidden;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+}
+
+.wall-pager-item-active {
+    display: inline;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #00a2db;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+}
+
+/* Zoomed */
+
+table.wall-zoomed {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 60%;
+    height: 80%;
+    border: #00a2db solid 3px;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background: white;
+    z-index: 40;
+}
+td.wall-zoomed {
+    text-align: center;
+    vertical-align: middle;
+}
+img.wall-zoomed {
+    max-width: 90%;
+    max-height: 75%;
+}
+
+table.wall-zoomed-info {
+    width: 100%;
+    height: 100%;
+    border-spacing: 5px;
+    border-collapse: expression('separate', cellSpacing = '5px');
+}
+
+td.wall-info-image {
+    height: 85%;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.wall-info-item {
+    position: absolute;
+    left: 5%;
+    top: 76%;
+    width: 60%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background-color: #00a2db;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+div.wall-info-old-cost {
+    position: absolute;
+    left: 5%;
+    top: 83%;
+    width: 60%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background-color: #00a2db;
+    color: white;
+    font-weight: bold;
+    text-decoration: line-through;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+div.wall-info-new-cost {
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 60%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background-color: #00a2db;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+/* Zoomed - Back side */
+
+.wall-back-info {
+    width: 100%;
+    height: 100%;
+    border-spacing: 5px;
+    border-collapse: expression('separate', cellSpacing = '5px');
+    overflow: auto;
+}
+.wall-back-title {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 10%;
+}
+.wall-back-text {
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0px;
+    overflow: auto;
+}
+
+div.wall-info-rotate {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    width: 20%;
+    height: 20%;
+    border: #00a2db solid 3px;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background-color: #D5D7DA;
+    background-image: url(http://192.168.2.108/public_html/unavimp/graphics/wall-rotate.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 150;
+}
+div.wall-back-rotate {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    width: 20%;
+    height: 20%;
+    border: #00a2db solid 3px;
+    border-radius: 10px;
+    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    background: lightgray;
+    background-image: url(http://192.168.2.108/public_html/unavimp/graphics/wall-rotate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #d3d3d3;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 50;
+}
+/* End of Top10 */

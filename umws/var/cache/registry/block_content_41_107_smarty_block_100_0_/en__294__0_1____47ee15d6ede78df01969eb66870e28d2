@@ -1,0 +1,13 @@
+a:2:{s:4:"data";s:910:"    <div class=" footer-no-wysiwyg    float-left">
+        <div class="wysiwyg-content"><p><span>Demo Store</span></p>
+<ul>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=pages.view&amp;page_id=2">About us</a></li>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=pages.view&amp;page_id=30">Contact us</a></li>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=gift_certificates.add">Gift certificates</a></li>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=product_features.view_all&amp;filter_id=10">Our brands</a></li>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=events.search">Events</a></li>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=sitemap.view">Sitemap</a></li>
+<li><a href="http://localhost/public_html/umws/index.php?dispatch=news.list">News</a></li>
+</ul></div>
+    </div>
+";s:6:"expiry";i:0;}

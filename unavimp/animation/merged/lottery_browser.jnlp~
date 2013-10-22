@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Attributes info:
+    codebase - must be altered to URI where THIS file can be located by clients.
+        File and localhost URIs will be available only locally. For web users
+        fully specefied domain name or ip-address should be provided.
+    href - a name of THIS file or script that generates it.
+-->
+<jnlp spec="1.0+"
+        codebase="http://admin.uniqoom.com/unavi/animation/merged/"
+        href="lottery_browser.jnlp">
+    <information>
+        <title>lottery</title>
+        <vendor>leon.pp.ua</vendor>
+        <homepage href="" />
+        <description>lottery</description>
+        <offline-allowed />
+    </information>
+    <update check="always" />
+    <security>
+        <all-permissions />
+    </security>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime"
+                href="http://dl.javafx.com/1.3/javafx-rt.jnlp"
+                java-vm-args="-client -Xtoolkit prism -Xms384m -Xmx384m -XX:MaxPermSize=128m" />
+        <jar href="lottery.jar" main="true"/>
+        <jar href="dialer.jar"/>
+        <jar href="jfx-commons.jar"/>
+        <jar href="stools.jar"/>
+    </resources>
+    <applet-desc name="lottery"
+            main-class="com.sun.javafx.runtime.adapter.Applet"
+            width="1130" height="835">
+        <!--
+            Default parameter. MUST NOT be removed or changed.
+        -->
+        <param name="MainJavaFXScript" value="ua.pp.leon.lottery.Main"/>
+        <!--
+            Defines a color of the background of the scene.
+            Type: String in hexademical web format - #rrggbb.
+        -->
+        <param name="background-color" value="#000c15"/>
+        <!--
+            Contains an URL template taht is used for clients data retrieval.
+            Value: String.
+            Default: ""
+        -->
+        <param name="url-background"
+                value="http://admin.uniqoom.com/unavi/animation/merged/media/lottery-background.png" />
+        <param name="url-strings"
+                value="http://admin.uniqoom.com/unavi/animation/merged/media/lottery-%s.xml" />
+        <param name="url-client"
+                value="https://admin.uniqoom.com:8443/getgift" />
+        <!--
+            Type of the animation. Valid values are: lottery, special.
+            Value: String.
+            Default: ""
+        -->
+        <param name="device-type" value="lottery" />
+        <!--
+            Contains an URL that is used for data synchronization operations.
+            Value: String.
+        -->
+        <param name="sync-url"
+                value="https://admin.uniqoom.com:8443/syncclient" />
+        <!--
+            Contains a login of this client.
+            Value: Integer.
+        -->
+        <param name="sync-login" value="tester01" />
+        <!--
+            Contains a password that will confirm an identity of the client.
+            Value: String.
+        -->
+        <param name="sync-password" value="tester-01-password" />
+        <param name="validator" value="05[0247]?[0-9]{7,7}" />
+        <param name="color-button-common-1" value="#d8d8d8" />
+        <param name="color-button-common-2" value="#ffffff" />
+        <param name="opacity-button-common-1" value="0.6" />
+        <param name="opacity-button-common-2" value="0.8" />
+        <param name="color-button-special-1" value="#fb961d" />
+        <param name="color-button-special-2" value="#fff100" />
+        <param name="opacity-button-special-1" value="0.6" />
+        <param name="opacity-button-special-2" value="0.8" />
+
+        <param name="color-multigift-mark-stroke" value="#ffffff" />
+        <param name="color-multigift-mark-fill" value="#ed1d24" />
+        <param name="color-multigift-mark-number" value="#fff200" />
+    </applet-desc>
+</jnlp>

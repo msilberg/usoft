@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use //n instead of \n for new line -->
+<strings>
+    <prizeCancel value="назад"/>
+    <prizeGetSMS value="продолжить"/>
+    <prizeTitle value="Ваш выигрыш"/>
+    <dialerTextLine1 value="Введите номер//nВашего мобильного//nтелефона"/>
+    <dialerTextLine2 value="услуга бесплатна"/>
+    <dialerCancel value="отмена"/>
+    <thanksTextLine1 value="В течение 5 мин Вам будет//nотправлен купон"/>
+    <thanksTextLine2 value="Спасибо за Ваше участие!"/>
+</strings>

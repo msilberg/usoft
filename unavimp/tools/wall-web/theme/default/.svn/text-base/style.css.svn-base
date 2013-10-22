@@ -1,0 +1,219 @@
+/* 
+    Document   : wall
+    Created on : Sep 13, 2012, 4:19:15 PM
+    Author     : Andrii Zalevskyi {@linkplain mailto:azalevskyi@gmail.com}
+    Description:
+        Defines user styles for wall-web project.
+*/
+
+.wall-placeholder {
+    display: none;
+}
+
+div.wall-container {
+    font-family: Arial,Helvetica,sans-serif;
+    direction: ltr;
+    position: absolute;
+    width: 705px;
+    height: 525px;
+    border: #00a2db solid 3px;
+    border-radius: 13px;
+    behavior: url("PIE.htc");
+    background-color: transparent;
+    z-index: 1;
+}
+
+div.wall-fader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 705px;
+    height: 525px;
+    border: none;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background-color: transparent;
+    background-image: url("images/wall-fader.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+/* Stores list */
+table.wall-products {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-spacing: 10px;
+    z-index: 20;
+}
+td.wall-product {
+    border: #00a2db solid 1px;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+img.wall-product {
+    max-width: 100px;
+    max-height: 200px;
+    z-index: 25;
+    behavior: url("PIE.htc");
+}
+
+/* Zoomed */
+
+table.wall-zoomed {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 60%;
+    height: 80%;
+    border: #00a2db solid 3px;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background: white;
+    z-index: 40;
+}
+td.wall-zoomed {
+    text-align: center;
+    vertical-align: middle;
+}
+img.wall-zoomed {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+table.wall-zoomed-info {
+    width: 100%;
+    height: 100%;
+    border-spacing: 5px;
+}
+
+td.wall-info-image {
+    height: 85%;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.wall-info-item {
+    position: absolute;
+    left: 5%;
+    top: 76%;
+    width: 60%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background-color: #00a2db;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.wall-info-old-cost {
+    position: absolute;
+    left: 5%;
+    top: 83%;
+    width: 60%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background-color: #00a2db;
+    color: white;
+    font-weight: bold;
+    text-decoration: line-through;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.wall-info-new-cost {
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 60%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background-color: #00a2db;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Zoomed - Back side */
+
+table.wall-back-info {
+    width: 100%;
+    height: 100%;
+    border-spacing: 5px;
+}
+td.wall-back-title {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 10%;
+}
+td.wall-back-text {
+    text-align: left;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+td.wall-back-text-rtl {
+    text-align: right;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.wall-info-rotate {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    width: 20%;
+    height: 20%;
+    border: #00a2db solid 3px;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background: lightgray;
+    background-image: url("images/wall-rotate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 50;
+}
+div.wall-back-rotate {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    width: 20%;
+    height: 20%;
+    border: #00a2db solid 3px;
+    border-radius: 10px;
+    behavior: url("PIE.htc");
+    background: lightgray;
+    background-image: url("images/wall-rotate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 50;
+}

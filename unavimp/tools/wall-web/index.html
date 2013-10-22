@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Wall web example</title>
+        <link rel="stylesheet" href="theme/default/style.css" type="text/css" />
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.utils.min.js"></script>
+        <script type="text/javascript" src="js/jquery-css-transform.js"></script>
+        <script type="text/javascript" src="js/rotate3Di.js"></script>
+        <script type="text/javascript" src="js/wall-web.js"></script>
+        <script type="text/JavaScript">
+            $(function() {
+//                $("#rotable").click(function () {
+//                    $(this).rotate3Di('toggle', 500);
+//                });
+                webWall("50px", "50px", "he", "uadmin.no-ip.biz:8080", 15);
+//                webWall("50px", "50px", "en", "localhost:8080", 15);
+            });
+        </script>
+    </head>
+    <body>
+        <!-- External catalogue injection smaples -->
+        <input type="submit" value="ID: 15" onclick="webWallSelectCatalogue(15);" />
+        <input type="submit" value="ID: 16 (not available)" onclick="webWallSelectCatalogue(16);" />
+        <input type="submit" value="ID: 21" onclick="webWallSelectCatalogue(21);" />
+        <input type="submit" value="ID: 24" onclick="webWallSelectCatalogue(24);" />
+        <input type="submit" value="ID: 1350" onclick="webWallSelectCatalogue(1350);" />
+
+        <!-- Wall placeholder - will be replaced after execution of webWall() call. -->
+        <div class="wall-placeholder"></div>
+        <!--<div id="rotable" style="border:1px solid black;width:150px;">Click me to rotate!</div>-->
+    </body>
+</html>
