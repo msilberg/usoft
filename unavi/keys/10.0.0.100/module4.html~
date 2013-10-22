@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+	<head>
+		<script type="text/javascript" language="JavaScript">
+			window.onload=function(){document.forms["auth"].submit()}
+		</script>
+	</head>
+	<form name="auth" action="http://uniqoom.no-ip.biz/unavi/index.php" method="post">
+		<input type="hidden" name="login" value="1b19331c861e46ae9ccf178d950722e6">
+		<input type="hidden" name="psswd" value="e9dcccd086651319d12d9da91cdc47aa">
+	</form>
+</html>

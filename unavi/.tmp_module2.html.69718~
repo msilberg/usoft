@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+	<head>
+		<script type="text/javascript" language="JavaScript">
+			window.onload=function(){document.forms["auth"].submit()}
+		</script>
+	</head>
+	<form name="auth" action="http://localhost/public_html/unavi/index.php" method="post">
+		<input type="hidden" name="login" value="f9cce95db5c816a935906a713c78aff5">
+		<input type="hidden" name="psswd" value="c1572d05424d0ecb2a65ec6a82aeacbf">
+	</form>
+</html>

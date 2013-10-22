@@ -1,0 +1,1 @@
+require_once((substr($_SERVER['SCRIPT_FILENAME'],0,-26))."loader.inc");

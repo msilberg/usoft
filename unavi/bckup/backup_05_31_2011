@@ -1,0 +1,17 @@
+	protected function canvas_coords()
+	{
+		$step_x=2*data::$cxs+data::$nscale*data::$canvas_w;
+		$step_y=2*data::$cys+data::$nscale*data::$canvas_h;
+		for ($i=1;$i<=count(data::$larr);$i++)
+			switch ($i)
+			{
+				case 1: $arr[]=array(data::$cxs,data::$cys);
+				break;
+				case 2: $arr[]=array($step_x,data::$cys);
+				break;
+				case 3: $arr[]=array(data::$cxs,$step_y);
+				break;
+				case 4: $arr[]=array($step_x,$step_y);
+			}
+		return $arr;
+	}s

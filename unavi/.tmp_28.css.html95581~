@@ -1,0 +1,582 @@
+<html><h1>The H1 tag looks like this</h1>
+<p>The paragraph tag after an H1 tag looks like this</p>
+<h2>The H2 tag looks like this</h2>
+<p>The paragraph tag after an H2 tag looks like this</p>
+<h3>The H3 tag looks like this</h3>
+<p>The paragraph tag after an H3 tag looks like this</p>
+<h4>The H4 tag looks like this</h4>
+<p>The paragraph tag after an H4 tag looks like this</p>
+<h5>The H5 tag looks like this</h5>
+<p>The paragraph tag after an H5 tag looks like this</p>
+<ol>
+<li><strong>This is a strong element in an ordered list</strong></li>
+<li><i>This is an italic element in an ordered list</i></li>
+<li><b>This is a bold element in an ordered list</b></li>
+<li><em>This is an emphasized element in an ordered list</em></li>
+<li>This is a regular element in an ordered list</li>
+</ol>
+<ul>
+<li><strong>This is a strong element in an unordered list</strong></li>
+<li><i>This is an italic element in an unordered list</i></li>
+<li><b>This is a bold element in an unordered list</b></li>
+<li><em>This is an emphasized element in an unordered list</em></li>
+<li>This is a regular element in an unordered list</li>
+</ul>
+<blockquote>The block quote element looks like this</blockquote>
+<pre>The pre element looks like this</pre>
+<code>The code element looks like this</code>
+<br/>
+<span>The span element looks like this</span>
+<br/>
+<a href="#">The anchor element looks like this</a>
+<br/>
+<br/>
+<div style="float:left;margin:20px;width:200px;">Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.  Text inside a div that is 200 pixels wide looks like this.</div>
+<div style="float:left;margin:20px;width:400px;">Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.  Text inside a div that is 400 pixels wide looks like this.</div>
+<div style="float:left;margin:20px;width:600px;">Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.  Text inside a div that is 600 pixels wide looks like this.</div><style>#4766f5;@CHARSET "UTF-8";
+body{
+	overflow: scroll;
+}
+table{
+	font-family: "Arial";
+}
+a{
+	text-decoration: none;
+}
+#head-div{
+	z-index: 1;
+}
+#hlogo{
+	background-image: url(./graphics/hicon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 372px;
+	height: 109px;
+}
+#bckgr2{
+	width: 1165px;
+	height: 775px;
+	background-color: #bfbfbf;
+}
+#map-cp{
+	position: absolute; top: 115px;
+	z-index: 1;
+}
+.harmonica{
+	cursor: pointer;
+	width: 1182px;
+}
+.har-head{
+	padding-right: 5px;
+	color: #ffffff;
+	background-color: #6d2076;
+}
+.har-cont-inv{
+	display: none;
+}
+.har-cont-vis{
+	display: block;
+	background-color: white;
+}
+.assist-cont-inv{
+	display: none;
+}
+.assist-cont-vis{
+	display: block;
+}
+.cl-bc-inv{
+	display: none;
+}
+.cl-bc-vis{
+	display: block;
+	background-color: white;
+}
+.hoverme-fill{
+	background-color: #d78cd7;
+}
+.har-btn-marked{
+	background-color: #6d2076;
+	color: #ffffff;
+}
+.da-name{
+	font-size: 16pt;
+	font-weight: bold;
+	color: #840091;
+}
+.da-prod{
+	font-weight: bold;
+	color: red;
+}
+.da-prod a{
+	font-weight: bold;
+	color: red;
+}
+.simple-prod{
+	font-weight: bold;
+}
+.simple-prod a{
+	font-weight: bold;
+}
+.cbtn{
+	background-color: #6d2076;
+	color: #ffffff;
+	width: 105px;
+	height: 50px;
+	text-align: center;
+	cursor: hand;
+}
+.cbtn-inact{
+	background-color: #a0a0a0;
+	color: #ffffff;
+	width: 105px;
+	height: 50px;
+	text-align: center;
+	cursor: default;
+}
+.cbtn2{
+	background-color: #6d2076;
+	color: #ffffff;
+	width: 220px;
+	height: 50px;
+	text-align: center;
+	cursor: hand;
+}
+.mark{
+	background-color: white;
+}
+#lev-unmarked{
+	background-color: #6d2076;
+	color: #ffffff;
+	height: 50px;
+}
+#lev-marked{
+	background-color: #ffffff;
+	color: #6d2076;
+	border: 1px solid #6d2076;
+	height: 50px;
+}
+.lev-switch{
+	height: 50px;
+}
+#hncat{
+	width: 250px;
+}
+#store-info{
+	display: block;
+	border: 2px solid #7e15bf;
+	position: relative; top: -630px;
+	width: 300px;
+	height: 150px;
+	background-color: #eebfff;
+}
+#goback{
+	cursor: hand;
+}
+.blng{
+	background-color: #4444ff;
+	color: #ffffff;
+}
+.banners-table{
+	border: 1px solid #7e1abd;
+}
+#rstrip{
+	background-color: #e6e6fa;
+}
+#rstrip a{
+	text-decoration: none;
+	font-size: 16pt;
+	color: #1616a1;
+}
+#assist{
+	width: 972px;
+	height: 92px;
+	background-image: url(./graphics/assist_bckgr.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: whitesmoke;
+	font-size: 16pt;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.assist-border{
+	width: 3px;
+	height: 92px;
+	background-image: url(./graphics/assist_border.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#bott-cont{
+	width: 1155px;
+}
+.scroll-table{
+	color: #ffffff;
+	font-size: 16pt;
+}
+.prod-picts-inv{
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+.prod-picts-vis{
+	width: 1180px;
+	height: 600px;
+	display: block;
+	position: absolute; top: 85px;
+	padding-top: 70px;
+	z-index: 4;
+}
+.prod-pct-bckgr{
+	width: 1180px;
+	height: 600px;
+	display: block;
+	position: absolute; top: -70px;
+	position: relative;
+	background-color: #000000;
+	padding-top: 70px;
+	z-index: 5;
+}
+.prod-pct-uppers{
+	position: relative; top: -650px;
+	display: block;
+	z-index: 6;
+}
+.si-act{
+	background-color: red;
+}
+.si-pass{
+	background-color: #7f7f7f;
+}
+/* Passive category buttons */
+.cat-btn{
+	display: block;
+	width: 185px;
+	height: 95px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#cat-btn-pass-1{
+	background-image: url(./graphics/cat_btn_pass_1.png);
+}
+#cat-btn-pass-2{
+	background-image: url(./graphics/cat_btn_pass_2.png);
+}
+#cat-btn-pass-3{
+	background-image: url(./graphics/cat_btn_pass_3.png);
+}
+#cat-btn-pass-4{
+	background-image: url(./graphics/cat_btn_pass_4.png);
+}
+#cat-btn-pass-5{
+	background-image: url(./graphics/cat_btn_pass_5.png);
+}
+#cat-btn-pass-6{
+	background-image: url(./graphics/cat_btn_pass_6.png);
+}
+#cat-btn-pass-7{
+	background-image: url(./graphics/cat_btn_pass_7.png);
+}
+#cat-btn-pass-8{
+	background-image: url(./graphics/cat_btn_pass_8.png);
+}
+#cat-btn-pass-9{
+	background-image: url(./graphics/cat_btn_pass_9.png);
+}
+#cat-btn-pass-10{
+	background-image: url(./graphics/cat_btn_pass_10.png);
+}
+#cat-btn-pass-11{
+	background-image: url(./graphics/cat_btn_pass_11.png);
+}
+#cat-btn-pass-12{
+	background-image: url(./graphics/cat_btn_pass_12.png);
+}
+#cat-btn-pass-13{
+	background-image: url(./graphics/cat_btn_pass_13.png);
+}
+#cat-btn-pass-14{
+	background-image: url(./graphics/cat_btn_pass_14.png);
+}
+#cat-btn-pass-15{
+	background-image: url(./graphics/cat_btn_pass_15.png);
+}
+#cat-btn-pass-16{
+	background-image: url(./graphics/cat_btn_pass_16.png);
+}
+/* Active category buttons */
+#cat-btn-act-1{
+	background-image: url(./graphics/cat_btn_act_1.png);
+}
+#cat-btn-act-2{
+	background-image: url(./graphics/cat_btn_act_2.png);
+}
+#cat-btn-act-3{
+	background-image: url(./graphics/cat_btn_act_3.png);
+}
+#cat-btn-act-4{
+	background-image: url(./graphics/cat_btn_act_4.png);
+}
+#cat-btn-act-5{
+	background-image: url(./graphics/cat_btn_act_5.png);
+}
+#cat-btn-act-6{
+	background-image: url(./graphics/cat_btn_act_6.png);
+}
+#cat-btn-act-7{
+	background-image: url(./graphics/cat_btn_act_7.png);
+}
+#cat-btn-act-8{
+	background-image: url(./graphics/cat_btn_act_8.png);
+}
+#cat-btn-act-9{
+	background-image: url(./graphics/cat_btn_act_9.png);
+}
+#cat-btn-act-10{
+	background-image: url(./graphics/cat_btn_act_10.png);
+}
+#cat-btn-act-11{
+	background-image: url(./graphics/cat_btn_act_11.png);
+}
+#cat-btn-act-12{
+	background-image: url(./graphics/cat_btn_act_12.png);
+}
+#cat-btn-act-13{
+	background-image: url(./graphics/cat_btn_act_13.png);
+}
+#cat-btn-act-14{
+	background-image: url(./graphics/cat_btn_act_14.png);
+}
+#cat-btn-act-15{
+	background-image: url(./graphics/cat_btn_act_15.png);
+}
+#cat-btn-act-16{
+	background-image: url(./graphics/cat_btn_act_16.png);
+}
+/* ================================== */
+#cat-bckgr{
+	width: 385px;
+	height: 901px;
+	background-image: url(./graphics/cat_bckgr.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* breadcrumbs */
+.bc{
+	height: 73px;
+}
+.bc-rb{
+	width: 15px;
+	background-image: url(./graphics/bc_bright.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.bc-lb{
+	width: 15px;
+	background-image: url(./graphics/bc_bleft.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.bc-filler{
+	background-image: url(./graphics/bc_filler.png);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+/* breadcrumbs buttons */
+.bc-btn{
+	height: 54px;
+}
+.bc-layer{
+	display: block;
+}
+.bc-btn-pass-head{
+	width: 29px;
+	background-image: url(./graphics/bc_btn_pass_head.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.bc-btn-pass-filler{
+	background-image: url(./graphics/bc_btn_pass_filler.png);
+	background-repeat: repeat-x;
+	padding-right: 10px;
+}
+.bc-btn-pass-tail{
+	width: 34px;
+	background-image: url(./graphics/bc_btn_pass_tail.png);
+	background-repeat: no-repeat;
+}
+.bc-btn-pass-ftail{
+	width: 5px;
+	background-image: url(./graphics/bc_btn_pass_ftail.png);
+	background-repeat: no-repeat;
+}
+.bc-btn-act-head{
+	width: 30px;
+	background-image: url(./graphics/bc_btn_act_head.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.bc-btn-act-filler{
+	background-image: url(./graphics/bc_btn_act_filler.png);
+	background-repeat: repeat-x;
+	padding-right: 10px;
+}
+.bc-btn-act-tail{
+	width: 31px;
+	background-image: url(./graphics/bc_btn_act_tail.png);
+	background-repeat: no-repeat;
+}
+/* Map control panel */
+.da-btn{
+	width: 153px;
+	height: 81px;
+	position: relative; top: -3px;
+}
+.da-btn-on-pass{
+	background-image: url(./graphics/daonly_pass.png);
+	background-repeat: no-repeat;
+}
+.da-btn-on-act{
+	background-image: url(./graphics/daonly_act.png);
+	background-repeat: no-repeat;
+}
+.da-btn-off-pass{
+	background-image: url(./graphics/showall_pass.png);
+	background-repeat: no-repeat;
+}
+.da-btn-off-act{
+	background-image: url(./graphics/showall_act.png);
+	background-repeat: no-repeat;
+}
+.da-btn-dis{
+	background-image: url(./graphics/daonly_dis.png);
+	background-repeat: no-repeat;
+}
+.onmap-btn-pass{
+	background-image: url(./graphics/onmap_pass.png);
+	background-repeat: no-repeat;
+}
+.onmap-btn-act{
+	background-image: url(./graphics/onmap_act.png);
+	background-repeat: no-repeat;
+}
+/* Clients' wall */
+.wblock-right{
+	width: 29px;
+	background-image: url(./graphics/wb_right.png);
+	background-repeat: repeat-y;
+	background-position: right;
+}
+.wblock-left{
+	width: 29px;
+	background-image: url(./graphics/wb_left.png);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.wblock-top{
+	height: 29px;
+	background-image: url(./graphics/wb_top.png);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.wblock-bott{
+	height: 29px;
+	background-image: url(./graphics/wb_bott.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.wcrn11{
+	background-image: url(./graphics/c11.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 29px;
+	height: 29px;
+}
+.wcrn21{
+	background-image: url(./graphics/c21.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 29px;
+	height: 29px;
+}
+.wcrn22{
+	background-image: url(./graphics/c22.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 29px;
+	height: 29px;
+}
+.store-btn{
+	width: 111px;
+	height: 76px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.store-btn-pass{
+	background-image: url(./graphics/store_btn_pass.png);
+}
+.store-btn-act{
+	background-image: url(./graphics/store_btn_act.png);
+}
+.dastore-btn-pass{
+	background-image: url(./graphics/dastore_btn_pass.png);
+}
+.dastore-btn-act{
+	background-image: url(./graphics/dastore_btn_act.png);
+}
+.store-btn-text{
+	position: relative;
+	padding: 10px 10px;
+	padding-bottom: 10px;
+}
+.lev-cp{
+	width: 425px;
+	height: 101px;
+	background-image: url(./graphics/lev_cp_bckgr.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.cl-wall{
+	width: 660px;
+}
+.cl-wall-border{
+	width: 7px;
+}
+.lev-lbl{
+	width: 80px;
+	height: 74px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.lev-lbl-1{
+	background-image: url(./graphics/lev_1.png);
+}
+.lev-lbl-2{
+	background-image: url(./graphics/lev_2.png);
+}
+.lev-lbl-3{
+	background-image: url(./graphics/lev_3.png);
+}
+.lev-lbl-4{
+	background-image: url(./graphics/lev_4.png);
+}
+.lev-lbl-5{
+	background-image: url(./graphics/lev_5.png);
+}
+.cl-store-cell{
+	width: 587px;
+	height: 658px;
+}
+.back-btn-pass{
+	width: 213px;
+	height: 81px;
+	background-image: url(./graphics/back_btn_pass.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.back-btn-act{
+	width: 213px;
+	height: 81px;
+	background-image: url(./graphics/back_btn_act.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}</style></html>

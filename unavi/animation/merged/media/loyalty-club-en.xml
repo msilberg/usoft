@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use //n instead of \n for new line -->
+<strings>
+    <dialerCancel value="Cancel" />
+    <dialerInfoMain value="Type here a mobile//n phone number" />
+    <dialerInfoSecondary value="The service is free of fees" />
+    <licenseTitle value="License agreement" />
+    <licenseAccept value="Accept" />
+    <licenseReject value="Reject" />
+    <thanksMain value="The gift coupon will be//n sent within 5 min." />
+    <thanksSecondary value="Thanks for Your participation!" />
+    <wallTitleMain value="Please choose a brand" />
+    <wallTitleSecondary value="that is interesting for you//n      to get its discount" />
+    <mark value="Special offer" />
+</strings>

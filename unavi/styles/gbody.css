@@ -1,0 +1,1639 @@
+@CHARSET "UTF-8";
+body{
+	width: 1920px;
+	height: 942px;
+	overflow: auto;
+	color: #ffffff;
+	background: #ffffff;
+	/*-moz-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;*/
+}
+body div{
+	/*-moz-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;*/
+}
+table{
+	font-family: Tahoma;
+}
+table div{
+	/*-moz-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;*/
+}
+a{
+	text-decoration: none;
+}
+.body-bckgr-act{
+	background-color: #000c15;
+}
+.body-bckgr-pass{
+	background-color: #000c15;
+	background-image: url(http://localhost/public_html/unavi/graphics/start_bckgr.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+}
+.hide-layer{
+	display: none;
+}
+.mw{
+	display: table-cell;
+	vertical-align: top;
+}
+/* Running line itself */
+.rstrip-bckgr{
+	display: block;
+	position: relative;
+	height: 141px;
+	background-image: url(http://localhost/public_html/unavi/graphics/top_filler.png);
+	background-repeat: repeat-x;
+	background-color: #000000;
+	margin: 0px 0px 8px 0px;
+}
+.rstrip-bckgr-rtl{
+	right: -9px;
+}
+.rstrip-bckgr-ltr{
+	left: -9px;
+}
+.rstrip-table{
+	width: 1880px;
+	height: 141px;
+	padding-right: 14px;
+	padding-left: 14px;
+	position: relative; top: 0px;
+}
+.tc-lbl{
+	display: table;
+	width: 350px;
+	height: 100%;
+	color: #ffffff;
+	font-size: 36pt;
+	font-weight: bold;
+	text-align: center;
+}
+.tc-lbl-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.tc-lbl-text{
+	text-shadow: 3px 3px 5px #000f15;
+}
+.hor-scroller{
+	position: relative;
+	margin: 0px 45px;
+	border-radius: 35px;
+	height: 70px;
+	width: 1460px;
+	display: run-in;
+	overflow: hidden;
+	background-image: url(http://localhost/public_html/unavi/graphics/rstrip_filler.png);
+	background-repeat: repeat-x;
+}
+.scrollingtext{
+	position: absolute;
+	white-space: nowrap;
+	padding-top: 13px;
+	font-size: 24pt;
+	color: #bed730;
+}
+/* Main window */
+.mw{
+	width: 1130px;
+	height: 735px;
+}
+/* Categories Control Panel */
+.hncat-cell{
+	display: table-cell;
+	height: 770px;
+}
+.hncat{
+	display: block;
+	position: relative;	top: -7px;
+	height: 95.5%;
+	z-index: 10;
+}
+.hncat-rtl{
+	padding-right: 7px;
+}
+.hncat-ltr{
+	padding-left: 7px;
+}
+.cbtn{
+	display: block;
+	position: inherit;
+	width: 350px;
+	height: 60px;
+	background-repeat: repeat-x;
+	text-align: center;
+	font-size: 18pt;
+	margin: 0.5px 0px;
+	border-radius: 10px;
+}
+.cbtn span{
+	position: relative;
+	top: 13px;
+}
+.cbtn-act{
+	background-image: url(http://localhost/public_html/unavi/graphics/cat_btn_act_bckgr.png);
+	color: #0d2441;
+}
+.cbtn-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/cat_btn_pass_bckgr.png);
+	color: #c9e12d;
+}
+/* Main Control Panel */
+.info-btn{
+	display: block; 
+	position: relative; top: -5px;
+	width: 350px;
+}
+.info-btn table{
+	width: 100%;
+	height: 70px;
+}
+.info-btn-rtl{
+	right: 23px;
+}
+.info-btn-ltr{
+	left: 23px;
+}
+.prod-info{
+	display: block;
+	color: #ffffff;
+	font-size: 12pt;
+	margin-left: 25px;
+}
+.prod-info span{
+	font-size: 20pt;
+}
+.qr-cell{
+	width: 95px;
+}
+.uni-qr{
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: content-box;
+	background-image: url(http://localhost/public_html/unavi/graphics/uni_qr.png);
+	background-size: contain;
+}
+/* Maps */
+.lev-maps{
+	display: block;
+	position: relative;
+	background-repeat: no-repeat;
+}
+/* Modes switching buttons */
+.mode-switch{
+	display: block;
+	position: relative;
+	width: 443px;
+	height: 71px;
+	background-repeat: repeat-x;
+	font-size: 28pt;
+	text-align: center;
+	color: #ffffff;
+	border: 2px solid;
+	border-radius: 10px;
+	background-position: center center;
+	margin: 0px 15px;
+	z-index: 17;
+}
+.mode-switch span{
+	position: relative; top: 10px; 
+}
+.mbtn-act{
+	background-image: -moz-linear-gradient(center top , #F0F0F0, #DFDFDF);
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
+    border-color: #a2a2a2;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 5) inset;
+    color: #222222;
+}
+.map-pass-bckgr, .drum-pass, .lott-pass, .lang-pass, .hot-pass{
+	text-shadow: 1px 1px 2px #000F15;
+}
+.map-pass-bckgr{
+	background-image: url(http://localhost/public_html/unavi/graphics/map_pass_bckgr.png);
+	border-color: #00632d;
+}
+.drum-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/drum_pass_bckgr.png);
+	border-color: #00a99c;
+}
+.lott-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/lott_pass_bckgr.png);
+	border-color: #253c8c;
+}
+.lang-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/lang_pass_bckgr.png);
+	border-color: #852c71;
+}
+.lang-act{
+	background-image: url(http://localhost/public_html/unavi/graphics/lang_act_bckgr.png);
+	border-right-color: #ffffff;
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-bottom-color: #fdb813;
+	border-radius: 10px 10px 0px 0px;
+}
+.hot-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/hotbtn_bckgr_pass.png);
+	border-color: #af1115;
+}
+/* Breadcrumbs */
+.bc-layer{
+	display: block;
+	position: absolute; top: 252px;
+	height: 60px;
+	z-index: 2;
+}
+.bc-layer table{
+	font-size: 18pt;
+}
+.bc-layer-rtl{
+	right: 406px;
+}
+.bc-layer-ltr{
+	left: 406px;
+}
+.bc-level{
+	display: none;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+}
+.bc-level-act{
+	color: #ffffff;
+}
+.bc-arr{
+	display: none;
+	width: 20px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.bc-arr-rtl{
+	background-image: url(http://localhost/public_html/unavi/graphics/bc_arr_rtl.png);
+}
+.bc-arr-ltr{
+	background-image: url(http://localhost/public_html/unavi/graphics/bc_arr_ltr.png);
+}
+.bc-arr{
+	padding: 0px 15px;
+}
+.bc-otp-cont{
+	display: inline-block;
+	padding: 15px;
+}
+/* Minisite window */
+.minisite{
+	display: inline-block;
+	position: absolute; top: 251px;
+	width: 1110px;
+	height: 791px;
+	border: 5px solid #00b4f9;
+	border-radius: 20px;
+	background-color: #ffffff;
+	opacity: 0.9;
+	z-index: 3;
+}
+.minisite-rtl{
+	right: 409px;
+}
+.minisite-ltr{
+	left: 409px;
+}
+.cls-btn-cross, .msg-cls{
+	display: table;
+	position: absolute; top: 251px;
+	border-style: solid;
+	border-color: #6d6e71;
+	width: 70px;
+	height: 52px;
+	background-image: -moz-linear-gradient(top, #d1d2d3, #8d8f92);
+	background-image: -webkit-linear-gradient(top, #d1d2d3, #8d8f92);
+	z-index: 5;
+}
+.cls-btn-cross-rtl{
+	right: 1458px;
+	border-radius: 20px 0px 10px 0px;
+	border-width: 1px 0px 0px 1px;
+	box-shadow: 1px 1px 2px #4b4b4b;
+}
+.cls-btn-cross-ltr{
+	left: 1458px;
+	border-radius: 0px 20px 0px 10px;
+	border-width: 1px 1px 0px 0px;
+	box-shadow: -1px 1px 2px #4b4b4b;
+}
+.cls-btn-icon{
+	display: table-cell;
+	width: 36px;
+	height: 36px;
+	background-image: url(http://localhost/public_html/unavi/graphics/cls_icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.info-uplayer{
+	display: table;
+	position: absolute; top: 256px;
+	width: 723px;
+	height: 195px;
+	color: #007eb2;
+	font-weight: bold;
+	font-size: 20pt;
+	overflow: hidden;
+	z-index: 4;
+}
+.info-uplayer-rtl{
+	left: 463px;
+}
+.info-uplayer-ltr{
+	right: 463px;
+}
+.info-frame{
+	display: table-cell;
+	vertical-align: middle;
+}
+.info-content{
+	width: 100%;
+	position: relative; top: 0px;
+	max-height: 195px;
+	overflow-y: hidden;
+}
+.info-text{
+	display: inline-block;
+	position: relative;
+}
+.info-uplayer span{
+	color: #ff0000;
+}
+.pct-uplayer{
+	display: block;
+	position: absolute; top: 450px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 790px;
+	height: 597px;
+	z-index: 4;
+}
+.pct-uplayer-rtl{
+	left: 396px;
+}
+.pct-uplayer-ltr{
+	right: 396px;
+}
+.showcase{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-size: cover;
+}
+.showcase-rtl{
+	background-position: left center;
+	border-radius: 0px 0px 0px 16px;
+}
+.showcase-ltr{
+	background-position: right center;
+	border-radius: 0px 0px 16px 0px;
+}
+.logo-uplayer{
+	display: block;
+	position: absolute; top: 256px;
+	width: 282px;
+	height: 194px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-position: center center;
+	background-size: contain;
+	z-index: 4;
+}
+.logo-uplayer-rtl{
+	right: 425px;
+}
+.logo-uplayer-ltr{
+	left: 430px;
+}
+.name-uplayer{
+	display: block;
+	position: absolute; top: 333px;
+	width: 260px;
+	color: #ff0000;
+	font-size: 26pt;
+	font-weight: bold;
+	text-align: center;
+	z-index: 4;
+}
+.name-uplayer-rtl{
+	right: 430px;
+}
+.name-uplayer-ltr{
+	left: 450px;
+}
+.sbtns-uplayer{
+	display: block;
+	position: absolute; top: 547px;
+	width: 297px;
+	height: 500px;
+	z-index: 4;
+}
+.sbtns-uplayer-rtl{
+	right: 414px;
+}
+.sbtns-uplayer-ltr{
+	left: 414px;
+}
+.storemap-btn, .gdisc-btn, .top10-btn, .video-btn, .contact-btn{
+	display: table;
+	position: absolute;
+	width: 297px;
+	height: 70px;
+	background-repeat: repeat-x;
+	color: #ffffff;
+	font-size: 21pt;
+	text-align: center;
+	z-index: 5;
+}
+.storemap-btn div, .gdisc-btn div, .top10-btn div, .video-btn div, .contact-btn div{
+	display: table-cell;
+	vertical-align: middle;
+}
+.store-btn-rad-rtl{
+	border-radius: 10px 0px 0px 10px;
+}
+.store-btn-rad-ltr{
+	border-radius: 0px 10px 10px 0px;
+}
+/* buttons places. beginning */
+/*.store-btn-pos1{
+	top: 360px;
+}
+.store-btn-pos2{
+	top: 240px;
+}
+.store-btn-pos3{
+	top: 120px;
+}
+.store-btn-pos4{
+	top: 0px;
+}*/
+.sm-btn{
+	position: absolute;
+}
+/* buttons places. end */
+.video-btn-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/video_btn_pass_bckgr.png);
+}
+.top10-btn-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/top10_btn_pass_bckgr.png);
+}
+.gdisc-btn{
+	background-image: url(http://localhost/public_html/unavi/graphics/discount_btn_pass_bckgr.png);
+}
+.contact-btn-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/contact_btn_bckgr.png);
+}
+.storemap-btn{
+	top: 430px;
+	background-image: url(http://localhost/public_html/unavi/graphics/storemap_btn_pass_bckgr.png);
+}
+.storemap-btn-rtl{
+	border-radius: 10px 0px 16px 0px;
+}
+.storemap-btn-ltr{
+	border-radius: 0px 10px 0px 16px;
+}
+.video-btn-pass, .top10-btn-pass, .gdisc-btn, .contact-btn-pass, .storemap-btn{
+	text-shadow: 1px 1px 2px #000F15;
+}
+.minisite-btn-act{
+	background-color: #939598;
+	border-left-color: #716f6f;
+	border-top-color: #716f6f;
+	border-right-color: #d7d7d7;
+	border-bottom-color: #d7d7d7;
+	box-shadow:	#4b4b4b 5px 5px 5px inset;
+}
+.work-time{
+	display: block;
+	width: 600px;
+}
+.work-time span{
+	color: #ff0000;
+}
+.ud-arr{
+	display: none;
+	position: absolute;
+	width: 53px;
+	height: 51px;
+	border-radius: 5px;
+	text-align: center;
+	z-index: 5;
+}
+.ud-arr-rtl{
+	left: 406px;
+}
+.ud-arr-ltr{
+	right: 406px;
+}
+.ud-arr-pass{
+	background-image: -moz-linear-gradient(top, #00a7e8, #234090);
+	background-image: -webkit-linear-gradient(top, #00a7e8, #234090);
+}
+.ud-arr-pass div{
+	border-color: #ffffff;
+}
+.ud-arr-act{
+	background-color: #dcdcdc;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 5) inset;
+}
+.ud-arr-act div{
+	border-color: #222222;
+}
+#info-arr-up{
+	top: 326px;
+}
+#info-arr-up div{
+	display: inline-block;
+	position: relative;
+	margin: 17px 5px;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom-width: 15px;
+	border-bottom-style: solid;
+}
+#info-arr-down{
+	top: 386px;
+}
+#info-arr-down div{
+	display: inline-block;
+	position: relative;
+	margin: 20px 5px;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top-width: 15px;
+	border-top-style: solid;
+}
+.store-anime{
+	display: inherit;
+	position: relative; top: 52px; left: 5px;
+	width: 700px;
+	height: 393px;
+	z-index: 20;		
+}
+/* Stores list window */
+.list-cont{
+	display: inline-block;
+	position: relative; top: 9px; right: 20px; left: 20px;
+	z-index: 4;
+}
+.store-btn-bckgr{
+	display: table;
+	width: 149px;
+	height: 149px;
+	background-image: url(http://localhost/public_html/unavi/graphics/store_btn_bckgr.png);
+	background-repeat: repeat-x;
+	border-radius: 10px;
+}
+.store-btn-frame{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.store-btn{
+	display: inline-block;
+	position: relative;
+	font-size: 18pt;
+	color: #000000;
+}
+.store-wall{
+	display: inline-block;
+	position: absolute; top: 10px;
+	background-color: #6d8087;
+	border-radius: 10px;
+	opacity: 0.9;
+	min-width: 1118px;
+	min-height: 801px;
+	z-index: 5;
+}
+.store-wall-rtl{
+	right: -26px;
+}
+.store-wall-ltr{
+	left: -26px;
+}
+.stores-container{
+	display: block;
+	position: absolute; top: 12px;
+	padding: 16px;
+	min-width: 1118px;
+	min-height: 688px;
+	z-index: 6;
+}
+.stores-container-rtl{
+	right: -25px;
+}
+.stores-container-ltr{
+	left: -25px;
+}
+.promo-list{
+	width: 100%;
+	height: 100%;
+	background-origin: content-box;
+	background-size: 95%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.close-wall{
+	display: table;
+	position: absolute; top: 759px;
+	background-image: -moz-linear-gradient(top, #e91c24, #b11117);
+	background-image: -webkit-linear-gradient(top, #e91c24, #b11117);
+	width: 100px;
+	height: 52px;
+	z-index: 7;
+}
+.close-wall-rtl{
+	right: 992px;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 1px -1px 2px #2d2d2d;
+}
+.close-wall-ltr{
+	left: 992px;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: -1px -1px 2px #2d2d2d;
+}
+.sl-tr{
+	display: none;
+	position: absolute;
+	opacity: 0.9;
+}
+.sl-tr-rtl{
+	right: -51px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid #6d8087;
+}
+.sl-tr-ltr{
+	left: -51px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent; 
+	border-right: 25px solid #6d8087;
+}
+/* Stores listing block */
+.slides-scope{
+	display: block;
+	position: absolute; top: -2px;
+	width: 1118px;
+	height: 742px;
+	overflow: hidden;
+}
+.slides-scope-rtl{
+	right: -1px;
+}
+.slides-scope-ltr{
+	left: -1px;
+}
+.slides-cont{
+	display: inline-block;
+	position: relative;
+}
+.slide-cell{
+	display: inline-block;
+	padding: 10px 17px;
+	width: 1084px;
+	height: 742px;
+	vertical-align: top;
+}
+.list-slider{
+	display: block;
+	position: absolute; top: 746px;
+	width: 950px;
+}
+.list-slider-rtl{
+	right: 30px;
+}
+.list-slider-ltr{
+	left: 30px;
+}
+.ls-btn{
+	display: inline-block;
+	width: 53px;
+	height: 40px;
+	padding-top: 13px;
+	margin: 0px 8px;
+	border-radius: 10px 10px 0px 0px;
+	font-size: 18pt;
+	text-align: center;
+}
+.ls-btn-pass{
+	background-color: #e5e5e5;
+	color: #000000;
+}
+.ls-btn-act{
+	background-repeat: repeat-x;
+	background-image: url(http://localhost/public_html/unavi/graphics/cat_btn_act_bckgr.png);
+	color: #0d2441;
+}
+.ls-btn-scope{
+	display: inline-block;
+	width: 828px;
+	overflow: hidden;
+}
+.ls-btn-cont{
+	display: inline-block;
+	position: relative;
+}
+.ls-move{
+	display: block;
+	width: 53px;
+	height: 53px;
+	margin: 0px 8px;
+}
+.ls-move-pass{
+	background-color: #e5e5e5;
+}
+.ls-move-act{
+	background-color: #516067;
+	opacity: .6;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 5) inset;
+}
+.ls-move-beg-rtl, .ls-move-end-ltr{
+	border-radius: 0px 10px 10px 0px;
+}
+.ls-move-end-rtl, .ls-move-beg-ltr{
+	border-radius: 10px 0px 0px 10px;
+}
+.ls-arr-end-rtl, .ls-arr-beg-ltr, .ls-arr-beg-rtl, .ls-arr-end-ltr{
+	display: inline-block;
+	margin: 13px 19px;
+}
+.ls-arr-beg-rtl, .ls-arr-end-ltr{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid #222222;
+}
+.ls-arr-end-rtl, .ls-arr-beg-ltr{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #222222;
+}
+/* Top10 wall */
+.top10-wall{
+	display: none;
+	position: absolute; top: 500px;
+}
+.top10-wall-rtl{
+	right: 735px;
+}
+.top10-wall-ltr{
+	left: 735px;
+}
+.ttcat-btn{
+	display: table;
+	min-width: 110px;
+	max-width: 145px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+}
+.ttcat-btn-pass{
+	background-repeat: repeat-x;
+	background-origin: content-box;
+	background-size: contain;
+	background-image: url(http://localhost/public_html/unavi/graphics/top10_btn_pass_bckgr.png);
+	color: #ffffff;
+}
+.ttcat-btn-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.store-mbtn-act{
+	background-image: -moz-linear-gradient(center top , #F0F0F0, #DFDFDF);
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
+    border-color: #a2a2a2;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 5) inset;
+    color: #222222;
+}
+/* Video block */
+.video-layer{
+	display: block;
+	width: 770px;
+	height: 485px;
+	z-index: 4;
+}
+.videos-matrix{
+	display: block;
+	position: absolute; top: 60px;
+}
+.videos-matrix-rtl{
+	right: 0px;
+}
+.videos-matrix-ltr{
+	left: 0px;
+}
+.vtrailer-icon{
+	display: block;
+	width: 240px;
+	height: 145px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: content-box;
+	background-size: contain;
+	z-index: 5;
+}
+.vplayer-bckgr{
+	display: block;
+	position: absolute; top: 430px;
+	width: 770px;
+	height: 485px;
+	z-index: 6;
+}
+.vplayer-bckgr-rtl{
+	right: 730px;
+}
+.vplayer-bckgr-ltr{
+	left: 730px;
+}
+.video-player{
+	display: block;
+	position: absolute;
+	z-index: 7;
+}
+.video-player-scrs{
+	display: block;
+	position: absolute;
+	z-index: 11;
+}
+.video-close{
+	display: none;
+	position: absolute;
+	padding: 13px;
+	width: 34px;
+	height: 34px;
+	background-image: -moz-linear-gradient(top, #d1d2d3, #8d8f92);
+	background-image: -webkit-linear-gradient(top, #d1d2d3, #8d8f92);
+	border: 3px solid #6d6e71;
+	border-radius: 35px;
+	z-index: 8;
+}
+/* Service icons block */
+.sibtn{
+	display: table;
+	position: relative;
+	width: 350px;
+	height: 60px;
+	background-repeat: repeat-x;
+	text-align: center;
+	font-size: 18pt;
+	margin: 0.5px 0px;
+	border-radius: 10px;
+}
+.sibtn-frame{
+	display: table-cell;
+	vertical-align: middle;
+}
+.sibtn-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/sibtn_pass_bckgr.png);
+	color: #ffffff;	
+}
+.si-bckgr{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	background-image: -moz-linear-gradient(top, #00aeef, #21428f);
+	background-image: -webkit-linear-gradient(top, #00aeef, #21428f);
+}
+.si-bckgr-pass{
+	background-image: -moz-linear-gradient(top, #00aeef, #21428f);
+	background-image: -webkit-linear-gradient(top, #00aeef, #21428f);
+}
+.si-bckgr-act{
+	background-image: -moz-linear-gradient(top, #6eef00, #2cab00);
+	background-image: -webkit-linear-gradient(top, #6eef00, #2cab00);
+}
+.si-btn{
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	padding: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: content-box;
+	background-size: 95%;
+}
+/* Banners block */
+.valign-cell{
+	display: table-cell;
+	width: 375px;
+}
+.bann-layer{
+	display: inline-block;
+	position: relative; top: -1px;
+	margin: 0px 12px;
+	z-index: 12;
+}
+.bann-cell{
+	display: block;
+	width: 170px;
+	height: 105px;
+	background-repeat: repeat-x;
+	border-radius: 10px;
+}
+.bann-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/banner_bckgr_pass.png);
+	opacity: 0.8;
+}
+.bann-act{
+	background-image: url(http://localhost/public_html/unavi/graphics/banner_bckgr_act.png);
+}
+.bann-logo{
+	display: inline-block;
+	width: 160px;
+	height: 95px;
+	padding: 5px;
+	background-origin: content-box;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* Levels switcher */
+.lev-switch{
+	display: block;
+	position: absolute; top: 0px;
+	border-radius: 9px;
+	width: 100%;
+	height: 100%;
+}
+.lev-switch table{
+	width: 100%;
+	height: 100%;
+	font-size: 28pt;
+}
+.back2root-cell{
+	width: 120px;
+}
+.back2root{
+	display: block;
+	height: 100%;
+}
+.lev-back-cell{
+	width: 20%;
+}
+.lev-back-lbl{
+	display: table;
+}
+.lev-lbl-rtl{
+	padding: 0px 10px 8px 0px;
+}
+.lev-lbl-ltr{
+	padding: 0px 0px 8px 10px;
+}
+.ud-lev-btn{
+	display: block;
+	width: 100%;
+}
+.lev-arrow{
+	display: run-in;
+	width: 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lev-arrow-up{
+	width: 0px;
+	height: 0px;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	border-bottom: 17px solid #ffffff;
+}
+.lev-arrow-down{
+	width: 0px;
+	height: 0px;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	border-top: 17px solid #ffffff;
+}
+.lev-arrow-rtl{
+	width: 0px;
+	height: 0px;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #ffffff;
+}
+.lev-arrow-ltr{
+	width: 0px;
+	height: 0px;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-right: 17px solid #ffffff;
+}
+.lev-separate{
+	display: block;
+	position: absolute; top: 0px;
+	width: 2px;
+	height: 71px;
+	background-color: #000000;
+	box-shadow: 0 0 2px 1px #002912;
+	opacity: 0.4;
+}
+.ls1-rtl{
+	right: 217px;	
+}
+.ls2-rtl{
+	right: 329px;	
+}
+.ls1-ltr{
+	left: 217px;	
+}
+.ls2-ltr{
+	left: 281px;	
+}
+.la-cell{
+	width: 65px;
+}
+.la-frame{
+	display: table-cell;
+	vertical-align: middle;
+}
+.lau-layer{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.lau-frame-act{
+	height: 75px;
+	position: relative;
+}
+.la-bckgr-act, .scale-btn-act{
+	background-image: -moz-linear-gradient(center top , #F0F0F0, #DFDFDF);
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
+    border-color: #a2a2a2;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 5) inset;
+    color: #222222;
+}
+.lad-layer{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.lad-frame-act-rtl{
+	height: 75px;
+	position: relative; left: -2px;
+	border-radius: 10px 0px 0px 10px;
+}
+.lad-frame-act-ltr{
+	height: 75px;
+	position: relative; right: -2px;
+	border-radius: 0px 10px 10px 0px;
+}
+/* Language switch panel */
+.lang-panel{
+	display: none;
+	position: absolute; top: 210px;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	width: 443px;
+	background-color: #fdb813;
+	z-index: 16;
+}
+.lang-panel table{
+	color: #ffffff;
+	font-size: 26pt;
+	font-weight: bold;
+}
+.lang-panel-rtl{
+	right: 23px;
+}
+.lang-panel-ltr{
+	left: 23px;
+}
+.lang-elem{
+	display: block;
+	padding-top: 8px;
+	height: 52px;
+	border-radius: 10px;
+}
+.lang-elem-act{
+	background-color: #ffffff;
+	color: #000000;
+	box-shadow: 0 0 3px 3px #f7941e;
+}
+.lang-elem-pass{
+	background-color: #f7941e;
+	color: #ffffff;
+	box-shadow: 0 0 3px 3px #ffffff;
+}
+.lang-close{
+	display: block;
+	position: relative; top: 5px;
+	padding-top: 15px;
+	height: 56px;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	background-image: url(http://localhost/public_html/unavi/graphics/lang_act_bckgr.png);
+	background-repeat: repeat-x;
+}
+.lang-up-arrow{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid #ffffff;
+}
+/* Levels scaling */
+.scale-btn{
+	display: block;
+	position: relative;
+	width: 108px;
+	height: 108px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.nscale-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/nscale_pass.png);
+}
+.nscale-act{
+	background-image: url(http://localhost/public_html/unavi/graphics/nscale_act.png);
+}
+.pscale-pass{
+	background-image: url(http://localhost/public_html/unavi/graphics/pscale_pass.png);
+}
+.pscale-act{
+	background-image: url(http://localhost/public_html/unavi/graphics/pscale_act.png);
+}
+.lsp-spacer{
+	width: 100%;
+}
+/* Drum Block */
+.drum-layer{
+	display: none;
+	position: relative;
+}
+.drum-layer-rtl{
+	right: -22px;
+}
+.drum-layer-ltr{
+	left: -3px;
+}
+.drum-gifts, .hot-info{
+	display: none;
+	position: absolute; top: 242px;
+	padding-top: 0px;
+	width: 350px;
+	height: 745px;
+	background-image: -moz-linear-gradient(center top , #ffffff, #d1d2d4);
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
+	border-radius: 10px;
+}
+.drum-gifts ol{
+	position: relative; top: -6px;
+	width: 335px;
+	color: #000c15;
+	font-size: 11.5pt;
+}
+.drum-gifts-rtl, .hot-info-rtl{
+	right: 23px;
+}
+.drum-gifts-rtl ol{
+	right: -35px;
+}
+.drum-gifts-ltr, .hot-info-ltr{
+	left: 23px;
+}
+.drum-gifts-ltr ol{
+	left: -35px;
+}
+/* Lottery Block */
+.lott-layer{
+	display: none;
+	position: relative; top: 5px;
+}
+.lott-layer-rtl{
+	right: -12px;
+}
+.lott-layer-ltr{
+	left: -9px;
+}
+/* Hot deals */
+.hot-layer{
+	display: none;
+	position: relative; top: 170px;
+}
+.hot-layer-rtl{
+	right: 389px;
+}
+.hot-layer-ltr{
+	left: 389px;
+}
+.hd-info div{
+	display: inline-block;
+	position: relative; top: 20px;
+	width: 310px;
+	height: 64px;
+	margin: 0px 20px;
+	padding-top: 16px;
+	background-image: -moz-linear-gradient(center top , #00adee, #1c4591);
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
+	color: #ffffff;
+	font-size: 26pt;
+	text-align: center;
+	border-radius: 10px;
+}
+.hd-info span{
+	display: inline-block;
+	position: relative; top: 30px;
+	padding: 30px;
+	color: #000c15;
+	font-size: 18pt;
+}
+.thw-container{
+	display: block;
+	position: relative; top: 140px;
+	width: 1110px;
+}
+.thanks-window{
+	display: inline-block;
+	position: relative;
+	width: 798px;
+	height: 559px;
+	background-color: #ffffff;
+	border: 8px solid #ed1b24;
+	border-radius: 30px;
+	text-align: center;
+}
+.thanks-window span{
+	display: inline-block;
+	width: 565px;
+	font-size: 24pt;
+	position: relative; top: 110px;
+}
+.thanks-window-rtl{
+	right: 148px;
+}
+.thanks-window-ltr{
+	left: 148px;
+}
+.thanks-btn{
+	display: block;
+	position: absolute; top: 445px;
+	width: 318px;
+	height: 56px;
+	padding-top: 17px;
+	background-repeat: repeat-x;
+	background-image: url(http://localhost/public_html/unavi/graphics/thanks_btn_bckgr.png);
+	border: 2px solid #198036;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 24pt;
+	text-align: center;
+	box-shadow: 0 0 5px 5px #464646;
+}
+.thanks-btn-rtl{
+	right: 239px;
+}
+.thanks-btn-ltr{
+	left: 239px;
+}
+#thanks-info{
+	color: #01652f;
+}
+#thanks-message{
+	color: #ec121d;
+}
+/* Loop Panel Block */
+.loop-panel{
+	display: block;
+	position: absolute; top: 250px;
+}
+.loop-panel-rtl{
+	right: 1334px;
+}
+.loop-panel-ltr{
+	left: 1334px;
+}
+.scale-btn{
+	display: block;
+	width: 96px;
+	height: 56px;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-style: solid;
+	text-align: center;
+}
+.scale-btn div{
+	font-size: 26pt;
+}
+.scale-btn-pass{
+	background-repeat: repeat-x;
+	background-origin: content-box;
+	background-size: contain;
+	background-image: url(http://localhost/public_html/unavi/graphics/map_pass_bckgr.png);
+	border-color: #00652e;
+	color: #ffffff;
+}
+.scale-btn-pass div{
+	border-color: #ffffff;
+}
+.scale-btn-act div{
+	border-color: #222222;
+}
+.scale-btn-contain{
+	display: inline-block;
+	padding-top: 11px;
+	width: 100%;
+	height: 45px;
+}
+.scale-plus-rtl, .scale-minus-ltr{
+	border-radius: 0px 10px 10px 0px;
+	border-right-width: 2px;
+	border-left-width: 0px;
+}
+.scale-plus-ltr, .scale-minus-rtl{
+	border-radius: 10px 0px 0px 10px;
+	border-left-width: 2px;
+	border-right-width: 0px;
+}
+.plus-sign, .minus-sign{
+	display: inline-block;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 22px;
+}
+.plus-sign-rtl, .minus-sign-rtl{
+	width: 30px;
+	height: 30px;
+}
+.plus-sign-ltr, .minus-sign-ltr{
+	width: 31px;
+	height: 31px;
+}
+.loop-stick-plus, .loop-stick-minus{
+	display: inline-block;
+	position: relative; top: -12px; 
+	width: 20px;
+	height: 4px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.loop-stick-pass{
+	background-color: #ffffff;
+}
+.loop-stick-act{
+	background-color: #222222;
+}
+.loop-stick-rtl{
+	right: -17px;
+}
+.loop-stick-ltr{
+	right: -19px;
+}
+.scale-btn-separate{
+	display: block;
+	position: absolute; top: 2px;
+	width: 2px;
+	height: 56px;
+	background-color: #000000;
+	box-shadow: 0 0 2px 1px #002912;
+	opacity: 0.4;
+}
+.scale-btn-separate-rtl{
+	right: 97px;
+}
+.scale-btn-separate-ltr{
+	left: 97px;
+}
+/* Call request block */
+.call-request{
+	display: none;
+	position: absolute; top: 480px;
+	width: 700px;
+	height: 500px;
+	background-color: #e6e7e8;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 3px 3px #888;
+	z-index: 6;
+}
+.call-request table{
+	width: 100%;
+}
+.call-request-rtl{
+	right: 750px;
+}
+.call-request-ltr{
+	left: 750px;
+}
+.cr-text{
+	display: inline-block;
+	margin-top: 50px;
+	width: 375px;
+	color: #007EB2;
+	font-size: 20pt;
+	font-weight: bold;
+}
+.thanks-cr-text{
+	display: inline-block;
+	position: relative; top: 230px;
+	width: 100%;
+	text-align: center;
+	color: #007EB2;
+	font-size: 20pt;
+	font-weight: bold;
+}
+.cr-text-rtl{
+	padding-right: 15px;
+}
+.cr-text-ltr{
+	padding-left: 15px;
+}
+/* Screensaver block */
+.scrs-cont{
+	display: block;
+}
+.scrs-bckgr{
+	display: block;
+	position: relative; top: 19px;
+	width: 1121px;
+	height: 800px;
+	background-color: #3c3c3c;
+	opacity: .85;
+	border-radius: 20px;
+	z-index: 10;
+}
+.scrs-bckgr-rtl{
+	left: 6px;
+}
+.scrs-bckgr-ltr{
+	right: 6px;
+}
+.scrs-cls-btn{
+	display: run-in;
+	position: relative; top: 0px;
+	width: 70px;
+	height: 52px;
+	background-image: url(http://localhost/public_html/unavi/graphics/white_cross.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.scrs-cls-btn-rtl{
+	right: 1051px;
+	border-radius: 20px 0px 10px 0px;
+}
+.scrs-cls-btn-ltr{
+	left: 1051px;
+	border-radius: 0px 20px 0px 10px;
+}
+.scrs-anime-layer{
+	display: block;
+}
+.scrs-comm{
+	display: none;
+}
+.scrs-anime-layer, .scrs-comm{
+	position: absolute; top: 303px;
+	width: 1110px;
+	height: 730px;
+	font-size: 20pt;
+	z-index: 11;
+}
+.scrs-anime-layer div{
+	display: none;
+}
+/* Progress & info */
+.total-pb-bckgr{
+	display: none;
+	position: absolute; top: 0px; left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.6;
+	z-index: 30;
+}
+.pb-icon-cont{
+	display: none;
+	position: absolute; top: 0px; left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 31;
+}
+.pb-icon-table{
+	display: table;
+	position: absolute; top: 0px; left: 0px;
+	width: inherit;
+	height: inherit;
+}
+.pb-icon{
+	display: table-cell;
+	width: inherit;
+	height: inherit;
+	vertical-align: middle;
+	text-align: center;
+}
+.pb-icon div{
+	/* has been hidden */
+	display: none;
+	width: 128px;
+	height: 128px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(http://localhost/public_html/unavi/graphics/ajax_loader_mod.png);
+}
+.msg-box{
+	display: none;
+	position: absolute; top: 0px;
+	width: 450px;
+	height: 200px;
+	background-color: #FFFFFF;
+	border: 5px solid #00B4F9;
+	border-radius: 15px;
+	z-index: 32;
+}
+.msg-icon{
+	display: inline-block;
+	position: absolute; top: 65px;
+	width: 64px;
+	height: 64px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(http://localhost/public_html/unavi/graphics/info_icon.png);
+	color: #0099FF;
+	font-size: 48pt;
+}
+.msg-icon-rtl{
+	right: 20px;
+}
+.msg-icon-ltr{
+	left: 20px;
+}
+.msg-cls{
+	display: inline-block;
+	position: absolute; top: -5px;
+	width: 70px;
+	height: 52px;
+	background-image: -moz-linear-gradient(top , #D1D2D3, #8D8F92);
+	background-image: -webkit-linear-gradient(top , #D1D2D3, #8D8F92);
+}
+.msg-cls div:first-child{
+	display: inline-block;
+	margin-top: 9px;
+}
+.msg-cls-rtl{
+	left: -5px;
+	border-radius: 14px 0px 10px 0px;
+	border-width: 1px 0px 0px 1px;
+	box-shadow: 1px 1px 2px #4b4b4b;
+}
+.msg-cls-rtl div:first-child{
+	margin-right: 17px;
+}
+.msg-cls-ltr{
+	right: -5px;
+	border-radius: 0px 14px 0px 10px;
+	border-width: 1px 1px 0px 0px;
+	box-shadow: -1px 1px 2px #4b4b4b;
+}
+.msg-cls-ltr div:first-child{
+	margin-left: 17px;
+}
+.msg-txt{
+	display: table;
+	position: absolute; top: 5px;
+	width: 270px;
+	height: 190px;
+}
+.msg-txt-rtl{
+	right: 100px;
+}
+.msg-txt-ltr{
+	left: 100px;
+}
+.msg-txt div{
+	font-family: Tahoma;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 18pt;
+	color: #000000;
+}

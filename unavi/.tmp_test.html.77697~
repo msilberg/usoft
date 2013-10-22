@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test Page</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="raphael.min.js"></script>
+<script type="text/javascript" language="JavaScript">
+$(document).ready(function(){
+	var paper=Raphael(10,50,1000,800);
+	var shape=paper.path("M 81.822356,77.84373 C 95.994964,60.808265 110.45261,45.055489 127.27922,39.96301 c -3.35425,22.203953 2.95608,36.89101 11.61676,49.750013 L 95.206877,108.40084 81.822356,77.84373 z");
+	shape.attr("fill","#f00");
+	shape.attr("stroke","#fff");
+	shape.attr("fill-opacity","60%");
+	var shape2=paper.circle(100,100,5);
+	shape2.attr("fill","#0000ff");
+	shape2.attr("stroke","#0000ff");
+	var t=paper.text(110,85,"Twenty\nfour\nseven");
+	t.attr("font-size","13");
+	t.attr("rotation","-80");
+});
+</script>
+<style>
+</style>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<?php
+	static function coord_corr($coord)
+	{
+		$i=0;
+		$corr_arr=array(data::$corr_xmap,data::$corr_ymap);
+		$focc=stripos($coord," ");
+		$cutc=substr($coord,++$focc,(stripos(substr($coord,$focc)," ")-$focc+2));
+		$old_val=self::str2arr($cutc);
+		foreach ($old_val as $val)
+		{
+			$corr_val[]=$val+$corr_arr[$i];
+			$i++;
+		}
+		return str_replace($old_val,$corr_val,$coord);
+	} 
+	public function js_objhl()
+	{
+		//return false;
+		if ((isset($_GET['clch']) && !service::is_scl()) || isset($_GET['showcat']))
+		{
+			$i=0;
+			$obj_arr=data::obj_map();
+			if (isset($_GET['showcat']))
+			{
+				if (isset($_GET['da'])) foreach (data::cat_disc() as $val) $obj_id[]=$val-2;
+				else foreach (data::cat_clients() as $val) $obj_id[]=$val-2;
+			}
+			else
+			{
+				$cut=($_GET['lev']==1)? 2 : 3;
+				$obj_id[0]=(integer)$_GET['clch'];
+				$obj_id[0]-=$cut;
+			}
+			print "<script type=\"text/javascript\" charset=\"utf-8\">
+			window.onload=function(){
+			var paper=Raphael(".data::$corr_xmap.",".data::$corr_ymap.",1000,700);\n";
+			foreach ($obj_id as $val)
+				print "var c$i=paper.path(\"".$obj_arr[$val]."\");\n
+				c$i.attr(\"fill\", \"#f00\");
+				c$i.attr(\"fill-opacity\",\"30%\");
+				c$i.attr(\"stroke\",\"#f00\");
+				c$i.click(function(){
+					alert(\"alert hello store ".$i++."\");
+				});";
+			print "};\n</script>";
+		}
+		else return false;
+	}
+	static function arr_layer($arr,$beg,$step)
+	{
+		if (($step!="prev" && $step!="next") || 
+		($beg==0 && $step=="prev") || 
+		($beg==(count($arr)-1) && $step=="next")) return false;
+		return ($step=="prev")? $arr[--$beg] : $arr[++$beg];
+	}
+// sorting
+/*$tail=self::cl_blng();
+		foreach ($tail as $key=>$val)
+			if (data::get_cl_cat($key)==(integer)data::$cat && data::lev_of_cl($key)==$lev)
+				foreach ($val as $fval)
+					for ($i=0;$i<count($stores);$i++)
+						if ($fval==$stores[$i][0])
+						{
+							unset($stores[$i]);
+							break;
+						}
+		foreach ($tail as $key=>$val)
+			if (data::get_cl_cat($key)==(integer)data::$cat)
+			{
+				if (self::is_scl($key))
+				{
+					$mrk_beg="<span style=\"background-color:".data::cl_colour($key).";\">";
+					$mrk_end="</span>";
+				}
+				else
+				{
+					$mrk_beg="<b>";
+					$mrk_end="</b>";
+				}
+				for ($i=0;$i<count($stores);$i++)
+					if ($key==$stores[$i][0])
+					{
+						unset($tval);
+						$tval[0][]=$key;
+						$tval[0][]=$mrk_beg.data::get_cl_name($key).$mrk_end;
+						$j=1;
+						foreach ($val as $fval)
+							if (data::lev_of_cl($fval)==$lev)
+							{
+								$tval[$j][]=$fval;
+								$tval[$j++][]=$mrk_beg.data::get_cl_name($fval).$mrk_end;
+							}
+						//array_splice($stores,$i,1,$tval);
+						break;
+					}
+			}*/
+protected function cat()
+	{
+		$raw=db::get_cat();
+		for ($i=0;$i<count($raw);$i++)
+			if ((isset(data::$cat) && data::$cat==$raw[$i][0] && !db::get_cl_cat("")) ||
+			(isset(data::$cl) && db::get_cl_cat("")==$raw[$i][0])) $arr[]=$raw[$i][1];
+			elseif (isset($_GET['showcat'])) 
+				$arr[]=(data::$cat==$raw[$i][0])? $raw[$i][1] : 
+				"<a href=\"?showcat".self::addl("lev")."&catch=".$raw[$i][0]."\">".$raw[$i][1]."</a>";
+			else $arr[]="<a href=\"?catch=".$raw[$i][0]."\">".$raw[$i][1]."</a>";
+		return $arr;
+	}
+?>

@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+.plus-sign span{
+	position: relative;
+}
+.plus-sign-rtl span{
+	top: -12px;
+	left: -1px;
+}
+.plus-sign-ltr span{
+	top: -8px;
+	right: 0px;
+}
+.minus-sign span{
+	position: relative;
+	top: -8px; 
+}
+.minus-sign-rtl span{
+	left: -1px;
+}
+.minus-sign-ltr span{
+	right: 0px;
+}
