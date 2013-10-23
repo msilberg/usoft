@@ -173,7 +173,7 @@ class data
 	}
 	public function is_ie()
 	{
-		return $_SESSION['browser']=="ie";
+		return $_SESSION['browser']=="ie" && self::iev_otp() < 10;
 	}
 	/*
 	 * Body build functions
@@ -332,7 +332,7 @@ class data
 	{
 		return service::top10_arr();
 	}
-	public function iev_otp()
+	static function iev_otp()
 	{
 		return service::detect_ie_version();
 	}

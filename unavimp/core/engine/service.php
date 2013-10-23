@@ -764,6 +764,7 @@ class service extends data
 		elseif (stristr($_SERVER['HTTP_USER_AGENT'],'MSIE 8')) $iev=8;
 		elseif (stristr($_SERVER['HTTP_USER_AGENT'],'MSIE 9')) $iev=9;
 		elseif (stristr($_SERVER['HTTP_USER_AGENT'],'MSIE 10')) $iev=10;
+		elseif (stristr($_SERVER['HTTP_USER_AGENT'],'MSIE 11')) $iev=11;
 		else $iev="unknown";
 		return $iev;
 	}
