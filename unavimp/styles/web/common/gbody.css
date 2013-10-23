@@ -67,7 +67,7 @@ a{
 	height: 56px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/logo.png);
+	background-image: url(../../../graphics/logo.png);
 	cursor: pointer;
 }
 /* Header block */
@@ -82,7 +82,7 @@ a{
 	vertical-align: middle;
 	text-align: center;
 	background-repeat: repeat-x;
-	background-image: url(http://localhost/public_html/unavimp/graphics/header_bckgr.png);
+	background-image: url(../../../graphics/header_bckgr.png);
 }
 .header-bckgr>div:first-child>div:first-child{
 	display: inline-block;
@@ -108,6 +108,7 @@ a{
 	background-image: -moz-linear-gradient(top, #F9F9F9, #F0F0F0);
 	background-image: -webkit-linear-gradient(top, #F9F9F9, #F0F0F0);
 	background-image: -o-linear-gradient(top, #F9F9F9, #F0F0F0);
+	background-image: -ms-linear-gradient(top, #F9F9F9, #F0F0F0);
 	width: 230px;
 	height: 150px;
 	border-radius: 5px;
@@ -117,6 +118,7 @@ a{
 	background-image: -moz-linear-gradient(top, #F9F9F9, #E0E0E0);
 	background-image: -webkit-linear-gradient(top, #F9F9F9, #E0E0E0);
 	background-image: -o-linear-gradient(top, #F9F9F9, #E0E0E0);
+	background-image: -ms-linear-gradient(top, #F9F9F9, #E0E0E0);
 }
 .bottom-bckgr>div:first-child>table>tbody>tr>td>div>div{
 	display: inline-block;
@@ -150,7 +152,7 @@ a{
 }
 .shadow-strip-up{
 	top: 178px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/shadow_down.png);
+	background-image: url(../../../graphics/shadow_down.png);
 }
 .shadow-strip-bottom{
 	top: 777px;
@@ -176,7 +178,7 @@ a{
 	border-width: 1px;
 	outline: medium none;
     box-shadow: 0 1px 0 #FFFFFF, 0 1px 0 rgba(0, 0, 0, 0.2) inset;
-    background: url(http://localhost/public_html/unavimp/graphics/magnifier.png) no-repeat scroll 8px center white;
+    background: url(../../../graphics/magnifier.png) no-repeat scroll 8px center white;
     padding-left: 25px;
     font-size: 14px;
 }
@@ -189,13 +191,13 @@ a{
 	font-size: 11px;
 	text-align: center;
 	background-repeat: repeat-x;
-	background-image: url(http://localhost/public_html/unavimp/graphics/up-menu-bckg11.png);
+	background-image: url(../../../graphics/up-menu-bckg11.png);
 	border-radius: 0px 14px 14px 0px;
 	box-shadow: 0px 1px 2px rgb(126, 126, 126);
     cursor: pointer;
 }
 .sch-btn:hover{
-	background-image: url(http://localhost/public_html/unavimp/graphics/sec_menu_btn_hover.png);
+	background-image: url(../../../graphics/sec_menu_btn_hover.png);
 	color: #426293;
 }
 .sch-btn span{
@@ -207,7 +209,7 @@ a{
 	height: 33px;
 	width: 100%;
 	background-repeat: repeat-x;
-	background-image: url(http://localhost/public_html/unavimp/graphics/up-menu-bckg11.png);
+	background-image: url(../../../graphics/up-menu-bckg11.png);
 	box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .header-strip table{
@@ -288,6 +290,7 @@ a{
 	background-image: -moz-linear-gradient(top, #479bc8, #2e8ab9);
 	background-image: -webkit-linear-gradient(top, #479bc8, #2e8ab9);
 	background-image: -o-linear-gradient(top, #479bc8, #2e8ab9);
+	background-image: -ms-linear-gradient(top, #479bc8, #2e8ab9);
 	width: 280px;
 	height: 37px;
 	color: #FFFFFF;
@@ -340,6 +343,7 @@ a{
 	background-image: -moz-linear-gradient(top, #7abce2, #6ca4c9);
 	background-image: -webkit-linear-gradient(top, #7abce2, #6ca4c9);
 	background-image: -o-linear-gradient(top, #7abce2, #6ca4c9);
+	background-image: -ms-linear-gradient(top, #7abce2, #6ca4c9);
 	padding-bottom: 3px;
 	color: #FFFFFF;
 	text-align: center;
@@ -383,6 +387,7 @@ a{
 	background-image: -moz-linear-gradient(top , #F0F0F0, #DFDFDF);
 	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
 	background-image: -o-linear-gradient(top, #F0F0F0, #DFDFDF);
+	background-image: -ms-linear-gradient(top, #F0F0F0, #DFDFDF);
     border-color: #a2a2a2;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 5) inset;
     color: #222222;
@@ -396,52 +401,62 @@ a{
 .map-btn-pass{
 	background-image: -moz-linear-gradient(top, #309e41, #00652e);
 	background-image: -webkit-linear-gradient(top, #309e41, #00652e);
-	background-image: -o-linear-gradient(top, #309e41, #00652e);	
+	background-image: -o-linear-gradient(top, #309e41, #00652e);
+	background-image: -ms-linear-gradient(top, #309e41, #00652e);
 }
 .map-btn-pass:hover{
 	background-image: -moz-linear-gradient(bottom, #309e41, #00652e);
 	background-image: -webkit-linear-gradient(bottom, #309e41, #00652e);
 	background-image: -o-linear-gradient(bottom, #309e41, #00652e);
+	background-image: -ms-linear-gradient(bottom, #309e41, #00652e);
 }
 .lang-btn-pass{
 	background-image: -moz-linear-gradient(top, #cd1a89, #852c72);
 	background-image: -webkit-linear-gradient(top, #cd1a89, #852c72);
 	background-image: -o-linear-gradient(top, #cd1a89, #852c72);
+	background-image: -ms-linear-gradient(top, #cd1a89, #852c72);
 }
 .lang-btn-pass:hover{
 	background-image: -moz-linear-gradient(bottom, #cd1a89, #852c72);
 	background-image: -webkit-linear-gradient(bottom, #cd1a89, #852c72);
 	background-image: -o-linear-gradient(bottom, #cd1a89, #852c72);
+	background-image: -ms-linear-gradient(bottom, #cd1a89, #852c72);
 }
 .drum-btn-pass{
 	background-image: -moz-linear-gradient(top, #5dc9eb, #009c92);
 	background-image: -webkit-linear-gradient(top, #5dc9eb, #009c92);
 	background-image: -o-linear-gradient(top, #5dc9eb, #009c92);
+	background-image: -ms-linear-gradient(top, #5dc9eb, #009c92);
 }
 .drum-btn-pass:hover{
 	background-image: -moz-linear-gradient(bottom, #5dc9eb, #009c92);
 	background-image: -webkit-linear-gradient(bottom, #5dc9eb, #009c92);
 	background-image: -o-linear-gradient(bottom, #5dc9eb, #009c92);
+	background-image: -ms-linear-gradient(bottom, #5dc9eb, #009c92);
 }
 .lott-btn-pass{
 	background-image: -moz-linear-gradient(top, #0098d9, #234090);
 	background-image: -webkit-linear-gradient(top, #0098d9, #234090);
 	background-image: -o-linear-gradient(top, #0098d9, #234090);
+	background-image: -ms-linear-gradient(top, #0098d9, #234090);
 }
 .lott-btn-pass:hover{
 	background-image: -moz-linear-gradient(bottom, #0098d9, #234090);
 	background-image: -webkit-linear-gradient(bottom, #0098d9, #234090);
 	background-image: -o-linear-gradient(bottom, #0098d9, #234090);
+	background-image: -ms-linear-gradient(bottom, #0098d9, #234090);
 }
 .hd-btn-pass{
 	background-image: -moz-linear-gradient(top, #e91c24, #b11117);
 	background-image: -webkit-linear-gradient(top, #e91c24, #b11117);
 	background-image: -o-linear-gradient(top, #e91c24, #b11117);
+	background-image: -ms-linear-gradient(top, #e91c24, #b11117);
 }
 .hd-btn-pass:hover{
 	background-image: -moz-linear-gradient(bottom, #e91c24, #b11117);
 	background-image: -webkit-linear-gradient(bottom, #e91c24, #b11117);
 	background-image: -o-linear-gradient(bottom, #e91c24, #b11117);
+	background-image: -ms-linear-gradient(bottom, #e91c24, #b11117);
 }
 /* Main window */
 .mw{	
@@ -524,6 +539,7 @@ a{
 	background-image: -moz-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -webkit-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -o-linear-gradient(bottom, #c0c1c4, #f4f4f5);
+	background-image: -ms-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	z-index: 3;
 }
 .cn-cont-bckgr{
@@ -545,6 +561,7 @@ a{
 	background-image: -moz-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -webkit-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -o-linear-gradient(bottom, #c0c1c4, #f4f4f5);
+	background-image: -ms-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 }
 .sibtn-pass{
 	border: 1px solid #b6b8ba;
@@ -597,7 +614,7 @@ a{
 	display: block;
 	width: 40px;
 	height: 40px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon.png);
+	background-image: url(../../../graphics/cls_icon.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
@@ -606,7 +623,7 @@ a{
 	display: block;
 	width: 45px;
 	height: 45px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon_dark.png);
+	background-image: url(../../../graphics/cls_icon_dark.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
@@ -744,6 +761,7 @@ a{
 	background-image: -moz-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -webkit-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -o-linear-gradient(bottom, #c0c1c4, #f4f4f5);
+	background-image: -ms-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	border: 1px solid #B6B8BA;
 }
 .sm-btn div{
@@ -784,6 +802,8 @@ a{
 .ud-arr-pass{
 	background-image: -moz-linear-gradient(top, #00a7e8, #234090);
 	background-image: -webkit-linear-gradient(top, #00a7e8, #234090);
+	background-image: -o-linear-gradient(top, #00a7e8, #234090);
+	background-image: -ms-linear-gradient(top, #00a7e8, #234090);
 }
 .ud-arr-pass div{
 	border-color: #ffffff;
@@ -840,7 +860,7 @@ a{
 	width: 700px;
 	height: 607px;
 	box-shadow: 0 0 3px #888;
-	background-image: url(http://localhost/public_html/unavimp/graphics/ajax-loader.gif);
+	background-image: url(../../../graphics/ajax-loader.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	z-index: 4;
@@ -972,12 +992,14 @@ a{
 	background-image: -moz-linear-gradient(bottom, #ff681c, #ff9b68);
 	background-image: -webkit-linear-gradient(bottom, #ff681c, #ff9b68);
 	background-image: -o-linear-gradient(bottom, #ff681c, #ff9b68);
+	background-image: -ms-linear-gradient(bottom, #ff681c, #ff9b68);
 	box-shadow: 0 0 3px #888;
 }
 .show-st-list-act, .add-cbtn-act{
 	background-image: -moz-linear-gradient(top, #ff681c, #ff9b68);
 	background-image: -webkit-linear-gradient(top, #ff681c, #ff9b68);
 	background-image: -o-linear-gradient(top, #ff681c, #ff9b68);
+	background-image: -ms-linear-gradient(top, #ff681c, #ff9b68);
 	box-shadow: 0px 1px 3px #888 inset;
 }
 /* Additional category buttons */
@@ -1038,7 +1060,7 @@ a{
 	height: 23px;
 	background-repeat: no-repeat;
 	background-position: 16% 49%;
-	background-image: url(http://localhost/public_html/unavimp/graphics/escape.png);
+	background-image: url(../../../graphics/escape.png);
 	background-color: #d0d0d0;
 }
 .slides-cont{
@@ -1156,7 +1178,7 @@ a{
 	background-repeat: repeat-x;
 	background-origin: content-box;
 	background-size: contain;
-	background-image: url(http://localhost/public_html/unavimp/graphics/top10_btn_pass_bckgr.png);
+	background-image: url(../../../graphics/top10_btn_pass_bckgr.png);
 	color: #ffffff;
 }
 .ttcat-btn-cell{
@@ -1389,7 +1411,7 @@ div.wall-info-rotate {
     border: #00a2db solid 3px;
     border-radius: 10px;
     background: lightgray;
-    background-image: url(http://localhost/public_html/unavimp/graphics/wall-rotate.png);
+    background-image: url(../../../graphics/wall-rotate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #d3d3d3;
@@ -1407,7 +1429,7 @@ div.wall-back-rotate {
     border: #00a2db solid 3px;
     border-radius: 10px;
     background: lightgray;
-    background-image: url(http://localhost/public_html/unavimp/graphics/wall-rotate.png);
+    background-image: url(../../../graphics/wall-rotate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #d3d3d3;
@@ -1565,7 +1587,7 @@ div.wall-back-rotate {
 	position: relative; left: 156px;
 	width: 506px;
 	height: 385px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/ajax-loader.gif);
+	background-image: url(../../../graphics/ajax-loader.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -1644,7 +1666,7 @@ div.wall-back-rotate {
 	height: 45px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon_dark.png);
+	background-image: url(../../../graphics/cls_icon_dark.png);
 	cursor: pointer;
 	z-index: 32;
 }
@@ -1663,11 +1685,15 @@ div.wall-back-rotate {
 .si-bckgr-pass{
 	background-image: -moz-linear-gradient(top, #f4f4f5, #c0c1c4);
 	background-image: -webkit-linear-gradient(top, #f4f4f5, #c0c1c4);
+	background-image: -o-linear-gradient(top, #f4f4f5, #c0c1c4);
+	background-image: -ms-linear-gradient(top, #f4f4f5, #c0c1c4);
 	border: 1px solid #B6B8BA;
 }
 .si-bckgr-act{
 	background-image: -moz-linear-gradient(top, #6eef00, #2cab00);
 	background-image: -webkit-linear-gradient(top, #6eef00, #2cab00);
+	background-image: -o-linear-gradient(top, #6eef00, #2cab00);
+	background-image: -ms-linear-gradient(top, #6eef00, #2cab00);
 	border: 1px solid #2F8CBB;
 }
 .si-btn{
@@ -1708,7 +1734,7 @@ div.wall-back-rotate {
 	width: 20px;
 	height: 20px;
 	background-color: #00008b;
-	background-image: url(http://localhost/public_html/unavimp/graphics/go_fullscreen.png);
+	background-image: url(../../../graphics/go_fullscreen.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	border-radius: 5px;
@@ -1725,7 +1751,7 @@ div.wall-back-rotate {
 	font-size: 13px;
 	cursor: pointer;
 	border-radius: 5px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/leave_fullscreen.png);
+	background-image: url(../../../graphics/leave_fullscreen.png);
 	background-position: 262px 12px;
 	background-repeat: no-repeat;
 	z-index: 16;
@@ -1838,7 +1864,7 @@ div.wall-back-rotate {
 	height: 70px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/ajax_loader_web.png);
+	background-image: url(../../../graphics/ajax_loader_web.png);
 }
 .msg-box{
 	display: none;
@@ -1857,7 +1883,7 @@ div.wall-back-rotate {
 	height: 64px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/info_icon.png);
+	background-image: url(../../../graphics/info_icon.png);
 	color: #0099FF;
 	font-size: 48pt;
 }
@@ -1902,6 +1928,7 @@ div.wall-back-rotate {
 	background-image: -moz-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -webkit-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	background-image: -o-linear-gradient(bottom, #c0c1c4, #f4f4f5);
+	background-image: -ms-linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	cursor: pointer;
 }
 .img-filter-icon, .full-list-icon{
@@ -1912,10 +1939,10 @@ div.wall-back-rotate {
 	background-position: center center;
 }
 .img-filter-icon{
-	background-image: url(http://localhost/public_html/unavimp/graphics/img_filter.png);
+	background-image: url(../../../graphics/img_filter.png);
 }
 .full-list-icon{
-	background-image: url(http://localhost/public_html/unavimp/graphics/full_list.png);
+	background-image: url(../../../graphics/full_list.png);
 }
 .img-filter-act2{
 	cursor: pointer;
@@ -1945,7 +1972,7 @@ div.wall-back-rotate {
 	height: 80px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon_big_web.png);
+	background-image: url(../../../graphics/cls_icon_big_web.png);
 	cursor: pointer;
 	z-index: 32;
 }
@@ -1998,10 +2025,10 @@ div.wall-back-rotate {
 	z-index: 10;
 }
 .measure-pass{
-	background-image: url(http://localhost/public_html/unavimp/js/img/ruler.png);
+	background-image: url(../../../js/img/ruler.png);
 }
 .measure-act{
-	background-image: url(http://localhost/public_html/unavimp/js/img/ruler_act.png);
+	background-image: url(../../../js/img/ruler_act.png);
 }
 .measure-cont{
 	display: none;
@@ -2025,7 +2052,7 @@ div.wall-back-rotate {
 	height: 17px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/js/img/close.gif);
+	background-image: url(../../../js/img/close.gif);
 	border-radius: 10px;
 	cursor: pointer;
 }
