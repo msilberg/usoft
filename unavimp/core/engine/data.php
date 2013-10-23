@@ -18,7 +18,7 @@ class data
 	 * prm_st_arr - array of promoted stores
 	 * */
 	
-	static $raddr="/var/www/";
+	static $raddr="/var/www/public_html/unavimp/";
 	static $login,$psswd,$wlev,$tstore,$da,$larr,$carr,$nscale,$sclcorr_ox,$sclcorr_oy,
 		$ccoords,$cxs,$cxs_corr,$cys,$cys_corr,$corr_xmap,$corr_ymap,$max_si,$si_cols,$mbtns,$top10_cat,$cells,
 		$scs_si,$sich,$anime,$lang_arr,$dlang,$lev_names,$sa_width,$sa_height,$browser,
@@ -108,7 +108,7 @@ class data
 		foreach ($base as $key=>$own) 
 			print "<script type=\"text/javascript\" src=\"".(($own)?self::$traddr."js/$key.js":$key)."\"></script>\n";
 		// U Navigator JS libraries output
-		foreach (array("body.min".$_SESSION['release']) as $val) 
+		foreach (array("body-altered".$_SESSION['release']) as $val) 
 			print "<script type=\"text/javascript\" src=\"".self::$traddr."js/".$_SESSION['mode']."/$val.js\"></script>\n";
 		// IE-only libraries output
 		if ($_SESSION['mode']=="web" && self::is_ie())

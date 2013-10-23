@@ -802,43 +802,33 @@ bMap.clearMeasure = function(switcher){
 	bMap.measureLine.deactivate();
 	bMap.map.removeControl(bMap.measureLine);
 }
-bMap.setMap = function(mapDiv){
-	bMap.zoomBox();
-	bMap.keyboardnav = new OpenLayers.Control.KeyboardDefaults();
-	var mapOptions = {
-		projection: "EPSG:4326",
-		controls:[
-			new OpenLayers.Control.PanZoomBar(),
-			bMap.keyboardnav
-		],
-		restrictedExtent: new OpenLayers.Bounds(bMap.mSmBounds['lbx'],bMap.mSmBounds['lby'],bMap.mSmBounds['rtx'],bMap.mSmBounds['rty']),
-		minScale: 90000000, maxScale: 1000000, numZoomLevels: 15
-	};
-	//minScale: 120 000 000, maxScale: 1000000, numZoomLevels: 15
-	//maxExtent: new OpenLayers.Bounds(-138.37428975068707,-90.01754720240103,138.37935776289794,89.99996241829405),
-	bMap.map = new OpenLayers.Map(mapDiv, mapOptions);
-	bMap.map.addLayer(new OpenLayers.Layer.WMS( "Barabashovo", "http://uadmin.no-ip.biz:8080/geoserver/uniqoom/wms", {layers: 'umarket', format: "image/jpeg"}/*, {
-		singleTile: true, 
-		ratio: 1, 
-		isBaseLayer: true,
-		yx : {'EPSG:4326' : true}
-	}*/ ));
-	bMap.map.addControl(new OpenLayers.Control.CustomNavToolbar());
-	bMap.map.addControl(
-                new OpenLayers.Control.MousePosition({
-                    prefix: '<a target="_blank" ' +
-                        'href="http://spatialreference.org/ref/epsg/4326/">' +
-                        'EPSG:4326</a> coordinates: ',
-                    separator: ' | ',
-                    numDigits: 2,
-                    emptyString: 'Mouse is not over map.'
-                })
-            );
-	bMap.map.addControl(new OpenLayers.Control.OverviewMap({ maximized: false, autoPan: true }));
-	bMap.setBckgrIcons();
-	bMap.map.events.register("move", null, bMap.controlScale);
-	bMap.map.zoomToMaxExtent();
-}
+bMap.setMap = function(parentNodeId) {
+    var extent = new OpenLayers.Bounds(bMap.mSmBounds.lbx, bMap.mSmBounds.lby
+            , bMap.mSmBounds.rtx, bMap.mSmBounds.rty);
+    var zoomLimit = new OpenLayers.Bounds(36.29508, 50.00170, 36.30534, 50.00756);
+    bMap.zoomBox();
+    bMap.keyboardnav = new OpenLayers.Control.KeyboardDefaults;
+    var options = {
+        projection: "EPSG:4326"
+        , controls: [new OpenLayers.Control.PanZoomBar, bMap.keyboardnav]
+        , restrictedExtent: extent
+        , maxExtent: extent
+        , numZoomLevels: 7
+        , maxResolution: "auto"
+    };
+    bMap.map = new OpenLayers.Map(parentNodeId, options);
+    bMap.map.addLayer(new OpenLayers.Layer.WMS(
+            "Barabashovo"
+            , "http://uadmin.no-ip.biz:8080/geoserver/uniqoom/wms"
+                + '?BGCOLOR=0xf4f3f0&TRANSPARENT=false'
+            , {layers: "2013-07-14", format: "image/png"})
+    );
+    bMap.map.addControl(new OpenLayers.Control.CustomNavToolbar);
+    bMap.map.addControl(new OpenLayers.Control.OverviewMap({maximized: false, autoPan: true}));
+    bMap.setBckgrIcons();
+    bMap.map.events.register("move", null, bMap.controlScale);
+    bMap.map.zoomToExtent(zoomLimit);
+};
 bMap.dragControlOn = function(){
 	bMap.dcSwitch = new OpenLayers.Control.DragPan({'map': bMap.map, 'panMapDone':function(evt){
 		bMap.map.userdragged = true;
