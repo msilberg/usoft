@@ -731,6 +731,7 @@ class service extends data
 		$arr_cns_st=self::ver_slice($arr_cns,0);
 		$arr_cns_cat=self::ver_slice($arr_cns,1);
 		$i=0;
+		if (!is_array($arr_id)) return array();
 		foreach ($arr_id as $val)
 		{
 			$ind=array_search($val,$arr_cns_st);
@@ -754,7 +755,7 @@ class service extends data
 		elseif (stripos($_SERVER["HTTP_USER_AGENT"],"safari")) $_SESSION['browser']="sa";
 		elseif (stripos($_SERVER["HTTP_USER_AGENT"],"presto")) $_SESSION['browser']="op";
 		else $_SESSION['browser']="an";
-		$_SESSION['cbrws']=($_SESSION['browser']=="ie")? "ie" : "common";
+		$_SESSION['cbrws']=($_SESSION['browser']=="ie" && self::detect_ie_version()<10)? "ie" : "common";
 	}
 	protected function detect_ie_version()
 	{

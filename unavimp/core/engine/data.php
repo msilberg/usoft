@@ -108,7 +108,7 @@ class data
 		foreach ($base as $key=>$own) 
 			print "<script type=\"text/javascript\" src=\"".(($own)?self::$traddr."js/$key.js":$key)."\"></script>\n";
 		// U Navigator JS libraries output
-		foreach (array("body".$_SESSION['release']) as $val) 
+		foreach (array("body.min".$_SESSION['release']) as $val) 
 			print "<script type=\"text/javascript\" src=\"".self::$traddr."js/".$_SESSION['mode']."/$val.js\"></script>\n";
 		// IE-only libraries output
 		if ($_SESSION['mode']=="web" && self::is_ie())
@@ -138,7 +138,7 @@ class data
 		return ($_SESSION['wdir']=="rtl")? TRUE : FALSE;
 	}
 	protected function lang()
-	{
+	{ 
 		/* *
 		 * 0 - Default language of the current build
 		 * Others by the order 
