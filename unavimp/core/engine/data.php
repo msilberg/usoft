@@ -18,7 +18,7 @@ class data
 	 * prm_st_arr - array of promoted stores
 	 * */
 	
-	static $raddr="/var/www/public_html/unavimp/";
+	static $raddr="/var/www/";
 	static $login,$psswd,$wlev,$tstore,$da,$larr,$carr,$nscale,$sclcorr_ox,$sclcorr_oy,
 		$ccoords,$cxs,$cxs_corr,$cys,$cys_corr,$corr_xmap,$corr_ymap,$max_si,$si_cols,$mbtns,$top10_cat,$cells,
 		$scs_si,$sich,$anime,$lang_arr,$dlang,$lev_names,$sa_width,$sa_height,$browser,
