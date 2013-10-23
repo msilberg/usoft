@@ -4,15 +4,15 @@ body{
 	background-color: #FFFFFF;
 	color: #000000;
     font: 13px/1.4 Verdana,Arial,Helvetica,sans-serif;
-    /*-moz-user-select: none;
+    -moz-user-select: none;
 	-webkit-user-select: none;
-	-o-user-select: none;*/
+	-o-user-select: none;
 	width: 100%;
 }
 div{
-	/*-moz-user-select: none;
+	-moz-user-select: none;
 	-webkit-user-select: none;
-	-o-user-select: none;*/
+	-o-user-select: none;
 }
 a{
 	text-decoration: none;

@@ -1783,13 +1783,14 @@ uServe.setBrwsPref = function(){
 	if ($.browser.mozilla){ bVars.brwsPref = "-moz-" }
 	else if ($.browser.webkit){ bVars.brwsPref = "-webkit-" }
 	else if ($.browser.opera){ bVars.brwsPref = "-o-" }
+	else if ($.browser.msie){ bVars.brwsPref = "-ms-" }
 }
 uServe.setUpElems = function(){
 	/*
 	 * setting unique DOM elements for IE and other browser 
 	 */
 	uElem.measureCont = [];
-	if ($.browser.msie){
+	if ($.browser.msie && parseFloat($.browser.version) < 10){
 		bVars.slideStep = 702;
 		uElem.siBtnName = $("span.siname");
 		uElem.mBtnCont = $("div.map-btn>div>span");
