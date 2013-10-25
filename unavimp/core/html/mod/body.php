@@ -1,5 +1,5 @@
 <?php 
-	require_once("/var/www/public_html/unavimp/core/loader.inc");
+	require_once("core/loader.inc");
 	$build=new data(NULL,NULL);
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
@@ -8,10 +8,10 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
 <title><?php $build->lbl_otp(99) ?></title>
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/gbody.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."js/theme/default/style.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/jquery-ui.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/keyboard.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/gbody.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "js/theme/default/style.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/jquery-ui.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/keyboard.css" ?>" />
 <?php $build->js_otp() ?>
 </head>
 	<body class="body-bckgr-act">

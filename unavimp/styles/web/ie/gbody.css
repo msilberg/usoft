@@ -24,12 +24,11 @@ a{
 	box-shadow: 1px 1px 3px #979797;
 	overflow: hidden;
 	z-index: 1;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .mbody{
 	display: inline-block;
 	position: relative; top: 175px;
-	margin-top: 163px;
 	max-width: 1197px;
 	max-height: 628px;
 	overflow: hidden;
@@ -48,7 +47,7 @@ a{
 	height: 56px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/logo.png);
+	background-image: url(graphics/logo.png);
 	cursor: pointer;
 }
 .span-in-middle{
@@ -67,7 +66,7 @@ a{
 	width: 101%;
 	height: 148px;
 	background-repeat: repeat-x;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/header_bckgr.png);
+	background-image: url(graphics/header_bckgr.png);
 }
 .header-bckgr>div:first-child{
 	display: table-cell;
@@ -101,12 +100,12 @@ a{
 	height: 150px;
 	border-radius: 5px;
 	box-shadow: 0 2px 3px #6d6d6d;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 	cursor: pointer;
 }
 a.a-partn-cont:hover div{
 	-pie-background: linear-gradient(top, #F9F9F9, #E0E0E0);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .partn-logo{
 	display: inline-block;
@@ -125,20 +124,17 @@ a.a-partn-cont:hover div{
 }
 .shadow-strip-up, .shadow-strip-bottom{
 	display: block;
-	position: absolute;
 	width: 100%;
-	height: 71px;
+	height: 10px;
 	background-origin: content-box;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
 }
 .shadow-strip-up{
-	top: 178px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/shadow_down.png);
+	background-image: url(../../../graphics/shadow_down.png);
 }
 .shadow-strip-bottom{
-	top: 777px;
 	z-index: 1;
 }
 .search-field{
@@ -161,26 +157,29 @@ a.a-partn-cont:hover div{
 	border-width: 1px;
 	outline: medium none;
     box-shadow: 0 1px 0 #FFFFFF, 0 1px 0 rgba(0, 0, 0, 0.2) inset;
-    background: url(http://192.168.2.108/public_html/unavimp/graphics/magnifier.png) no-repeat scroll 8px center white;
+    background: url(../../../graphics/magnifier.png) no-repeat scroll 8px center white;
     padding-top: 5px;
     padding-left: 25px;
     font-size: 14px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(PIE.htc);
 }
 .sch-btn{
-	display: inline-table;
-	position: relative; left: 5px;
+	display: inline-block;
+	position: relative;
+    top: -1px;
+    left: -5px;
 	width: 60px;
-	height: 27px;
+	height: 22px;
 	color: #FFFFFF;
 	font-size: 11px;
 	text-align: center;
 	background-repeat: repeat-x;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/up-menu-bckg11.png);
+	background-image: url(../../../graphics/up-menu-bckg11.png);
 	border-radius: 0px 14px 14px 0px;
 	box-shadow: 0px 1px 2px rgb(126, 126, 126);
     cursor: pointer;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(PIE.htc);
+    padding: 5px 0px 0px 0px;
 }
 .sch-btn div{
 	display: table-cell;
@@ -193,31 +192,48 @@ a.a-partn-cont:hover div{
 	position: absolute; top: 0px; left: 0px;
 	height: 33px;
 	width: 101%;
+    height: 54px;
 	background-repeat: repeat-x;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/up-menu-bckg11.png);
+	background-image: url(graphics/up-menu-bckg11.png);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#527fa4', endColorstr='#316088',GradientType=0 ); /* IE6-9 */
 	box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .header-strip table{
 	display: table;
-	width: 1180px;
+	width: 100%;
+    height: 54px;
+    border: none;
+    border-spacing: 0px;
 }
-.header-strip>table>tbody>tr>td>table:first-child{
-	width: 223px;
-	font-size: 11px;
+.header-strip table tr td {
+    width: 10%;
+    vertical-align: middle;
+    text-align: center;
+}
+.header-cell-home {
+    width: 176px !important;
+    vertical-align: middle;
+    text-align: center;
+}
+.header-cell-search {
+    width: auto !important;
+    vertical-align: middle;
+    text-align: center;
 }
 .a-home-page-btn{
 	position: relative; top: -10px;
 }
 .home-page-btn{
-	display: inline-table;
+    background-image: url(http://barabashovo.ua/wp-content/uploads/2013/09/tcb-logo.png);
+    width: 180px;
+    height: 54px;
+	display: table;
 	position: relative;
 	border-width: 0px 1px 0px 1px;
 	border-style: solid;
 	border-color: #365b7a;
     color: #FFFFFF;
     font-size: 11px;
-    width: 85px;
-    height: 33px;
     text-align: center;
     cursor: pointer;
 }
@@ -264,7 +280,7 @@ a.a-partn-cont:hover div{
 	z-index: 31;
 	background-color: #FFFFFF;
 	border-radius: 15px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .sw-body td{
 	display: table-cell;
@@ -285,7 +301,7 @@ a.a-partn-cont:hover div{
 	border-radius: 10px;
 	margin: 10px 0px;
 	text-align: center;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .sw-body table>tbody>tr:first-child>td>div:first-child>span{
 	display: table-cell;
@@ -304,7 +320,7 @@ a.a-partn-cont:hover div{
 	box-shadow: 0 1px 0 #FFFFFF, 0 1px 1px rgba(0, 0, 0, 0.2) inset;
 	margin-bottom: 10px;
 	padding: 5px 5px 0px 5px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 #sw-pass-ph{
 	display: inline-block;
@@ -344,7 +360,7 @@ a.a-partn-cont:hover div{
 	text-align: center;
 	font-size: 13px;
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 /* Mode buttons */
 .mbtns{
@@ -361,12 +377,12 @@ a.a-partn-cont:hover div{
 }
 .lang-btn{
 	border-radius: 5px 0px 0px 5px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .hot-deal-btn{
 	border-radius: 0px 5px 5px 0px;
 	border-right-width: 0px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .lang-btn div, .map-btn div, .drum-btn div, .hot-deal-btn div, .lott-btn div{
 	display: table-cell;
@@ -382,57 +398,57 @@ a.a-partn-cont:hover div{
     box-shadow: 1px 1px 3px #5b5b5b inset;
     color: #222222;
     cursor: default;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(PIE.htc);
 }
 .map-btn-pass, .lang-btn-pass, .drum-btn-pass, .lott-btn-pass, .hd-btn-pass{
 	color: #FFFFFF;
 	cursor: pointer;
-	box-shadow: 1px 1px 4px #606060;
+	height: 54px;
 }
 .map-btn-pass{
 	-pie-background: linear-gradient(top, #309e41, #00652e);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .a-map-btn:hover div.map-btn-pass{
 	-pie-background: linear-gradient(bottom, #309e41, #00652e);
 	box-shadow: none;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .lang-btn-pass{
 	-pie-background: linear-gradient(top, #cd1a89, #852c72);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .a-lang-btn:hover div.lang-btn-pass{
 	-pie-background: linear-gradient(bottom, #cd1a89, #852c72);
 	box-shadow: none;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .drum-btn-pass{
 	-pie-background: linear-gradient(top, #5dc9eb, #009c92);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .a-drum-btn:hover div.drum-btn-pass{
 	-pie-background: linear-gradient(bottom, #5dc9eb, #009c92);
 	box-shadow: none;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .lott-btn-pass{
 	-pie-background: linear-gradient(top, #0098d9, #234090);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .a-lott-btn:hover div.lott-btn-pass{
 	-pie-background: linear-gradient(bottom, #0098d9, #234090);
 	box-shadow: none;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .hd-btn-pass{
 	-pie-background: linear-gradient(top, #e91c24, #b11117);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .a-hot-deal-btn:hover div.hot-deal-btn{
 	-pie-background: linear-gradient(bottom, #e91c24, #b11117);
 	box-shadow: none;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 /* Main window */
 .mw{	
@@ -471,7 +487,7 @@ a.a-partn-cont:hover div{
 	color: #000000;
 	font-size: 10pt;
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .cbtn{
 	width: 285px;
@@ -528,7 +544,7 @@ a.a-partn-cont:hover div{
 	border-color: #b6b8ba;
 	-pie-background: linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	z-index: 3;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .cn-cont-bckgr{
 	display: inline-table;
@@ -538,7 +554,7 @@ a.a-partn-cont:hover div{
 	background-color: #6ecff6;
     border: 1px solid #2f8cbb;	    
     border-radius: 0px 5px 5px 0px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(PIE.htc);
 }
 #scname-cell{
 	display: table-cell;
@@ -559,7 +575,7 @@ a.a-partn-cont:hover div{
 .cbtn-pass, .sibtn-pass, .lang-elem-pass{
 	border: 1px solid #b6b8ba;
 	-pie-background: linear-gradient(bottom, #c0c1c4, #f4f4f5);
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .sibtn-pass{
 	border: 1px solid #b6b8ba;
@@ -591,7 +607,7 @@ a.a-partn-cont:hover div{
 	background-color: #f2f1f0;
 	box-shadow: 0 0 3px #888;
 	z-index: 17;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .minisite-rtl{
 	right: 18px;
@@ -614,7 +630,7 @@ a.a-partn-cont:hover div{
 	display: block;
 	width: 40px;
 	height: 40px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/cls_icon.png);
+	background-image: url(graphics/cls_icon.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
@@ -623,7 +639,7 @@ a.a-partn-cont:hover div{
 	display: block;
 	width: 45px;
 	height: 45px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/cls_icon_dark.png);
+	background-image: url(graphics/cls_icon_dark.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
@@ -765,12 +781,12 @@ a.a-partn-cont:hover div{
 	text-align: center;
 	cursor: pointer;
 	z-index: 5;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .sm-btn-pass{
 	-pie-background: linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	border: 1px solid #B6B8BA;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .sm-btn div{
 	display: table-cell;
@@ -868,11 +884,11 @@ a.a-partn-cont:hover div{
 	width: 700px;
 	height: 607px;
 	box-shadow: 0 0 3px #888;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/ajax-loader.gif);
+	background-image: url(graphics/ajax-loader.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	z-index: 4;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .store-btn-bckgr{
 	display: table;
@@ -881,7 +897,7 @@ a.a-partn-cont:hover div{
 	height: 32px;
 	border-radius: 5px;
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .store-btn-bckgr-pass{
 	border: 1px solid #878787;
@@ -951,7 +967,7 @@ a.a-partn-cont:hover div{
 	cursor: pointer;
 	border-radius: 5px;
 	margin-left: 3px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .rst-el div{
 	display: table-cell;
@@ -988,7 +1004,7 @@ a.a-partn-cont:hover div{
 	font-size: 13px;
 	cursor: pointer;
 	z-index: 10;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .show-st-list div{
 	display: inline-table;
@@ -1005,12 +1021,12 @@ a.a-partn-cont:hover div{
 .show-st-list-pass, .add-cbtn-pass{
 	-pie-background: linear-gradient(bottom, #ff681c, #ff9b68);
 	box-shadow: 0 0 3px #888;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .show-st-list-act, .add-cbtn-act{
 	-pie-background: linear-gradient(top, #ff681c, #ff9b68);
 	box-shadow: 0px 1px 3px #888 inset;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 /* Additional category buttons */
 .add-cbtn-cont{
@@ -1032,11 +1048,11 @@ a.a-partn-cont:hover div{
 }
 .add-cbtn{
 	border-radius: 5px 0px 0px 5px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .add-tt-btn{
 	border-radius: 0px 5px 5px 0px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 /* Stores listing block */
 .slides-scope{
@@ -1072,7 +1088,7 @@ a.a-partn-cont:hover div{
 	height: 43px;
 	background-repeat: no-repeat;
 	background-position: 16% 49%;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/escape.png);
+	background-image: url(graphics/escape.png);
 	background-color: #d0d0d0;
 }
 .slides-cont{
@@ -1093,7 +1109,7 @@ a.a-partn-cont:hover div{
 	width: 698px;
 	height: 44px;
 	background-color: #E9E9E9;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .list-slider{
 	display: inline-block;
@@ -1180,7 +1196,7 @@ a.a-partn-cont:hover div{
 	background-repeat: repeat-x;
 	background-origin: content-box;
 	background-size: contain;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/top10_btn_pass_bckgr.png);
+	background-image: url(graphics/top10_btn_pass_bckgr.png);
 	color: #ffffff;
 }
 .ttcat-btn-cell{
@@ -1196,7 +1212,7 @@ a.a-partn-cont:hover div{
 	position: relative; left: 156px;
 	width: 506px;
 	height: 385px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/ajax-loader.gif);
+	background-image: url(graphics/ajax-loader.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -1219,7 +1235,7 @@ a.a-partn-cont:hover div{
 	font-size: 13px;
 	border-radius: 5px;
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .plist-elem div{
 	display: table-cell;
@@ -1276,7 +1292,7 @@ a.a-partn-cont:hover div{
 	height: 45px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/cls_icon_dark.png);
+	background-image: url(graphics/cls_icon_dark.png);
 	cursor: pointer;
 	z-index: 41;
 }
@@ -1288,7 +1304,7 @@ a.a-partn-cont:hover div{
 	border-radius: 5px;
 	margin: 0px 1px;
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .si-bckgr span{
 	display: none;
@@ -1296,12 +1312,12 @@ a.a-partn-cont:hover div{
 .si-bckgr-pass{
 	-pie-background: linear-gradient(top, #f4f4f5, #c0c1c4);
 	border: 1px solid #B6B8BA;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .si-bckgr-act{
 	-pie-background: linear-gradient(top, #6eef00, #2cab00);
 	border: 1px solid #2F8CBB;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .si-btn{
 	display: inline-block;
@@ -1333,7 +1349,7 @@ a.a-partn-cont:hover div{
 	box-shadow: 1px 1px 3px #979797;
 	background-repeat: no-repeat;
 	background-position: center center;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 /* Fullscreen block */
 .go-fscr{
@@ -1341,7 +1357,7 @@ a.a-partn-cont:hover div{
 	position: relative; top: 14px; left: 688px;
 	width: 20px;
 	height: 20px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/ie/go_fscr.png);
+	background-image: url(graphics/ie/go_fscr.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -1357,7 +1373,7 @@ a.a-partn-cont:hover div{
 	font-size: 13px;
 	cursor: pointer;
 	border-radius: 5px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/leave_fullscreen.png);
+	background-image: url(graphics/leave_fullscreen.png);
 	background-position: 262px 12px;
 	background-repeat: no-repeat;
 	z-index: 16;
@@ -1406,7 +1422,7 @@ a.a-partn-cont:hover div{
 	color: #FFFFFF;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/ie/scale_hint.png);
+	background-image: url(graphics/ie/scale_hint.png);
 	z-index: 12;
 }
 .scale-hint span{
@@ -1462,7 +1478,7 @@ a.a-partn-cont:hover div{
 	height: 13px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/ie/ajax_loader.gif);
+	background-image: url(graphics/ie/ajax_loader.gif);
 }
 .msg-box{
 	display: none;
@@ -1473,7 +1489,7 @@ a.a-partn-cont:hover div{
 	background-color: #FFFFFF;
 	border-radius: 15px;
 	z-index: 31;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .msg-icon{
 	display: inline-block;
@@ -1482,7 +1498,7 @@ a.a-partn-cont:hover div{
 	height: 64px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/info_icon.png);
+	background-image: url(graphics/info_icon.png);
 	color: #0099FF;
 	font-size: 48pt;
 }
@@ -1516,7 +1532,7 @@ a.a-partn-cont:hover div{
 	border-radius: 4px;
 	border-style: solid;
 	border-width: 1px;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .img-filter{
 	left: 45px;
@@ -1528,7 +1544,7 @@ a.a-partn-cont:hover div{
 	border-color: #b6b8ba;
 	-pie-background: linear-gradient(bottom, #c0c1c4, #f4f4f5);
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .img-filter-icon, .full-list-icon{
 	display: inline-block;
@@ -1538,10 +1554,10 @@ a.a-partn-cont:hover div{
 	background-position: center center;
 }
 .img-filter-icon{
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/img_filter.png);
+	background-image: url(graphics/img_filter.png);
 }
 .full-list-icon{
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/full_list.png);
+	background-image: url(graphics/full_list.png);
 }
 .img-filter-act2{
 	cursor: pointer;
@@ -1571,7 +1587,7 @@ a.a-partn-cont:hover div{
 	height: 80px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/cls_icon_big_web.png);
+	background-image: url(graphics/cls_icon_big_web.png);
 	cursor: pointer;
 	z-index: 32;
 }
@@ -1584,7 +1600,7 @@ a.a-partn-cont:hover div{
 	background-color: #FFFFFF;
 	border-radius: 15px;
 	z-index: 31;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .lang-panel ul{
 	position: absolute; top: 75px; left: -22px;
@@ -1601,7 +1617,7 @@ a.a-partn-cont:hover div{
 	height: 48px;
 	border-radius: 5px;
 	cursor: pointer;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .lang-elem div{
 	display: table-cell;
@@ -1628,10 +1644,10 @@ a.a-partn-cont:hover div{
 	z-index: 10;
 }
 .measure-pass{
-	background-image: url(http://192.168.2.108/public_html/unavimp/js/img/ruler.png);
+	background-image: url(js/img/ruler.png);
 }
 .measure-act{
-	background-image: url(http://192.168.2.108/public_html/unavimp/js/img/ruler_act.png);
+	background-image: url(js/img/ruler_act.png);
 }
 .measure-cont{
 	display: none;
@@ -1647,7 +1663,7 @@ a.a-partn-cont:hover div{
 	font-size: 13px;
 	border: 1px solid #B6B8BA;
 	z-index: 10;
-	behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+	behavior: url(PIE.htc);
 }
 .measure-cls{
 	display: inline-block;
@@ -1656,7 +1672,7 @@ a.a-partn-cont:hover div{
 	height: 17px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://192.168.2.108/public_html/unavimp/js/img/close.gif);
+	background-image: url(js/img/close.gif);
 	border-radius: 10px;
 	cursor: pointer;
 }

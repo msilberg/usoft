@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <parameters>
     <!-- Script address -->
-    <param name="traddr">http://localhost/public_html/unavimp/</param>
+    <param name="traddr">http://uadmin.no-ip.biz/</param>
     <!-- Admin address -->
     <param name="raddr2">http://uadmin.no-ip.biz:8080/</param>
     <!-- Image server address -->

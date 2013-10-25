@@ -1,5 +1,5 @@
 <?php 
-	require_once("/var/www/public_html/unavimp/core/loader.inc");
+	require_once("core/loader.inc");
 	$build=new data(NULL,NULL);
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
@@ -8,15 +8,26 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
 <title><?php $build->lbl_otp(99) ?></title>
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/".$build->cbrws."/gbody.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."js/theme/default/style.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/gbody.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "js/theme/default/style.css" ?>" />
 <?php if (!$build->is_ie()){ ?>
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/".$build->cbrws."/chosen.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/".$build->cbrws."/antiscroll.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/".$build->cbrws."/tooltipster.css" ?>" />
-<link rel="stylesheet" type="text/css" href="<?php print $build->traddr."styles/".$build->mode."/".$build->cbrws."/".$build->browser.".css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/chosen.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/antiscroll.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/tooltipster.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/".$build->browser.".css" ?>" />
 <?php } ?>
 <?php $build->js_otp() ?>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34505650-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
 <body>
 	<center>
@@ -28,11 +39,6 @@
 			}
 		?>
 		<?php $build->loadblock("header") ?>
-		<div class="header-bckgr">
-			<div>
-				<div><?php $build->loadblock(array("search","mbtns")) ?></div>
-			</div>
-		</div>
 		<div class="shadow-strip-up"></div>
 		<div class="mbody">
 			<table cellspacing="0" cellpadding="0" width="100%" class="unc" border="0">

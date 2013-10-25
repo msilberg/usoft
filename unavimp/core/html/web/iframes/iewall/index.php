@@ -1,5 +1,5 @@
 <?php
-	require_once("/var/www/public_html/unavimp/core/loader.inc");
+	require_once("core/loader.inc");
 	$build=new data(NULL,NULL);
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

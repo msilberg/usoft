@@ -10,14 +10,14 @@
     border-color: #00a2db;
     border-radius: 10px 10px 0px 0px;
     background-color: #F4F4F5;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
 }
 .cls-wall-btn{
 	display: inline-block;
 	position: absolute; top: 7px; right: 5px;
 	width: 40px;
 	height: 40px;
-	background-image: url(http://192.168.2.108/public_html/unavimp/graphics/cls_icon.png);
+	background-image: url(graphics/cls_icon.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
@@ -37,7 +37,7 @@ div.wall-container {
     border-style: solid;
     border-width: 0px 2px 2px 2px;  
     border-radius: 0px 0px 13px 13px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background-color: #f7feff;
     overflow: hidden;
     -moz-user-select: none;
@@ -53,7 +53,7 @@ div.wall-fader {
     height: 100%;
     border: none;
     border-radius: 0px 0px 10px 10px;
-	/*behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);*/
+	/*behavior: url(styles/web/ie/pie/PIE.htc);*/
     background-color: #FFFFFF;
     opacity: 0.75;
     filter: alpha(opacity = 75) !important;
@@ -80,14 +80,14 @@ td.wall-product {
     border: #00a2db solid 1px;
     background-color: white;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
 }
 img.wall-product {
     z-index: 25;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
 }
 div.wall-pager {
     position: absolute;
@@ -116,7 +116,7 @@ table.wall-pager {
     color: darkblue;
     text-align: center;
     overflow: hidden;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
 }
 
 .wall-pager-item-active {
@@ -128,7 +128,7 @@ table.wall-pager {
     color: white;
     text-align: center;
     overflow: hidden;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
 }
 
 /* Zoomed */
@@ -141,7 +141,7 @@ table.wall-zoomed {
     height: 80%;
     border: #00a2db solid 3px;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background: white;
     z-index: 40;
 }
@@ -178,7 +178,7 @@ div.wall-info-item {
     height: 6%;
     border: none;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background-color: #00a2db;
     color: white;
     font-weight: bold;
@@ -195,7 +195,7 @@ div.wall-info-old-cost {
     height: 6%;
     border: none;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background-color: #00a2db;
     color: white;
     font-weight: bold;
@@ -213,7 +213,7 @@ div.wall-info-new-cost {
     height: 6%;
     border: none;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background-color: #00a2db;
     color: white;
     font-weight: bold;
@@ -256,9 +256,9 @@ div.wall-info-rotate {
     height: 20%;
     border: #00a2db solid 3px;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background-color: #D5D7DA;
-    background-image: url(http://192.168.2.108/public_html/unavimp/graphics/wall-rotate.png);
+    background-image: url(graphics/wall-rotate.png);
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
@@ -274,9 +274,9 @@ div.wall-back-rotate {
     height: 20%;
     border: #00a2db solid 3px;
     border-radius: 10px;
-    behavior: url(http://192.168.2.108/public_html/unavimp/styles/web/ie/pie/PIE.htc);
+    behavior: url(styles/web/ie/pie/PIE.htc);
     background: lightgray;
-    background-image: url(http://192.168.2.108/public_html/unavimp/graphics/wall-rotate.png);
+    background-image: url(graphics/wall-rotate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #d3d3d3;

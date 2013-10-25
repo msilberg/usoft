@@ -1,0 +1,29 @@
+point	title	description	icon
+50.00373210756,36.290829473596	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.009199851097,36.312236261408	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.008845740736,36.311043468613	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.009479411909,36.308080124011	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+49.997421022241,36.312133755777	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.000775751978,36.309021312077	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.003021557164,36.308108080092	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.002425160766,36.306477308692	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.013449175431,36.308285135273	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.001567840944,36.301566357104	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.011478271713,36.299525563181	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.007555101659,36.299143496738	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.002001160204,36.298416638629	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.004889955255,36.292449177954	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.012265701330,36.312907207356	Парковка	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/parking.png
+50.004773471584,36.301618191247	Метро	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/metro.png
+50.003617953563,36.301762630999	Метро	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/metro.png
+50.004955186111,36.304315953078	Метро	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/metro.png
+50.003119403449,36.304520964339	Метро	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/metro.png
+50.007358244255,36.312091226122	Светофор	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/light.png
+50.003678525074,36.308324725513	Светофор	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/light.png
+49.999843882611,36.304394566438	Светофор	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/light.png
+50.001155488751,36.299739878927	Светофор	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/light.png
+50.003224238753,36.298112032735	Медпункт	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/medic.png
+50.012512646716,36.305743457190	Медпункт	информация	http://uadmin.no-ip.biz/graphics/bckgricons/small/medic.png
+50.003896349536,36.304408555408	U Navigator Barabashovo	интерактивный информационный стенд	http://uadmin.no-ip.biz/graphics/bckgricons/small/modicon_web.png
+50.004126987207,36.308293281479	U Navigator Barabashovo	интерактивный информационный стенд	http://uadmin.no-ip.biz/graphics/bckgricons/small/modicon_web.png
+50.006908617281,36.310059173938	U Navigator Barabashovo	интерактивный информационный стенд<br/>Интер 2	http://uadmin.no-ip.biz/graphics/bckgricons/small/modicon_web.png

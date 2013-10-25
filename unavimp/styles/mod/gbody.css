@@ -3,7 +3,7 @@
 body{
 	width: 1920px;
 	height: 1080px;
-	overflow: auto;
+	overflow: hidden;
 	background-color: #000c15;
 	color: #000000;
     font: 13px/1.4 Verdana,Arial,Helvetica,sans-serif;
@@ -34,10 +34,10 @@ a{
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-button:decrement{
-	background-image: url(http://localhost/public_html/unavimp/graphics/tr_up_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/tr_up_mod.png);
 }
 ::-webkit-scrollbar-button:increment{
-	background-image: url(http://localhost/public_html/unavimp/graphics/tr_down_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/tr_down_mod.png);
 }
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 20px rgba(0,0,0,0.3); 
@@ -100,7 +100,7 @@ textarea:focus{
 	height: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/logo_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/logo_mod.png);
 }
 /* Map control buttons */
 #scl-cnt{
@@ -143,7 +143,7 @@ textarea:focus{
 	position: absolute; left: -5px; top: 10px;
 	width: 100%;
 	height: 100%;
-	background-image: url(http://localhost/public_html/unavimp/graphics/top_filler.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/top_filler.png);
 	background-repeat: repeat-x;
 }
 .search-field{
@@ -164,7 +164,7 @@ textarea:focus{
 	overflow: hidden;
 	resize: none;
 	white-space: pre;
-	background-image: url(http://localhost/public_html/unavimp/graphics/rstrip_filler.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/rstrip_filler.png);
 	background-repeat: repeat-x;
 }
 /* Mode buttons */
@@ -204,27 +204,27 @@ textarea:focus{
 	border-radius: 10px;
 }
 .map-pass{
-	background-image: url("http://localhost/public_html/unavimp/graphics/map_pass_bckgr.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/map_pass_bckgr.png");
 	border-color: #00632D;
 	color: #FFFFFF;
 }
 .drum-pass{
-	background-image: url("http://localhost/public_html/unavimp/graphics/drum_pass_bckgr.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/drum_pass_bckgr.png");
     border-color: #00A99C;
     color: #FFFFFF;
 }
 .lott-pass{
-	background-image: url("http://localhost/public_html/unavimp/graphics/lott_pass_bckgr.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/lott_pass_bckgr.png");
     border-color: #253C8C;
 	color: #FFFFFF;
 }
 .hot-pass{
-	background-image: url("http://localhost/public_html/unavimp/graphics/hotbtn_bckgr_pass.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/hotbtn_bckgr_pass.png");
     border-color: #AF1115;
 	color: #FFFFFF;
 }
 .lang-pass{
-	background-image: url("http://localhost/public_html/unavimp/graphics/lang_pass_bckgr.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/lang_pass_bckgr.png");
     border-color: #852C71;
     color: #FFFFFF;
 }
@@ -232,7 +232,7 @@ textarea:focus{
 	z-index: 20;
 }
 .lang-act{
-	background-image: url("http://localhost/public_html/unavimp/graphics/lang_act_bckgr.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/lang_act_bckgr.png");
 	border-right-color: #ffffff;
 	border-left-color: #ffffff;
 	border-top-color: #ffffff;
@@ -285,7 +285,7 @@ textarea:focus{
 	height: 56px;
 	text-align: center;
 	border-radius: 0px 0px 10px 10px;
-	background-image: url("http://localhost/public_html/unavimp/graphics/lang_act_bckgr.png");
+	background-image: url("http://uadmin.no-ip.biz/graphics/lang_act_bckgr.png");
 	background-repeat: repeat-x;
 }
 .lang-up-arrow{
@@ -397,7 +397,7 @@ textarea:focus{
 	height: 60px;
 	border-radius: 10px 0px 0px 10px;
 	background-repeat: repeat-x;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cat_btn_pass_bckgr_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cat_btn_pass_bckgr_mod.png);
 	z-index: 3;
 }
 .cn-cont-bckgr{
@@ -406,20 +406,20 @@ textarea:focus{
 	height: 60px;
 	border-radius: 0px 10px 10px 0px;
     background-repeat: repeat-x;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cat_btn_act_bckgr.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cat_btn_act_bckgr.png);
 	box-shadow: 0 1px 7px #697426 inset;
 }
 .cbtn-act, .cbtn-act2, .sibtn-act, .sibtn-act2{
-	background-image: url(http://localhost/public_html/unavimp/graphics/cat_btn_act_bckgr.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cat_btn_act_bckgr.png);
 }
 .cbtn-act2 table{
 	color: #0d2441;
 }
 .cbtn-pass{
-	background-image: url(http://localhost/public_html/unavimp/graphics/cat_btn_pass_bckgr_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cat_btn_pass_bckgr_mod.png);
 }
 .sibtn-pass{
-	background-image: url(http://localhost/public_html/unavimp/graphics/sibtn_pass_bckgr.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/sibtn_pass_bckgr.png);
 }
 .cbtn-pass table{
 	color: #c9e12d;
@@ -460,7 +460,7 @@ textarea:focus{
 	height: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/target_mod2.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/target_mod2.png);
 }
 .qr-web{
 	display: block;
@@ -470,7 +470,7 @@ textarea:focus{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/qr_web.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/qr_web.png);
 }
 /* Minisite window */
 .minisite-cont{
@@ -519,7 +519,7 @@ textarea:focus{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cls_icon_mod.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -765,7 +765,7 @@ textarea:focus{
 	height: 801px;
 	background-color: #6D8087;
 	border-radius: 10px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/ajax-loader_mod.gif);
+	background-image: url(http://uadmin.no-ip.biz/graphics/ajax-loader_mod.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	z-index: 4;
@@ -974,7 +974,7 @@ textarea:focus{
 	display: block;
 	position: relative; top: 0; left: -7px;
 	background-color: #D0D0D0;
-    background-image: url(http://localhost/public_html/unavimp/graphics/escape_mod.png);
+    background-image: url(http://uadmin.no-ip.biz/graphics/escape_mod.png);
     background-position: 12% 49%;
     background-repeat: no-repeat;
     border-radius: 0 10px 0 10px;
@@ -1070,7 +1070,7 @@ textarea:focus{
 }
 .ls-btn-act{
 	background-repeat: repeat-x;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cat_btn_act_bckgr.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cat_btn_act_bckgr.png);
 	color: #0d2441;
 }
 .ls-btn-scope{
@@ -1182,7 +1182,7 @@ textarea:focus{
 #dd-icon{
 	background-repeat: no-repeat;
 	background-position: 10px 16px;
-	background-image: url(http://localhost/public_html/unavimp/graphics/dd_menu_icon.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/dd_menu_icon.png);
 }
 .ttcat-btn{
 	display: table-cell;
@@ -1196,7 +1196,7 @@ textarea:focus{
 	background-repeat: repeat-x;
 	background-origin: content-box;
 	background-size: contain;
-	background-image: url(http://localhost/public_html/unavimp/graphics/top10_btn_pass_bckgr.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/top10_btn_pass_bckgr.png);
 	color: #ffffff;
 }
 .ttcat-btn-cell{
@@ -1372,7 +1372,7 @@ div.wall-info-rotate {
     border: #00a2db solid 3px;
     border-radius: 10px;
     background-color: #CDCDCD;
-    background-image: url("http://localhost/public_html/unavimp/graphics/wall-rotate.png");
+    background-image: url("http://uadmin.no-ip.biz/graphics/wall-rotate.png");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -1388,7 +1388,7 @@ div.wall-back-rotate {
     border: #00a2db solid 3px;
     border-radius: 10px;
     background-color: #CDCDCD;
-    background-image: url("http://localhost/public_html/unavimp/graphics/wall-rotate.png");
+    background-image: url("http://uadmin.no-ip.biz/graphics/wall-rotate.png");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -1438,7 +1438,7 @@ div.wall-back-rotate {
 	height: 70px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon_dark_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cls_icon_dark_mod.png);
 	z-index: 32;
 }
 .video-player-scrs{
@@ -1498,10 +1498,10 @@ div#si>div>table>tbody>tr>td>div>table{
 	background-repeat: repeat-x;
 }
 .bann-pass{
-	background-image: url(http://localhost/public_html/unavimp/graphics/banner_bckgr_pass.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/banner_bckgr_pass.png);
 }
 .bann-act{
-	background-image: url(http://localhost/public_html/unavimp/graphics/banner_bckgr_act.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/banner_bckgr_act.png);
 }
 .bann-item{
 	display: inline-block;
@@ -1540,10 +1540,10 @@ div#si>div>table>tbody>tr>td>div>table{
 	background-size: contain;
 }
 .go-fscr-icon{
-	background-image: url(http://localhost/public_html/unavimp/graphics/go_fullscreen_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/go_fullscreen_mod.png);
 }
 .leave-fscr-icon{
-	background-image: url(http://localhost/public_html/unavimp/graphics/leave_fullscreen_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/leave_fullscreen_mod.png);
 }
 .leave-fscr span{
 	display: inline-block;
@@ -1657,7 +1657,7 @@ div#si>div>table>tbody>tr>td>div>table{
 	height: 128px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/ajax_loader_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/ajax_loader_mod.png);
 }
 .msg-box{
 	display: none;
@@ -1676,7 +1676,7 @@ div#si>div>table>tbody>tr>td>div>table{
 	height: 64px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/info_icon.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/info_icon.png);
 	color: #0099FF;
 	font-size: 48pt;
 }
@@ -1759,7 +1759,7 @@ div#si>div>table>tbody>tr>td>div>table{
 	height: 80px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(http://localhost/public_html/unavimp/graphics/cls_icon_big_mod.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/cls_icon_big_mod.png);
 	z-index: 32;
 }
 .ddl-cls-btn{
@@ -1795,8 +1795,8 @@ div#si>div>table>tbody>tr>td>div>table{
 	background-position: center center;
 }
 .overview-map-plus{
-	background-image: url(http://localhost/public_html/unavimp/graphics/plus.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/plus.png);
 }
 .overview-map-minus{
-	background-image: url(http://localhost/public_html/unavimp/graphics/minus.png);
+	background-image: url(http://uadmin.no-ip.biz/graphics/minus.png);
 }

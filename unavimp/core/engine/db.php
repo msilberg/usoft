@@ -120,12 +120,12 @@ class db extends service
 			package.id=pack_n_feat.package_id && pack_n_feat.feature_id=feature.id && feature.id=4")));
 	}
 	protected function get_bankers()
-	{
+    {
 		return service::res2karr(mysql_query("SELECT stores.id,stores_descr.descr_df,map_object.x,map_object.y
 			FROM stores,store_cat,map_object,stores_n_descr,stores_descr 
 			WHERE stores.tc_id=".$_SESSION['tc']." && stores.id=store_cat.store_id && store_cat.cat_id=".data::$spec_cat['bankers']." && 
 			stores.id=map_object.store_id && stores.id=stores_n_descr.store_id && stores_n_descr.descr_id=stores_descr.id"));
-	}
+    }
 	protected function get_lev_stores()
 	{
 		return service::res2sarr(mysql_query("SELECT stores.id FROM stores,levels,lev_n_stores WHERE 
