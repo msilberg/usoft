@@ -1086,8 +1086,12 @@ bMap.storeOnMap = function() {
             uServe.markerAboveBckgr();
             uri = 'http://uadmin.no-ip.biz:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
 //            uri = 'http://localhost:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
-                + '&X1=' + 36.304408555408 // logitute of module #35
-                + '&Y1=' + 50.003896349536 // latitude of module #35
+//                + '&X1=' + 36.304408555408 // logitute of module #35
+//                + '&Y1=' + 50.003896349536 // latitude of module #35
+//                + '&X1=' + 36.308293281479 // logitute of module #36
+//                + '&Y1=' + 50.004126987207 // latitude of module #36
+                + '&X1=' + 36.310059173938 // logitute of module #37
+                + '&Y1=' + 50.006908617281 // latitude of module #37
                 + '&X2=' + e[0]["x"]
                 + '&Y2=' + e[0]["y"]
                 + '&jsoncallback=?';
