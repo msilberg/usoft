@@ -2190,7 +2190,7 @@ uServe.setUpElems = function() {
     if ($.browser.msie) {
         bVars.slideStep = 702;
         uElem.siBtnName = $("span.siname");
-        uElem.mBtnCont = $(".map-btn>div>span");
+        uElem.mBtnCont = $(".map-btn");
         uElem.cnCont = $("div.cn-cont-bckgr");
         uElem.scName = "<div id='scname-cell'><span id='scname'></span></div>";
         uElem.schField = encodeURIComponent(document.getElementById("sch-field").value);
@@ -2201,7 +2201,7 @@ uServe.setUpElems = function() {
         bVars.slideStep = 689;
         bVars.ssCorr = 2;
         uElem.siBtnName = $("div.sibtn-name");
-        uElem.mBtnCont = $(".map-btn>div");
+        uElem.mBtnCont = $(".map-btn");
         uElem.cnCont = $("div.cn-cont" + bVars.cat);
         uElem.scName = "<span id='scname'></span>";
         uElem.schField = $("input.sch-field").val();
@@ -2497,7 +2497,6 @@ $(document).ready(function() {
         }
     });
     $("div.sch-btn").click(function() {
-        uServe.setUpElems();
         bVars.pmType = 2;
         uBody.showSpm(uElem.schField)
     });

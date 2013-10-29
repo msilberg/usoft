@@ -282,7 +282,7 @@ class db extends service
 	}
 	protected function make_search()
 	{
-		$ch=curl_init(data::$raddr2."geo?SERVICE=UniqoomAPI&REQUEST=search&TCID=35&TEXT=".$_SESSION['sch_txt']);
+		$ch=curl_init(data::$raddr2."geo?SERVICE=UniqoomAPI&REQUEST=search&TCID=1003&TEXT=".$_SESSION['sch_txt']);
 		$opts=array(CURLOPT_RETURNTRANSFER=>true, CURLOPT_HTTPHEADER=>array('Content-type: application/json'));
 		curl_setopt_array($ch,$opts);
 		$res=curl_exec($ch);

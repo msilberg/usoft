@@ -1587,7 +1587,7 @@ div#si>div>table>tbody>tr>td>div>table{
 /* Scale hint */
 .scale-hint{
 	display: none;
-	position: relative; top: 41px; left: -2px;
+	position: relative; top: -112px; left: -2px;
 	width: 127px;
 	height: 21px;
 	opacity: 0.8;

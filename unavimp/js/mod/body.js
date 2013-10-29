@@ -1247,11 +1247,11 @@ uBody.toggleMapBtn = function(e) {
         var n = $("textarea.sch-field").val().length > 0;
         if (e && (t || n)) {
             $.get(addrUrl.getLbl(112), function(e) {
-                $("div.map-btn").text(e).removeClass("mbtn-act").addClass("map-pass").on("mousedown", uBody.back2root)
+                $(".map-btn").text(e).removeClass("mbtn-act").addClass("map-pass").on("mousedown", uBody.back2root)
             })
         } else if (!t) {
             $.get(addrUrl.getLbl(108), function(e) {
-                $("div.map-btn").text(e).removeClass("map-pass").addClass("mbtn-act").off("mousedown", uBody.back2root);
+                $(".map-btn").text(e).removeClass("map-pass").addClass("mbtn-act").off("mousedown", uBody.back2root);
                 if ($("textarea.sch-field").val().length > 0) {
                     $("textarea.sch-field").val("")
                 }
