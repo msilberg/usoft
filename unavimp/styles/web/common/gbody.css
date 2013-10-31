@@ -2023,7 +2023,7 @@ div.wall-back-rotate {
 }
 /* Measurement Tools */
 .measure-switch{
-	display: block;
+	display: none;
 	position: relative; left: 19px; top: 348px;
 	width: 24px;
 	height: 22px;
