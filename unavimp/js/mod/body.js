@@ -73,14 +73,33 @@ bVars.mIdArr = [];
 bVars.chsmIdArr = [];
 bVars.mArr = [];
 bVars.tMapMove = null;
+/**
+ * Contains current module ID.
+ * @type Number
+ */
+bVars.moduleId = 0;
+/**
+ * Contains array of modules coordinate pairs.
+ * @type Array
+ */
+bVars.moduleCoords = {
+    35: {x: 36.304408555408, y: 50.003896349536}
+    , 36: {x: 36.308293281479, y: 50.004126987207}
+    , 37: {x: 36.310059173938, y: 50.006908617281}
+};
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
-bMap.path = null;
+/**
+ * Layer that is used to display shortest path between two points (module and store usually).
+ * @type @exp;OpenLayers@pro;Layer@call;Vector
+ */
+bMap.layerPath = null;
 
 // Server addressing variables
 var addrUrl = {};
 addrUrl.base = "http://uadmin.no-ip.biz/";
+//addrUrl.base = "http://localhost/unavimp/";
 addrUrl.startApi = addrUrl.base + "api.php";
 addrUrl.urlBckgr = addrUrl.base + "config/1003/mod/bismall.txt";
 addrUrl.api = addrUrl.startApi + "?query=";
@@ -1086,12 +1105,8 @@ bMap.storeOnMap = function() {
             uServe.markerAboveBckgr();
             uri = 'http://uadmin.no-ip.biz:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
 //            uri = 'http://localhost:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
-//                + '&X1=' + 36.304408555408 // logitute of module #35
-//                + '&Y1=' + 50.003896349536 // latitude of module #35
-//                + '&X1=' + 36.308293281479 // logitute of module #36
-//                + '&Y1=' + 50.004126987207 // latitude of module #36
-                + '&X1=' + 36.310059173938 // logitute of module #37
-                + '&Y1=' + 50.006908617281 // latitude of module #37
+                + '&X1=' + bVars.moduleCoords[bVars.moduleId]['x']
+                + '&Y1=' + bVars.moduleCoords[bVars.moduleId]['y']
                 + '&X2=' + e[0]["x"]
                 + '&Y2=' + e[0]["y"]
                 + '&jsoncallback=?';
@@ -1099,12 +1114,12 @@ bMap.storeOnMap = function() {
     );
     $.when.apply($, calls).then(function() {
         $.getJSON(uri, function(data) {
-            if (bMap.path !== null) {
-                bMap.map.removeLayer(bMap.path);
-                bMap.path = null;
+            if (bMap.layerPath !== null) {
+                bMap.map.removeLayer(bMap.layerPath);
+                bMap.layerPath = null;
             }
-            bMap.path = new OpenLayers.Layer.Vector("Path");
-            bMap.map.addLayer(bMap.path);
+            bMap.layerPath = new OpenLayers.Layer.Vector("Path");
+            bMap.map.addLayer(bMap.layerPath);
             var points = [];
             data.forEach(function(entry) {
                 points.push(new OpenLayers.Geometry.Point(entry[0], entry[1])
@@ -1118,7 +1133,7 @@ bMap.storeOnMap = function() {
                 strokeWidth: 5
             };
             var lineFeature = new OpenLayers.Feature.Vector(line, null, style);
-            bMap.path.addFeatures([lineFeature]);
+            bMap.layerPath.addFeatures([lineFeature]);
         });
     });
 };
@@ -1768,9 +1783,9 @@ uBody.back2root = function() {
     uBody.showStandByStores();
     uBody.closeSi();
     uBody.setOverview()
-    if (bMap.path !== null) {
-        bMap.map.removeLayer(bMap.path);
-        bMap.path = null;
+    if (bMap.layerPath !== null) {
+        bMap.map.removeLayer(bMap.layerPath);
+        bMap.layerPath = null;
     }
 };
 uBody.bannRenewal = function() {
