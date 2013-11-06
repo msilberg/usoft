@@ -7,7 +7,6 @@
 		switch (intval($_GET['query']))
 		{
 			case 1: $build->loadblock($_GET['block']);
-			
 			break;
 			case 2: $build->lbl_otp(stristr($_GET['lbl'],",")?(string)$_GET['lbl']:intval($_GET['lbl']));
 			break;
