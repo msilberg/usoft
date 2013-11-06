@@ -7,6 +7,7 @@
 		switch (intval($_GET['query']))
 		{
 			case 1: $build->loadblock($_GET['block']);
+			
 			break;
 			case 2: $build->lbl_otp(stristr($_GET['lbl'],",")?(string)$_GET['lbl']:intval($_GET['lbl']));
 			break;
@@ -57,7 +58,7 @@
 	}
 	elseif (isset($_GET['var']))
 	{
-		// get variable
+		// get variable 222
 		foreach (explode(",",$_GET['var']) as $val) $arr[$val]=$build->$val;
 		print json_encode($arr);
 	}
