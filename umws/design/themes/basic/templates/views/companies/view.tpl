@@ -16,81 +16,83 @@
                     </div>
                 {/hook}
             </div>
-            <div class="company-page-info">
-                <div class="company-logo">
-                    {assign var="capture_name" value="logo_`$obj_id`"}
-                    {$smarty.capture.$capture_name nofilter}
-                </div>
-                <div class="info-list">
-                    <h5>{__("contact_information")}</h5>
-                    {if $company_data.email}
-                        <div>
-                            <label>{__("email")}:</label>
-                            <span><a href="mailto:{$company_data.email}">{$company_data.email}</a></span>
-                        </div>
-                    {/if}
-                    {if $company_data.phone}
-                        <div>
-                            <label>{__("phone")}:</label>
-                            <span>{$company_data.phone}</span>
-                        </div>
-                    {/if}
-                    {if $company_data.fax}
-                        <div>
-                            <label>{__("fax")}:</label>
-                            <span>{$company_data.fax}</span>
-                        </div>
-                    {/if}
-                    {if $company_data.url}
-                        <div>
-                            <label>{__("website")}:</label>
-                            <span><a href="{$company_data.url}">{$company_data.url}</a></span>
-                        </div>
-                    {/if}
-                </div>
-                <div class="info-list">
-                    <h5>{__("shipping_address")}</h5>
 
-                    <div>
-                        <span>{$company_data.address}</span>
-                    </div>
-                    <div>
-                        <span>{$company_data.city}
-                            , {$company_data.state|fn_get_state_name:$company_data.country} {$company_data.zipcode}</span>
-                    </div>
-                    <div>
-                        <span>{$company_data.country|fn_get_country_name}</span>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <div class="company-categories">
-            <h2 class="subheader">{__("categories")}</h2>
 
-            <table class="table table-width">
-                <thead>
-                <tr>
-                    <th>{__("name")}</th>
-                    <th>{__("products_amount")}</th>
-                </tr>
-                </thead>
-                <tbody>
-                {foreach from=$company_categories item="category"}
-                    <tr>
-                        <td>
-                            <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">{$category.category}</a>
-                        </td>
-                        <td style="width: 10%" class="right">{$category.count}</td>
-                    </tr>
-                {/foreach}
-                </tbody>
-            </table>
-        </div>
 
         {capture name="tabsbox"}
+            <div id="content_categories" class="company-categories">
+                <h2 class="subheader">{__("categories")}</h2>
+
+                <table class="table table-width">
+                    <thead>
+                    <tr>
+                        <th>{__("name")}</th>
+                        <th>{__("products_amount")}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach from=$company_categories item="category"}
+                        <tr>
+                            <td>
+                                <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">{$category.category}</a>
+                            </td>
+                            <td style="width: 10%" class="right">{$category.count}</td>
+                        </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
             <div id="content_description"
                  class="{if $selected_section && $selected_section != "description"}hidden{/if}">
+                <div class="company-page-info">
+                    <div class="company-logo">
+                        {assign var="capture_name" value="logo_`$obj_id`"}
+                        {$smarty.capture.$capture_name nofilter}
+                    </div>
+                    <div class="info-list">
+                        <h5>{__("contact_information")}</h5>
+                        {if $company_data.email}
+                            <div>
+                                <label>{__("email")}:</label>
+                                <span><a href="mailto:{$company_data.email}">{$company_data.email}</a></span>
+                            </div>
+                        {/if}
+                        {if $company_data.phone}
+                            <div>
+                                <label>{__("phone")}:</label>
+                                <span>{$company_data.phone}</span>
+                            </div>
+                        {/if}
+                        {if $company_data.fax}
+                            <div>
+                                <label>{__("fax")}:</label>
+                                <span>{$company_data.fax}</span>
+                            </div>
+                        {/if}
+                        {if $company_data.url}
+                            <div>
+                                <label>{__("website")}:</label>
+                                <span><a href="{$company_data.url}">{$company_data.url}</a></span>
+                            </div>
+                        {/if}
+                    </div>
+                    <div class="info-list">
+                        <h5>{__("shipping_address")}</h5>
+
+                        <div>
+                            <span>{$company_data.address}</span>
+                        </div>
+                        <div>
+                        <span>{$company_data.city}
+                            , {$company_data.state|fn_get_state_name:$company_data.country} {$company_data.zipcode}</span>
+                        </div>
+                        <div>
+                            <span>{$company_data.country|fn_get_country_name}</span>
+                        </div>
+                    </div>
+                </div>
                 {if $company_data.company_description}
                     <div class="wysiwyg-content">
                         {$company_data.company_description nofilter}
