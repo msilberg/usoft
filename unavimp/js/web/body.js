@@ -80,6 +80,11 @@ bVars.tMapMove = null;
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
+/**
+ * Layer that is used to display shortest path between two points (module and store usually).
+ * @type @exp;OpenLayers@pro;Layer@call;Vector
+ */
+bMap.layerPath = null;
 bMap.mSmBounds = {
     lbx: 36.28508
     , lby: 49.99170
@@ -96,6 +101,8 @@ bMap.mFullBounds = {
 var addrUrl = {};
 addrUrl.base = "http://un.barabashovo.ua/";
 addrUrl.baseL = "http://un.barabashovo.ua:8080/";
+//addrUrl.base = "http://localhost/unavimp/";
+//addrUrl.baseL = "http://localhost:8080/";
 addrUrl.body = addrUrl.base + "core/html/web/body.php";
 addrUrl.html = addrUrl.base + "core/html/web/blocks/common/";
 addrUrl.startApi = addrUrl.base + "api.php";
@@ -571,6 +578,7 @@ uServe.loadTopTen = function(a) {
             });
         });
         webWall(12, 57, "en", "uadmin.no-ip.biz:8080", a);
+//        webWall(12, 57, "en", "localhost:8080", a);
         $("div.cls-wall-btn").on("click", uBody.closeTopTen);
     });
 };
@@ -1077,6 +1085,10 @@ bMap.storeOnMap = function() {
         uServe.addNewMarker(bMap.stCoords[0], 2);
         uServe.showHiddenMarker({x: bMap.stCoords[0]["x"], y: bMap.stCoords[0]["y"]});
         uServe.markerAboveBckgr();
+        // Shows a pathfinder dialog.
+        var destName = $('.info-text span b').text();
+        console.debug(destName);
+        pathfinder.show(destName, a[0]['x'], a[0]['y']);
     });
 };
 bMap.clearStore = function() {
@@ -1905,7 +1917,15 @@ uBody.back2root = function() {
     bMap.clearBckgrIcons();
     uServe.resetSomNo();
     uBody.showStandByStores();
-    uBody.closeSi()
+    uBody.closeSi();
+    // Removes pathfinder layer.
+    if (bMap.layerPath !== null) {
+        bMap.map.removeLayer(bMap.layerPath);
+        bMap.layerPath = null;
+    }
+    // Resets pathfinder dialog.
+    pathfinder.hide();
+    pathfinder.reset();
 };
 uBody.bannRenewal = function() {
     var b = 0;

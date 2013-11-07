@@ -1,0 +1,229 @@
+/* 
+    Document   : pathfinder
+    Created on : Nov 5, 2013, 1:01:15 PM
+    Author     : Andrii Zalevskyi {@linkplain mailto:azalevskyi@gmail.com}
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.ui-dialog {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+.ui-dialog-titlebar {
+    display: none !important;
+}
+#pathfinder {
+    width: 410px;
+    height: 210px;
+    border: 2px solid #d81920;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px;
+    padding: 0px;
+    cursor: move;
+    -webkit-box-shadow:  3px 3px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow:  3px 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pf-header {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.pf-header td {
+    background-color: #b8b8b8;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    color: #636363;
+    text-align: center;
+}
+.pf-header-title {
+    width: 240px;
+    background-color: #d3181f !important;
+    color: #ffffff !important;
+}
+#pf-print {
+    background-image: url(../../../graphics/pathfinder/print.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 60px;
+    border: none;
+    border-right: 1px solid #636363;
+}
+#pf-close {
+    background-image: url(../../../graphics/pathfinder/close.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50px;
+    border: none;
+}
+
+.pf-transport {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #dddddd;
+}
+.pf-transport-cell {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    /*width: 12.5%;*/
+    width: 14.285%;
+}
+#pf-pedestrian {
+    background-image: url(../../../graphics/pathfinder/pedestrian.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#pf-car {
+    background-image: url(../../../graphics/pathfinder/car.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#pf-marshrutka {
+    background-image: url(../../../graphics/pathfinder/marshrutka.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#pf-bus {
+    background-image: url(../../../graphics/pathfinder/bus.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#pf-tram {
+    background-image: url(../../../graphics/pathfinder/tram.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#pf-metro {
+    background-image: url(../../../graphics/pathfinder/metro.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.clickable {
+    cursor: pointer;
+}
+.clickable:hover {
+    -webkit-box-shadow: inset 0px 0px 3px 2px #cccccc;
+    box-shadow: inset 0px 0px 3px 2px #cccccc;
+}
+
+.pf-a {
+    width: 335px;
+    height: 30px;
+    border: none;
+    border-spacing: 0px;
+    margin: 8px 34px 6px 34px;
+    padding: 0px;
+}
+.pf-a-title {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0e75bc;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.pf-a-select-container {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+#pf-a-select {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #e51b23;
+    border-radius: 5px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+    background-color: transparent;
+    color: #b9b9b9;
+    outline: none;
+}
+
+.pf-b {
+    width: 335px;
+    height: 30px;
+    border: none;
+    border-spacing: 0px;
+    margin: 6px 34px 6px 34px;
+    padding: 0px;
+}
+.pf-b-title {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2a973f;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.pf-b-select-container {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+#pf-b-select {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #e51b23;
+    border-radius: 5px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px 5px;
+    background-color: transparent;
+    color: #b9b9b9;
+    outline: none;
+}
+#pf-b-select[type="text"][disabled] {
+   color: red;
+}
+
+.pf-calculate {
+    width: 213px;
+    height: 40px;
+    border: none;
+    border-spacing: 0px;
+    margin: 14px 0px 0px 98px;
+    padding: 0px;
+}
+#pf-calculate {
+    color: #ffffff;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgb(41,158,60); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(41,158,60,1) 0%, rgba(0,101,46,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,158,60,1)), color-stop(100%,rgba(0,101,46,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(41,158,60,1) 0%,rgba(0,101,46,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(41,158,60,1) 0%,rgba(0,101,46,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(41,158,60,1) 0%,rgba(0,101,46,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(41,158,60,1) 0%,rgba(0,101,46,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299e3c', endColorstr='#00652e',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
+}
