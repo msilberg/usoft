@@ -74,6 +74,9 @@ function fn_bestsellers_get_products(&$params, &$fields, &$sortings, &$condition
         if (!empty($params['category_id'])) {
             $condition .= db_quote(" AND ?:product_sales.category_id = ?i", $params['category_id']);
         }
+        if (!empty($_REQUEST['company_id'])) {
+            $condition .= db_quote(" AND products.company_id = ?i", $_REQUEST['company_id']);
+        }
     }
 
     $sortings['bestsellers'] = '?:product_sales.amount';
