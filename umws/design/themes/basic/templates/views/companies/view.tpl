@@ -23,7 +23,7 @@
 
         {capture name="tabsbox"}
             <div id="content_categories" class="company-categories">
-                <h2 class="subheader">{__("categories")}</h2>
+                <!-- <h2 class="subheader">{__("categories")}</h2> -->
 
                 <table class="table table-width">
                     <thead>
@@ -53,10 +53,10 @@
                     </div>
                     <div class="info-list">
                         <h5>{__("contact_information")}</h5>
-                        {if $company_data.email}
+                        {if $company_data.url}
                             <div>
-                                <label>{__("email")}:</label>
-                                <span><a href="mailto:{$company_data.email}">{$company_data.email}</a></span>
+                                <label>{__("website")}:</label>
+                                <span><a href="{$company_data.url}">{$company_data.url}</a></span>
                             </div>
                         {/if}
                         {if $company_data.phone}
@@ -65,16 +65,28 @@
                                 <span>{$company_data.phone}</span>
                             </div>
                         {/if}
+                        {if $company_data.contact}
+                            <div>
+                                <label>{__("contact")}:</label>
+                                <span>{$company_data.contact}</span>
+                            </div>
+                        {/if}
+                        {if $company_data.working_hours}
+                            <div>
+                                <label>{__("working_hours")}:</label>
+                                <span>{$company_data.working_hours}</span>
+                            </div>
+                        {/if}
+                        {if $company_data.email}
+                            <div>
+                                <label>{__("email")}:</label>
+                                <span><a href="mailto:{$company_data.email}">{$company_data.email}</a></span>
+                            </div>
+                        {/if}
                         {if $company_data.fax}
                             <div>
                                 <label>{__("fax")}:</label>
                                 <span>{$company_data.fax}</span>
-                            </div>
-                        {/if}
-                        {if $company_data.url}
-                            <div>
-                                <label>{__("website")}:</label>
-                                <span><a href="{$company_data.url}">{$company_data.url}</a></span>
                             </div>
                         {/if}
                     </div>
