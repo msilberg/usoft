@@ -101,8 +101,8 @@ bMap.mFullBounds = {
 var addrUrl = {};
 addrUrl.base = "http://un.barabashovo.ua/";
 addrUrl.baseL = "http://un.barabashovo.ua:8080/";
-//addrUrl.base = "http://localhost/unavimp/";
-//addrUrl.baseL = "http://localhost:8080/";
+//addrUrl.base = "http://192.167.1.2/unavimp/";
+//addrUrl.baseL = "http://192.167.1.2:8080/";
 addrUrl.body = addrUrl.base + "core/html/web/body.php";
 addrUrl.html = addrUrl.base + "core/html/web/blocks/common/";
 addrUrl.startApi = addrUrl.base + "api.php";
@@ -578,7 +578,7 @@ uServe.loadTopTen = function(a) {
             });
         });
         webWall(12, 57, "en", "uadmin.no-ip.biz:8080", a);
-//        webWall(12, 57, "en", "localhost:8080", a);
+//        webWall(12, 57, "en", "192.167.1.2:8080", a);
         $("div.cls-wall-btn").on("click", uBody.closeTopTen);
     });
 };
@@ -1243,7 +1243,7 @@ uBody.toggleMapBtn = function(a) {
                                 uServe.add_placeholder("sch-field", d);
                             });
                         } else {
-                            $("input.sch-field").val("")
+                            $("input#sch-field").val("")
                         }
                     }
                 });
@@ -2224,7 +2224,7 @@ uServe.setUpElems = function() {
         uElem.mBtnCont = $(".map-btn");
         uElem.cnCont = $("div.cn-cont" + bVars.cat);
         uElem.scName = "<span id='scname'></span>";
-        uElem.schField = $("input.sch-field").val();
+        uElem.schField = $("input#sch-field").val();
         uElem.measureCont.x = 20;
         uElem.measureCont.y = 0
     }
@@ -2516,11 +2516,11 @@ $(document).ready(function() {
             window.location.href = a
         }
     });
-    $("div.sch-btn").click(function() {
+    $(".search-image").click(function() {
         bVars.pmType = 2;
         uBody.showSpm(uElem.schField)
     });
-    $("input.sch-field").on("keypress", function(a) {
+    $("input#sch-field").on("keypress", function(a) {
         if (a.keyCode === 13) {
             uServe.setUpElems();
             bVars.pmType = 2;

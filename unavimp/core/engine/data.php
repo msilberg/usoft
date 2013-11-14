@@ -108,10 +108,15 @@ class data
 		foreach ($base as $key=>$own) 
 			print "<script type=\"text/javascript\" src=\"".(($own)?self::$traddr."js/$key.js":$key)."\"></script>\n";
 		// U Navigator JS libraries output
-        foreach (array('body' . $_SESSION['release'] . '.min'
-                , 'pathfinder' . $_SESSION['release'] . '.min'
-        ) as $val) {
-//        foreach (array('body', 'pathfinder') as $val) {
+        $libraries = array(
+//            'body'
+//            , 'pathfinder'
+//            , 'header'
+            'body' . $_SESSION['release'] . '.min'
+            , 'pathfinder' . $_SESSION['release'] . '.min'
+            , 'header' . $_SESSION['release'] . '.min'
+        );
+        foreach ($libraries as $val) {
             print '<script type="text/javascript" src="js/'
                     . $_SESSION['mode'] . '/' . $val . '.js"></script>' . "\n";
         }
