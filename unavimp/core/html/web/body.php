@@ -47,7 +47,6 @@
 					<td class="mw">
 						<div class="go-fscr" title="<?php $build->lbl_otp(95) ?>"></div>
 						<div class="show-st-list show-st-list-pass"><div><div></div></div></div>
-						<!--<div class="measure-switch measure-pass"></div>-->
 						<?php $build->loadblock(array("addcbtns","hints")) ?>
 						<div class="measure-cont"><?php $build->lbl_otp(136) ?>: <span id="measure-otp"></span><div class="measure-cls"></div></div>
 						<div id="smap" class="smallmap"></div>
@@ -58,57 +57,9 @@
 		</div>
 		<?php $build->loadblock(array("bottstrip","footer","fader","langpanel","msgbox","login","prodinfo")) ?>
 	</center>
-    <!-- TODO: Replace with external block -->
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-    <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/pathfinder.css" ?>" />
-    <div id="pathfinder">
-        <table class="pf-header">
-            <tr>
-                <td class="pf-header-title">Маршрут</td>
-                <td id="pf-print" class="clickable"></td>
-                <td class="clickable">Link</td>
-                <td id="pf-close" class="clickable"></td>
-            </tr>
-        </table>
-        <table class="pf-transport">
-            <tr>
-                <td class="pf-transport-cell"></td>
-                <!--<td class="pf-transport-cell clickable" id="pf-pedestrian"></td>-->
-                <td class="pf-transport-cell clickable" id="pf-car"></td>
-                <td class="pf-transport-cell clickable" id="pf-marshrutka"></td>
-                <td class="pf-transport-cell clickable" id="pf-bus"></td>
-                <td class="pf-transport-cell clickable" id="pf-tram"></td>
-                <td class="pf-transport-cell clickable" id="pf-metro"></td>
-                <td class="pf-transport-cell"></td>
-            </tr>
-        </table>
-        <table class="pf-a">
-            <tr>
-            <td class="pf-a-title">A</td>
-            <td class="pf-a-select-container">
-                <select id="pf-a-select"></select>
-            </td>
-            </tr>
-        </table>
-        <table class="pf-b">
-            <tr>
-            <td class="pf-b-title">B</td>
-            <td class="pf-b-select-container">
-                <input id="pf-b-select" value="" disabled="disabled" />
-            </td>
-            </tr>
-        </table>
-        <table class="pf-calculate">
-            <tr>
-                <td id="pf-calculate">
-                    Проложить маршрут
-                </td>
-            </tr>
-        </table>
-    </div>
-    <script language="javascript">
-        pathfinder.init('pathfinder');
-    </script>
-    <!-- END of TODO-->
+    <?php
+        // Pathfinder dialog block.
+        $build->loadblock('pathfinder');
+    ?>
 </body>
 </html>
