@@ -15,7 +15,7 @@
         <item lang="en" id="categories_company">Categories</item>
         <item lang="ru" id="categories_company">Категории</item>
 
-        <item lang="en" id="newest">Newest</item>
-        <item lang="ru" id="newest">Новые</item>
+        <item lang="en" id="brands_company">Brands</item>
+        <item lang="ru" id="brands_company">Бренды</item>
     </language_variables>
 </addon>
