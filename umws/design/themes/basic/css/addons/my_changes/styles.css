@@ -1,0 +1,20 @@
+.company_brand_wrapper {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    text-align: center;
+}
+
+.company_brand_wrapper .preview-image-wrapper  {
+    height: 150px;
+    line-height: 150px;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.company_brand_wrapper .preview-image-wrapper img {
+    max-height: 150px;
+    max-width: 150px;
+}
