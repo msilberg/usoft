@@ -28,7 +28,7 @@
                     <div class="company_category_wrapper">
                         <div class="preview-image-wrapper">
                             <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">
-                                <img class="pict" src="{if isset($smarty.server.HTTPS)}https://{else}http://{/if}{$smarty.server.HTTP_HOST}{if $category.image_path}/images/detailed/1/{$category.image_path}{else}/images/no_image.png{/if}" alt="" title="">
+                                <img class="pict" src="images{if $category.image_path}/detailed/1/{$category.image_path}{else}/no_image.png{/if}" alt="" title="">
                             </a>
                         </div>
                         <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">{$category.category}</a>
