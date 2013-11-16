@@ -82,13 +82,13 @@
                         {include file="addons/discussion/views/discussion_manager/components/bulk_allow_discussion.tpl" prefix="categories_data" object_id=$category.category_id object_type="C"}
                     {elseif $field == "image_pair"}
                         {* Uncomment the section below to enable uploading of category images *}
-                        {*
+
                         <table width="420">
                         <tr>
                             <td>{include file="common/attach_images.tpl" image_key=$category.category_id image_name="category_main" image_object_type="category" image_pair=$category.main_pair image_object_id=$category.category_id no_thumbnail=true}</td>
                         </tr>
                         </table>
-                        *}
+
                     {elseif $field == "timestamp"}
                         {include file="common/calendar.tpl" date_id="date_`$category.category_id`" date_name="categories_data[`$category.category_id`][$field]" date_val=$category.timestamp|default:$smarty.const.TIME start_year=$settings.Company.company_start_year}
                     {elseif $field == "localization"}

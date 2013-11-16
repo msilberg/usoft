@@ -28,9 +28,9 @@
         <label for="elm_description" class="checkbox"><input type="checkbox" value="description" name="selected_fields[data][]" id="elm_description" checked="checked" class="cm-item-s" />{__("category_description")}</label>
 
         {* Uncomment the section below to enable uploading of category images *}
-        {*
+
         <label class="checkbox" for="elm_image_pair"><input type="checkbox" value="image_pair" name="selected_fields[images][]" id="elm_image_pair" checked="checked" class="cm-item-s" />{__("image_pair")}</label>
-        *}
+
 
         <label class="checkbox" for="elm_page_title"><input type="checkbox" value="page_title" id="elm_page_title" name="selected_fields[data][]" checked="checked" class="cm-item-s" />{__("title")}</label>
 
