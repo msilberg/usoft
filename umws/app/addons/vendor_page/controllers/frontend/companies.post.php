@@ -25,7 +25,7 @@ if ($mode == 'view') {
             'js' => true
         );
 
-        $brands = db_query('SELECT cp.product_id, cpfv.variant_id, cpfvd.variant, cil.image_id, ci.image_path, ci.image_x, ci.image_y
+        $brands = db_get_array('SELECT cp.product_id, cpfv.variant_id, cpfvd.variant, cil.image_id, ci.image_path, ci.image_x, ci.image_y
                 FROM ?:products AS cp
                 LEFT JOIN ?:product_features_values as cpfv ON cpfv.product_id = cp.product_id
                 LEFT JOIN ?:product_feature_variant_descriptions as cpfvd ON cpfvd.variant_id = cpfv.variant_id
