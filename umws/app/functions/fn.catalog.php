@@ -9709,8 +9709,10 @@ function fn_get_product_counts_by_category($params, $lang_code = CART_LANGUAGE)
     $join .= 'JOIN ?:products ON ?:products_categories.product_id = ?:products.product_id ';
     $join .= 'JOIN ?:categories ON ?:products_categories.category_id = ?:categories.category_id ';
     $join .= 'JOIN ?:category_descriptions ON ?:products_categories.category_id = ?:category_descriptions.category_id ';
+    $join .= 'LEFT JOIN ?:images_links ON ?:images_links.object_id = ?:categories.category_id AND ?:images_links.object_type = "category"';
+    $join .= 'LEFT JOIN ?:images ON ?:images.image_id = ?:images_links.detailed_id';
 
-    $result = db_get_array("SELECT COUNT(*) as count, ?:category_descriptions.category, ?:category_descriptions.category_id FROM ?:products_categories ?p WHERE 1 ?p GROUP BY ?:products_categories.category_id ?p", $join, $condition, $sort);
+    $result = db_get_array("SELECT COUNT(*) as count, ?:images.image_path, ?:category_descriptions.category, ?:category_descriptions.category_id FROM ?:products_categories ?p WHERE 1 ?p GROUP BY ?:products_categories.category_id ?p", $join, $condition, $sort);
 
     return $result;
 }
