@@ -3,12 +3,9 @@
     {foreach from=$company_brands item="brand"}
         <div class="company_brand_wrapper">
             <div class="preview-image-wrapper">
-
                 <a href="index.php?dispatch=product_features.view&variant_id={$brand.variant_id}">
-                    <img class="pict" src="images/feature_variant/1/{$brand.image_path}" alt="" title="">
+                    <img class="pict" src="images/{if $brand.image_path}feature_variant/1/{$brand.image_path}{else}/no_image.png{/if}" alt="" title="">
                 </a>
-
-{if isset($smarty.session.abc)} ... {/if}
             </div>
             <a href="index.php?dispatch=product_features.view&variant_id={$brand.variant_id}">
                 {$brand.variant}
