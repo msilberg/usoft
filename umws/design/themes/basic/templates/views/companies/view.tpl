@@ -24,25 +24,16 @@
         {capture name="tabsbox"}
             <div id="content_categories" class="company-categories">
                 <!-- <h2 class="subheader">{__("categories")}</h2> -->
-
-                <table class="table table-width">
-                    <thead>
-                    <tr>
-                        <th>{__("name")}</th>
-                        <th>{__("products_amount")}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
                     {foreach from=$company_categories item="category"}
-                        <tr>
-                            <td>
-                                <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">{$category.category}</a>
-                            </td>
-                            <td style="width: 10%" class="right">{$category.count}</td>
-                        </tr>
+                    <div class="company_category_wrapper">
+                        <div class="preview-image-wrapper">
+                            <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">
+                                <img class="pict" src="{if isset($smarty.server.HTTPS)}https://{else}http://{/if}{$smarty.server.HTTP_HOST}{if $category.image_path}/images/detailed/1/{$category.image_path}{else}/images/no_image.png{/if}" alt="" title="">
+                            </a>
+                        </div>
+                        <a href="{"products.search?search_performed=Y&cid=`$category.category_id`&company_id=`$company_data.company_id`"|fn_url}">{$category.category}</a>
+                    </div>
                     {/foreach}
-                    </tbody>
-                </table>
             </div>
             <div id="content_description"
                  class="{if $selected_section && $selected_section != "description"}hidden{/if}">
