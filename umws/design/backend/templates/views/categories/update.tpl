@@ -76,14 +76,14 @@
     {/if}
 
     {* Uncomment the section below to enable uploading of category images *}
-    {*
+
     <div class="control-group">
         <label class="control-label">{__("images")}:</label>
         <div class="controls">
             {include file="common/attach_images.tpl" image_name="category_main" image_object_type="category" image_pair=$category_data.main_pair image_object_id=$id icon_text=__("text_category_icon") detailed_text=__("text_category_detailed_image") no_thumbnail=true}
         </div>
     </div>
-    *}
+    
 
     </div>
     <hr />
