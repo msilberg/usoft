@@ -1,1 +1,0 @@
-<div class="bc-otp-cont"><?php print service::si_name() ?></div>

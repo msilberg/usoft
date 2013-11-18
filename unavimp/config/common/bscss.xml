@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!-- browsers specific css prefix -->
-<bscss>
-    <browser name="ff">-moz-</browser>
-    <browser name="cr">-webkit-</browser>
-    <browser name="sa">-webkit-</browser>
-    <browser name="op">-o-</browser>
-    <browser name="ie">-ms-</browser>
-</bscss>
