@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Test</title>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/raphael.min.js"></script>
+<script type="text/javascript">
+	test = new Object();
+		test.var1 = 1;
+		test.var2 = 2;
+		
+		test.plusIt = function(){
+			this.result = this.var1 + this.var2;
+			alert(this.result);
+		}
+		test.outputIt = function(){
+			alert("The result is...");
+			this.plusIt();
+		}
+		
+	$(document).ready(function(){
+		$("div.btn").bind("click", test.outputIt());
+	});
+</script>
+<style>
+	.btn{
+		display: block;
+		position: relative; top: 300px;
+		width: 150px;
+		height: 50px;
+		background-color: #add8e6;
+		border: 1px solid #000000;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	
+<div class="btn"></div>
+</body>
+</html>

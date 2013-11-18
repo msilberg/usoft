@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use //n instead of \n for new line -->
+<strings>
+    <dialerCancel value="ביטול" />
+    <dialerInfoMain value="נא הקש מספר נייד" />
+    <dialerInfoSecondary value="שירות אינו כרוך בתשלום" />
+    <prizeCancel value="חזור" />
+    <prizeNext value="המשך" />
+    <thanksMain value="תוך 5 דקות ישלח למספר קופון הנחה שזכיתה בה" />
+    <thanksSecondary value="תודה על השתתפותך והמשך יום נעים!" />
+    <wallTitleMain value="נא לבחור חנות" />
+    <wallTitleSecondary value="שעליו תהיה מעונין לקבל הנחה" />
+    <mark value="הטבה בלעדית" />
+</strings>

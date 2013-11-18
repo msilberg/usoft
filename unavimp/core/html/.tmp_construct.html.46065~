@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+	<script type="text/javascript" src="http://localhost/public_html/unavi/js/jquery.min.js"></script>
+	<title>U Navigator</title>
+	<script type="text/javascript">
+		var body_load = false;
+		function load_again(){
+			$("framebott").ready(function(){
+				body_load = true;
+			});
+			if (!body_load){
+				framebott.location = "http://localhost/public_html/unavi/core/html/blocks/body.php?mode=map";
+			}
+		}
+		$(document).ready(function(){
+			setInterval("load_again();",5000);
+		});		
+	</script>
+</head>
+<frameset rows="141,*" border="0">
+	<frame src="http://localhost/public_html/unavi/core/html/blocks/rstrip.php" 
+		name="frametop" frameborder="0" scrolling="no" noresize>
+	<frame src="http://localhost/public_html/unavi/core/html/blocks/body.php?mode=map" 
+		name="framebott" frameborder="0" scrolling="yes" noresize>
+</frameset>
+</html>

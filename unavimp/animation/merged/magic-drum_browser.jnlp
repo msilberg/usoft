@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Attributes info:
+    codebase - must be altered to URI where THIS file can be located by clients.
+        File and localhost URIs will be available only locally. For web users
+        fully specefied domain name or ip-address should be provided.
+    href - a name of THIS file or script that generates it.
+-->
+<jnlp spec="1.0+"
+            codebase="http://localhost/public_html/unavi/animation/merged/"
+            href="magic-drum_browser.jnlp">
+    <information>
+        <title>magic-drum</title>
+        <vendor>leon.pp.ua</vendor>
+        <homepage href="" />
+        <description>magic-drum</description>
+        <offline-allowed />
+    </information>
+    <security>
+        <all-permissions />
+    </security>
+    <update check="always"/>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime"
+                href="http://dl.javafx.com/1.3/javafx-rt.jnlp"
+                java-vm-args="-client -Xtoolkit prism -Xmx1024m -XX:MaxPermSize=256m" />
+        <jar href="magic-drum.jar" main="true" />
+        <jar href="jfx-commons.jar" />
+        <jar href="dialer.jar" />
+        <jar href="stools.jar"/>
+    </resources>
+    <applet-desc name="magic-drum"
+            main-class="com.sun.javafx.runtime.adapter.Applet"
+            progress-class="com.javafx.progressbar.ProgressManager"
+            width="1130" height="835">
+        <!--
+            Default parameter. MUST NOT be removed or changed.
+        -->
+        <param name="MainJavaFXScript" value="ua.pp.leon.magicdrum.Main" />
+        <!--
+            Defines a color of the background of the scene.
+            Type: String in hexademical web format - #rrggbb.
+        -->
+        <param name="background-color" value="#000c15"/>
+        <!--
+            Defines amount of brands on a drum.
+            Value: Integer.
+            Valid value: 37 (must not be changed at this stage).
+        -->
+        <param name="brands-count" value="37" />
+        <!--
+            Performance tubibg parameter. Enables/disables antialiasing for
+            scene elements.
+            Value: Boolean (true/false).
+            Default: false.
+        -->
+        <param name="performance-smooth" value="true" />
+        <!--
+            Inertial parameter of the drum. Defines deceleration value.
+            Deceleration is a value drum speed will be reduced for each second.
+            Value: Double.
+            Default: 1.0.
+        -->
+        <param name="inertial-deseleration" value="10.0" />
+        <!--
+            Inertial parameter of the drum. Defines minimal allowed speed of
+            rotation in degrees per second (360.0 equals to a one full turn per
+            second).
+            Value: Double.
+            Default: 180.0.
+        -->
+        <param name="inertial-min-speed" value="180" />
+        <!--
+            Inertial parameter of the drum. Defines maximal allowed speed of
+            rotation in degrees per second (360.0 equals to a one full turn per
+            second).
+            Value: Double.
+            Default: 720.0.
+        -->
+        <param name="inertial-max-speed" value="720" />
+        <!-- Background image. -->
+        <param name="image-background"
+                value="http://localhost/public_html/unavi/animation/merged/media/drum-background.png" />
+        <!-- Selector image. -->
+        <param name="image-selector"
+                value="http://localhost/public_html/unavi/animation/merged/media/drum-selector.png" />
+        <!-- Drum surface image. -->
+        <param name="image-surface"
+                value="http://localhost/public_html/unavi/animation/merged/media/drum-surface.png" />
+        <!--
+            Contains an URL template taht is used for clients data retrieval.
+            Value: String.
+            Default: ""
+        -->
+        <param name="url-client" value="https://admin.uniqoom.com:8443/getgift" />
+        <!--
+            Contains an URL that is used for data synchronization operations.
+            Value: String.
+        -->
+        <param name="sync-url" value="https://admin.uniqoom.com:8443/syncclient" />
+        <param name="url-strings"
+                value="http://localhost/public_html/unavi/animation/merged/media/magic-drum-%s.xml" />
+        <!--
+            Contains a login of this client.
+            Value: Integer.
+        -->
+        <param name="sync-login" value="tester02" />
+        <!--
+            Contains a password that will confirm an identity of the client.
+            Value: String.
+        -->
+        <param name="sync-password" value="tester-02-password" />
+        <param name="validator" value="05[0247]?[0-9]{7,7}" />
+        <!-- Defines a mode of a logger -->
+        <param name="debug-mode" value="true" />
+    </applet-desc>
+</jnlp>

@@ -1,0 +1,16 @@
+a:2:{s:4:"data";s:595:"        <div class="mainbox-container clearfix homepage-vendors">
+                    <h1 class="mainbox-title">
+                
+                                    <span>Продавцы</span>
+                                
+
+            </h1>
+                <div class="mainbox-body">
+    <ul>
+            <li><a href="http://localhost/public_html/umws/index.php?dispatch=companies.view&amp;company_id=2">ACME Corp</a></li>
+            <li><a href="http://localhost/public_html/umws/index.php?dispatch=companies.view&amp;company_id=1">Simtech</a></li>
+        </ul>
+
+    </div>
+    </div>
+";s:6:"expiry";i:0;}

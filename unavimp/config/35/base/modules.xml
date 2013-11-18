@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modulesonthemap>
+    <module id="35">
+        <coord name="lon">19.12</coord>
+        <coord name="lat">-9.91</coord>
+    </module>
+    <module id="36">
+        <coord name="lon">54.46</coord>
+        <coord name="lat">-7.37</coord>
+    </module>
+    <module id="37">
+        <coord name="lon">74.48</coord>
+        <coord name="lat">15.84</coord>
+    </module>
+</modulesonthemap>

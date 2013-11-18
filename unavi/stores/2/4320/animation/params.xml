@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<parameters>
+	<!--
+		width - base swf width
+		height - base swf height
+		mshcorr - swf horizontal correction factor on the store's minisite
+		msvcorr - swf vertical correction factor on the store's minisite
+		scrshcorr - swf horizontal correction factor on the screensaver
+		scrsvcorr - swf vertical correction factor on the screensaver
+	-->
+	<dimensions
+		width="365" height="365"
+		mshcorr="215" msvcorr="50"
+		scrshcorr="210" scrsvcorr="150"
+	/>
+</parameters>

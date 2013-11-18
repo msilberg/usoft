@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>vendor_page</id>
+    <name>Vendor Page</name>
+    <description>Multiple changes to vendor page</description>
+    <version>1.0</version>
+    <priority>2305</priority>
+    <position>125</position>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <translations>
+        <item for="name" lang="ru">Страница продавца</item>
+        <item for="description" lang="ru">Разнообразные изменения страницы продавца</item>
+    </translations>
+    <language_variables>
+        <item lang="en" id="categories_company">Categories</item>
+        <item lang="ru" id="categories_company">Категории</item>
+
+        <item lang="en" id="brands_company">Brands</item>
+        <item lang="ru" id="brands_company">Бренды</item>
+    </language_variables>
+</addon>

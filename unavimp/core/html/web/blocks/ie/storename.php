@@ -1,0 +1,1 @@
+<div class="bc-otp-cont bc-store-name"><?php print db::get_store_name(NULL) ?></div>

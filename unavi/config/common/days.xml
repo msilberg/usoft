@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<days>
+	<!-- instead of countries names their national languages -->
+	<week lang="he">
+		<day>sun</day>
+		<day>mon</day>
+		<day>tue</day>
+		<day>wed</day>
+		<day>thu</day>
+		<day>fri</day>
+		<day>sat</day>
+	</week>
+	<week lang="en,de,ru,sr,ua">
+		<day>mon</day>
+		<day>tue</day>
+		<day>wed</day>
+		<day>thu</day>
+		<day>fri</day>
+		<day>sat</day>
+		<day>sun</day>
+	</week>
+</days>

@@ -1,0 +1,106 @@
+<?php
+$names=array(
+"קפוצ'ון",
+"גופיה",
+"מחנסי פוטר",
+"חולצה",
+"ג'ינס",
+"סריג",
+"ז'קט",
+"שמלה",
+"מחנסיים",
+"חולצה אריג",
+"קרדיגן",
+"גוזיה",
+"חצאית",
+"שמלת סריג",
+"חולצת פוטר",
+"חולצה",
+"חולצה מכופתרת",
+"ג'ינס",
+"סריג",
+"חולצת פולו",
+"קפוצ'ון",
+"מחנסי פוטר",
+"קפוצ'ון",
+"חולצה",
+"מחנסי פוטר",
+"מעיל",
+"צעיף",
+"סט לצעיף",
+"סריג",
+"ג'ינס",
+"חולצת פוטר",
+"טוניקה",
+"סווטשרט",
+"גופיה",
+"שמלת סריג",
+"מחנסיים",
+"קרדיגן",
+"חולצה מכופתרת",
+"חצאית",
+"טייץ",
+"כובע",
+"חולצת פסים",
+"חולצת כפתורים",
+"סריג",
+"ג'ינס",
+"טוניקה",
+"סט לטוניקה",
+"טייץ",
+"חולצה",
+"מכנסיים",
+"קרדיגן",
+"ז'קט ג'ינס",
+"סרפן ג'ינס",
+"גרביונים",
+"אפודה",
+"מעיל",
+"חצאית",
+"קפוצ'ון",
+"חולצה מכופתרת",
+"שמלה",
+"אוברול",
+"חולצה",
+"ג'ינס",
+"טייץ"
+);
+foreach ($names as $val)
+{
+	$amount=rand(3,10);
+	++$num;
+	for ($i=1;$i<=$amount;$i++)
+	{
+		if ($num>=1 && $num<=15)
+		{
+			$pct_no=rand(0,38);
+			$pct=($pct_no<10)? "PICT000".$pct_no.".jpg" : "PICT00".$pct_no.".jpg";
+		}
+		elseif ($num>=16 && $num<=22) $pct="PICT00".rand(39,59).".jpg";
+		elseif ($num>=23 && $num<=43) $pct="PICT00".rand(60,80).".jpg";
+		elseif ($num>=44 && $num<=59) $pct="PICT00".rand(81,99).".jpg";
+		elseif ($num>=60 && $num<=64) $pct="PICT0".rand(100,107).".jpg";
+		$price=rand(39,179).".99";
+		mysql_query("INSERT INTO products (name,price,disc_is_act,pct,range_id,da_id) 
+		VALUES ('$val','$price','0','$pct','$num','0');");
+	}	
+}
+// insert discounts
+for ($i=0;$i<=99;$i++)
+{
+	$id=rand(1,347);
+	$res=mysql_query("SELECT price FROM products WHERE id='$id'");
+	while ($a_row=mysql_fetch_object($res)) $price=intval($a_row->price);
+	$dprice=$price-rand(10,40);
+	$dprice.=".99";
+	mysql_query("UPDATE products SET disc_price='$dprice',disc_is_act='1' WHERE id='$id'");
+}
+//insert da
+$t=array(1,2,4);
+foreach ($t as $val)
+	for ($i=1;$i<=15;$i++)
+	{
+		$id=rand(1,347);
+		mysql_query("UPDATE products SET da_id='$val' WHERE id='$id'");
+	}
+?>

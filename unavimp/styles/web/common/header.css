@@ -1,0 +1,163 @@
+.menu {
+    width: 100%;
+    height: 33px;
+    background: url('http://infotrade.ua/barabashovo/wp-content/uploads/2012/10/up-menu-bckg11.png') repeat-x;
+    position: relative;
+    border-bottom: 1px solid #1c5380; border-bottom-color: rgba(4,40,71,0.8); -webkit-box-shadow: 0 1px 0 rgba(111,151,182,0.5) inset, 0 -1px 0 rgba(111,151,182,0.2) inset, 0px 1px 1px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 0 rgba(111,151,182,0.5) inset, 0 -1px 0 rgba(111,151,182,0.2) inset, 0px 1px 1px rgba(0,0,0,.2); box-shadow: 0 1px 0 rgba(111,151,182,0.5) inset, 0 -1px 0 rgba(111,151,182,0.2) inset, 0px 1px 1px rgba(0,0,0,.2);
+}
+.top-menu {
+    width: 980px;
+    margin: 0 auto;
+}
+#menu {
+    font-family: "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    height: 30px;
+    list-style: none outside none;
+    margin: 0 auto;
+    position: relative;
+    right: 0px;
+    left:15px;
+    text-transform: uppercase;
+    width: 550px;
+    z-index: 100;
+    float: left;
+}
+#menu > li {
+    float: left;
+}
+#menu > li > a {
+    padding-left:10px;
+    padding-right:10px;
+    color:#ffffff;
+    display:block;
+    line-height: 33px;
+    height: 33px;
+    background: url('http://infotrade.ua/barabashovo/wp-content/uploads/2012/10/up-menu-bckg11.png') repeat-x;
+    border-right: 1px solid #06365f; 
+    border-right-color: rgba(0,0,0,0.2); -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.1); -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.1); box-shadow: inset 1px 0 0 rgba(255,255,255,.1); text-shadow: 0 1px 0 rgba(3,27,47,0.5); -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none;
+}
+#menu > li:first-child > a {
+    color:#ffffff;
+    display:block;
+    border-left: 1px solid #06365f;
+    border-left-color: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.1);
+    -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.1);
+    box-shadow: inset 1px 0 0 rgba(255,255,255,.1);
+    text-shadow: 0 1px 0 rgba(3,27,47,0.5);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#menu > li:last-child > a {
+    border-right: 1px solid #06365f;
+    border-right-color: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.1);
+    -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.1);
+    box-shadow: inset 1px 0 0 rgba(255,255,255,.1);
+    text-shadow: 0 1px 0 rgba(3,27,47,0.5);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#menu > li:first-child:hover > a {
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png');
+    -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    -moz-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+}
+#menu > li:last-child:hover > a {
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/04/top_menu_btn_hover.png');
+    border-left:none;
+    padding-left:11px;
+}
+#menu > li:last-child:active > a {
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png');
+    -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    -moz-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+}
+
+
+#menu > li:hover > a {
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png');
+    -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    -moz-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+}
+.vhod_registracia{
+    float: right;
+    font-size: 11px;
+    z-index: 1;
+    position: relative;
+}
+#vhod_registracia {
+    height: 25px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+ul#vhod_registracia {
+    list-style: none;
+    width: 250px;
+}
+ul#vhod_registracia li {
+}
+
+#vhod_registracia a{
+    padding-left: 20px;
+    padding-right: 20px;
+    float:right;
+    height: 23px;
+    line-height: 23px;
+
+    text-decoration: none;
+}
+#vhod_registracia li:first-child a{
+    padding-left: 10px;
+    padding-right: 17px;
+    border-left: 1px solid #5391B4;
+    border-radius:0px 10px 10px 0px;
+    float:right;
+    height: 23px;
+    color: rgb(255, 255, 255);  
+    border: 1px solid #06365f; 
+    border-color: rgba(0,0,0,0.2); -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.1); -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.1); box-shadow: inset 1px 0 0 rgba(255,255,255,.1); text-shadow: 0 1px 0 rgba(3,27,47,0.5); -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#vhod_registracia li:last-child a{
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius:10px 0px 0px 10px;
+    float:right;
+    height: 23px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #06365f; 
+    border-color: rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.1); -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.1); box-shadow: inset 1px 0 0 rgba(255,255,255,.1); text-shadow: 0 1px 0 rgba(3,27,47,0.5); -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#vhod_registracia li:first-child a:hover{
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/prim_menu_btn_hover.png');
+}
+#vhod_registracia li:first-child a:active{
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png');
+    -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    -moz-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+}
+
+#vhod_registracia li:last-child a:hover{
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/prim_menu_btn_hover.png');
+}
+
+#vhod_registracia li:last-child a:active{
+    color:#ffffff;
+    background-image:url('http://barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png');
+    -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    -moz-box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+    box-shadow: -1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4);
+}

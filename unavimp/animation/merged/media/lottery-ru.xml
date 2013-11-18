@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use //n insteam of \n for new line -->
+<strings>
+    <dialerCancel value="Отмена" />
+    <dialerInfoMain value="Наберите номер//nмоб. телефона" />
+    <dialerInfoSecondary value="Услуга бесплатна" />
+    <prizeCancel value="Вернуться" />
+    <prizeNext value="Продолжить" />
+    <thanksMain value="Купон с подарком будет//nвыслан в течение 5 мин." />
+    <thanksSecondary value="Спасибо за Ваше участие" />
+    <wallTitleMain value="Выберите бренд" />
+    <wallTitleSecondary value="     на который Вам было бы//nинтересно получить скидку" />
+    <mark value="Уникальная скидка" />
+</strings>

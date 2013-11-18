@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Attribute "codebase" specifies a location of the JAR-archive with compiled
+    application. It can be a local directory link in format:
+        file:/home/leon/Documents/ims/WallGallery/sources/trunk/dist/
+    or universal Internet style URL:
+        http://hnleon.no-ip.org/ov/
+-->
+<jnlp spec="1.0+"
+        codebase="http://localhost/public_html/unavi/animation/wall/"
+        href="WallGallery_browser.jnlp">
+    <information>
+        <title>Wall Gallery</title>
+        <vendor>Uniqoom</vendor>
+        <homepage href="http://uniqoom.com/"/>
+        <description>Wall Gallery</description>
+        <offline-allowed/>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime"
+                href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="WallGallery.jar" main="true"/>
+        <jar href="lib/jfx-commons.jar"/>
+        <jar href="lib/stools.jar"/>
+    </resources>
+    <!--
+        Parameters "width" and "height" define the area of the applet object and
+        it is recommended that they have the same values as "sceneWidth" and
+        "sceneHeight" parameters below.
+    -->
+    <applet-desc name="WallGallery"
+            main-class="com.sun.javafx.runtime.adapter.Applet"
+            width="710" height="523">
+        <!--
+            First parameter is required for the system to work correctly and
+            must not be changed or removed.
+        -->
+        <param name="MainJavaFXScript" value="ua.pp.leon.WallGallery.Main"/>
+        <!--
+            Defines an amount of columns in wall.
+            Any positive integer numbers are allowed.
+        -->
+        <param name="columnsAmount" value="5"/>
+        <!--
+            Defines an amount of rows in wall.
+            Any positive integer numbers are allowed.
+        -->
+        <param name="rowsAmount" value="2"/>
+        <!--
+            Defines a margin between borders of the tile-wall and external
+            borders of the javaFX applet.
+            Any positive numbers are allowed.
+        -->
+        <param name="tileMargin" value="25"/>
+        <!--
+            Defines a margin between borders of the tile-wall and a external
+            borders of the javaFX applet.
+            Any positive numbers are allowed.
+        -->
+        <param name="tileSpacing" value="15"/>
+        <!--
+            Defines a margin between borders of the zoomed-in image and external
+            borders of the javaFX applet.
+            Any positive numbers are allowed.
+        -->
+        <param name="zoomedImageMargin" value="25"/>
+        <!--
+            URL that specifies source of the tile items data.
+        -->
+        <param name="dataSource"
+                value="https://admin.uniqoom.com:8443/getproducts"/>
+        <!--
+            Defines a color of the background of the scene.
+            Values of format 0xRRGGBB are allowed.
+        -->
+        <param name="background" value="0xffffff"/>
+        <!--
+            Defines a color of the background of the scene.
+            Values of format 0xRRGGBB are allowed.
+        -->
+        <param name="backgroundInner" value="0xdddddd"/>
+        <!--
+            Defines ID of the gallery.
+            Any positive integer numbers are allowed.
+        -->
+        <param name="gelleryId" value="0"/>
+        <!--
+            Defines a 1st color of the borders of the scene.
+            Values of format 0xRRGGBB are allowed.
+        -->
+        <param name="borderColor1" value="0x009ad0"/>
+        <!--
+            Defines a 2nd color of the borders of the scene.
+            Values of format 0xRRGGBB are allowed.
+        -->
+        <param name="borderColor2" value="0x009ad0"/>
+    </applet-desc>
+</jnlp>

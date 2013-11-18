@@ -1,0 +1,131 @@
+	private function js_stores_list()
+	{
+		if (!isset(data::$cat)) return false;
+		print "<script type=\"text/javascript\" language=\"JavaScript\">
+			$(document).ready(function(){
+				$(\"div.list-btn\").click(function(){
+					$(\"div.list-btn\").animate({\"left\":\"-=750px\"},720);
+					$(\"div.list-cont\").animate({width:\"65%\"},500);
+					$(this).removeClass(\"list-btn\").addClass(\"list-btn-cls\");
+					$(\"div.cls-btn-real\").show();
+					$(\"div.store-wall\").show(\"slow\");
+				});
+				$(\"div.cls-btn-real2\").click(function(){
+					$(\"div.list-btn-cls\").animate({\"left\":\"+=750px\"},500);
+					$(\"div.list-cont\").animate({width:\"0%\"},530);
+					$(\"div.list-btn-cls\").removeClass(\"list-btn-cls\").addClass(\"list-btn\");
+					$(\"div.cls-btn-real\").hide();
+					$(\"div.store-wall\").hide(\"slow\");
+				});
+			});
+		</script>\n";
+	}
+	private function stores_list()
+	{
+		if (!isset(data::$cat)) return false;
+		print "<div class=\"list-cont".((count(service::stores_sort())<=15)?" list-cont-fixed":NULL)."\">
+		<div class=\"store-wall\"><table cellspacing=\"15\" cellpadding=\"0\"><tr>";
+		foreach (service::stores_sort() as $key=>$val)
+		{
+			print "<td align=\"center\" valign=\"top\"><a href=\"".data::$traddr.
+				"core/html/blocks/body.php?sch=$key&catch=".data::$cat."&lev=".
+				db::lev_of_store($key)."\"><div>$val</div></a></td>";
+			if (!fmod(++$i,5)) print "</tr><tr>";
+		}
+		print "</tr></table></div></div>
+		<div class=\"list-btn si-cls info-cls hot-cls\"></div>
+		<div class=\"cls-btn-real2 cls-btn-real\"></div>";
+	}
+
+	private function stores_list()
+	{
+		if (!isset(data::$cat)) return false;
+		print "<div class=\"list-cont\"><div class=\"store-wall slides\">".
+		((count(service::stores_sort())>data::$max_stores)?"<div class=\"slides_container\"><div>":NULL).
+		"<table cellspacing=\"15\" cellpadding=\"0\"><tr>";
+		foreach (service::stores_sort() as $key=>$val)
+		{
+			print "<td align=\"center\" valign=\"top\"><a href=\"".data::$traddr.
+				"core/html/blocks/body.php?sch=$key&catch=".data::$cat."&lev=".
+				db::lev_of_store($key)."\"><div>$val</div></a></td>";
+			if (!fmod(++$i,data::$max_stores))
+			{
+				print "</tr></table></div><div><table cellspacing=\"15\" cellpadding=\"0\"><tr>";
+				$i=0;
+			}
+			elseif (!fmod($i,5)) print "</tr><tr>"; 
+		}
+		print "</tr></table>".((count(service::stores_sort())>data::$max_stores)?"</div></div>":NULL)."</div></div>
+		<div class=\"list-btn si-cls info-cls hot-cls\"></div>
+		<div class=\"cls-btn-real2 cls-btn-real\"></div>";
+	}
+
+/* Stores list window */
+.list-btn{
+	display: block;
+	position: absolute; top: 170px; left: 830px;
+	width: 108px;
+	height: 302px;
+	background-image: url(http://localhost/public_html/unavi/graphics/list_btn.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 4;
+}
+.list-btn-cls{
+	position: absolute; top: 168px; left: 85px;
+	width: 112px;
+	height: 302px;
+	background-image: url(http://localhost/public_html/unavi/graphics/list_btn_cls.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	z-index: 4;
+}
+.list-cont{
+	position: absolute; top: 170px;
+	z-index: 4;
+	min-height: 300px;
+}
+.cls-btn-real{
+	display: none;
+	position: absolute; top: 168px; left: 80px;
+	width: 112px;
+	height: 302px;
+	background-color: green;
+	opacity: 0.6;
+	z-index: 6;
+}
+.store-wall{
+	display: none;
+	border-radius: 15px;
+	background-color: #ffffff;
+	min-height: 301px;
+	opacity: 0.9;
+}
+.store-wall table{
+	font-size: 16pt;
+	width: 775px;
+}
+.store-wall td{
+	border-radius: 10px;
+	border: 1px solid #cacaca;
+	background-color: #e5e5e5;
+	padding: 0px 5px;
+	width: 200px;
+}
+.store-wall a{
+	color: #000000;
+	text-decoration: none;
+}
+.store-wall div{
+	height: 60px;
+}
+.slides_container {
+	width:470px;
+	height:170px;
+}
+.slides_container div {
+	width:470px;
+	height:170px;
+	display:block;
+}
