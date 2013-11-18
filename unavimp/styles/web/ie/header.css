@@ -21,7 +21,6 @@
     padding-right: 8px;
     color: white;
     font-size: 12px;
-    text-transform: uppercase;
     font-family: Din, Helvetica, Arial, sans-serif;
     float: left;
     text-align: center;
@@ -52,7 +51,6 @@
     text-align: center;
     line-height: 70px;
     color: white;
-    text-transform: uppercase;
     font-size: 20px;
     border-right: 1px solid rgb(66, 123, 168);
     border-right: 1px solid #063659;
@@ -73,8 +71,18 @@
     text-align: center;
     margin-top: 0px;
     color: white;
-    text-transform: uppercase;
     font-size: 20px;
+}
+#menu2 .m2_btn a:hover {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    font-size: 20px;
+    background: #757575;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
 }
 #menu_karti_sxemi {
     width: 100%;
@@ -91,7 +99,6 @@
     margin-top: 0px;
     line-height: 210px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     border-right: 1px solid rgb(66, 123, 168);
     border-right: 1px solid #06365f;
@@ -110,7 +117,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     background: url('http://barabashovo.ua/wp-content/uploads/2013/09/tcb-map.png') no-repeat 50%;
 }
 #menu_karti_sxemi .maps a:hover {
@@ -122,7 +128,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
     background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/tcb-map.png') no-repeat 50%;
 }
@@ -130,7 +135,6 @@
     text-align: center;
     line-height: 210px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     text-shadow: 0 1px 0 rgba(3, 27, 47, 0.5);
 }
@@ -143,7 +147,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     background: url('http://barabashovo.ua/wp-content/uploads/2013/09/parking.png') no-repeat 50%;
 }
@@ -157,7 +160,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
     background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/parking.png') no-repeat 50%;
@@ -171,7 +173,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     background: url('http://barabashovo.ua/wp-content/uploads/2013/09/money.png') no-repeat 50%;
 }
@@ -184,7 +185,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
     background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/money.png') no-repeat 50%;
@@ -199,7 +199,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     background: url('http://barabashovo.ua/wp-content/uploads/2013/09/red-cross.png') no-repeat 50%;
 }
@@ -213,7 +212,6 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    text-transform: uppercase;
     font-size: 12px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
     background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/red-cross.png') no-repeat 50%;
@@ -231,7 +229,6 @@
     text-align: center;
     line-height: 70px;
     color: white;
-    text-transform: uppercase;
     font-size: 20px;
     border-right: 1px solid rgb(66, 123, 168);
     border-right: 1px solid #063659;
@@ -252,7 +249,6 @@
     text-align: center;
     margin-top: 0px;
     color: white;
-    text-transform: uppercase;
 }
 #menu2_cont .m2_cont_btn a:hover {
     width: 100%;
@@ -261,7 +257,6 @@
     text-align: center;
     margin-top: 0px;
     color: white;
-    text-transform: uppercase;
     background: #757575;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
 }
@@ -281,7 +276,6 @@
     text-align: center;
     line-height: 70px;
     color: white;
-    text-transform: uppercase;
     font-size: 20px;
     border-right: 1px solid rgb(66, 123, 168);
     border-right: 1px solid #063659;
@@ -302,7 +296,6 @@
     text-align: center;
     margin-top: 0px;
     color: white;
-    text-transform: uppercase;
 }
 #menu2_rent .m2_rent_btn a:hover {
     width: 100%;
@@ -311,7 +304,6 @@
     text-align: center;
     margin-top: 0px;
     color: white;
-    text-transform: uppercase;
     background: #757575;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
 }
@@ -336,7 +328,6 @@ ul, p, blockquote, fieldset, input {
     padding-right: 8px;
     color: white;
     font-size: 12px;
-    text-transform: uppercase;
     font-family: Din, Helvetica, Arial, sans-serif;
     float: left;
     text-align: center;
@@ -462,7 +453,6 @@ menu-widget-wrap #search .search-image {
     padding-right: 8px;
     color: white;
     font-size: 12px;
-    text-transform: uppercase;
     font-family: Din, Helvetica, Arial, sans-serif;
     float: left;
     text-align: center;

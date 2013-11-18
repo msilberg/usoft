@@ -11,8 +11,10 @@
     <table class="pf-header">
         <tr>
             <td class="pf-header-title">Маршрут</td>
+<!--
             <td id="pf-print" class="clickable"></td>
             <td class="clickable">Link</td>
+-->
             <td id="pf-close" class="clickable"></td>
         </tr>
     </table>

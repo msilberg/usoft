@@ -140,7 +140,7 @@
 }
 .pf-a-select-container {
     display: inline-block;
-    width: 300px;
+    width: 298px;
     height: 30px;
     border: none;
     margin: 0px;
@@ -154,7 +154,7 @@
     margin: 0px 0px 0px 5px;
     padding: 0px;
     background-color: transparent;
-    color: #b9b9b9;
+    color: #646464;
     outline: none;
 }
 
@@ -181,7 +181,7 @@
 }
 .pf-b-select-container {
     display: inline-block;
-    width: 300px;
+    width: 298px;
     height: 30px;
     border: none;
     margin: 0px;
@@ -195,7 +195,7 @@
     margin: 0px 0px 0px 5px;
     padding: 0px 5px;
     background-color: transparent;
-    color: #b9b9b9;
+    color: #646464;
     outline: none;
 }
 #pf-b-select[type="text"][disabled] {
