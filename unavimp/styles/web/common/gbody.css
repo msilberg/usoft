@@ -413,70 +413,6 @@ a{
 	font-size: 13px;
 	overflow: hidden;
 }
-.map-btn-act, .drum-btn-act, .lott-btn-act, .hd-btn-act{
-	background-image: -moz-linear-gradient(top , #F0F0F0, #DFDFDF);
-	background-image: -webkit-linear-gradient(top, #F0F0F0, #DFDFDF);
-	background-image: -o-linear-gradient(top, #F0F0F0, #DFDFDF);
-    border-color: #a2a2a2;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 5) inset;
-    color: #222222;
-    cursor: default;
-}
-.map-btn-pass, .lang-btn-pass, .drum-btn-pass, .lott-btn-pass, .hd-btn-pass{
-	color: #FFFFFF;
-	cursor: pointer;
-    height: 54px;
-}
-.map-btn-pass{
-	background-image: -moz-linear-gradient(top, #309e41, #00652e);
-	background-image: -webkit-linear-gradient(top, #309e41, #00652e);
-	background-image: -o-linear-gradient(top, #309e41, #00652e);	
-}
-.map-btn-pass:hover{
-	background-image: -moz-linear-gradient(bottom, #309e41, #00652e);
-	background-image: -webkit-linear-gradient(bottom, #309e41, #00652e);
-	background-image: -o-linear-gradient(bottom, #309e41, #00652e);
-}
-.lang-btn-pass{
-	background-image: -moz-linear-gradient(top, #cd1a89, #852c72);
-	background-image: -webkit-linear-gradient(top, #cd1a89, #852c72);
-	background-image: -o-linear-gradient(top, #cd1a89, #852c72);
-}
-.lang-btn-pass:hover{
-	background-image: -moz-linear-gradient(bottom, #cd1a89, #852c72);
-	background-image: -webkit-linear-gradient(bottom, #cd1a89, #852c72);
-	background-image: -o-linear-gradient(bottom, #cd1a89, #852c72);
-}
-.drum-btn-pass{
-	background-image: -moz-linear-gradient(top, #5dc9eb, #009c92);
-	background-image: -webkit-linear-gradient(top, #5dc9eb, #009c92);
-	background-image: -o-linear-gradient(top, #5dc9eb, #009c92);
-}
-.drum-btn-pass:hover{
-	background-image: -moz-linear-gradient(bottom, #5dc9eb, #009c92);
-	background-image: -webkit-linear-gradient(bottom, #5dc9eb, #009c92);
-	background-image: -o-linear-gradient(bottom, #5dc9eb, #009c92);
-}
-.lott-btn-pass{
-	background-image: -moz-linear-gradient(top, #0098d9, #234090);
-	background-image: -webkit-linear-gradient(top, #0098d9, #234090);
-	background-image: -o-linear-gradient(top, #0098d9, #234090);
-}
-.lott-btn-pass:hover{
-	background-image: -moz-linear-gradient(bottom, #0098d9, #234090);
-	background-image: -webkit-linear-gradient(bottom, #0098d9, #234090);
-	background-image: -o-linear-gradient(bottom, #0098d9, #234090);
-}
-.hd-btn-pass{
-	background-image: -moz-linear-gradient(top, #e91c24, #b11117);
-	background-image: -webkit-linear-gradient(top, #e91c24, #b11117);
-	background-image: -o-linear-gradient(top, #e91c24, #b11117);
-}
-.hd-btn-pass:hover{
-	background-image: -moz-linear-gradient(bottom, #e91c24, #b11117);
-	background-image: -webkit-linear-gradient(bottom, #e91c24, #b11117);
-	background-image: -o-linear-gradient(bottom, #e91c24, #b11117);
-}
 /* Main window */
 .mw{	
 	display: table-cell;
@@ -1995,7 +1931,7 @@ div.wall-back-rotate {
 	z-index: 31;
 }
 .lang-panel ul{
-	position: absolute; top: 63px; left: -19px;
+	position: absolute; top: 63px; left: 23px;
 	list-style-type: none;
 }
 .lang-panel ul>li{

@@ -22,18 +22,22 @@
                     <tr>
                         <td colspan="3" style="background-color:#FFFFFF;">
                             <input type="text" name="textLogin" class="sw-body-txt-3254"
-                                   placeholder="введите логин"> 
+                                    placeholder="введите логин"
+                                    onfocus="bMap.keyboardnav.deactivate();"
+                                    onblur="bMap.keyboardnav.activate();" /> 
                         </td>
                     </tr>
                     <tr>
                         <td colspan="3" style="background-color:#FFFFFF;">
                             <input type="password" name="textPassword" class="sw-body-txt-3254"
-                                   placeholder="введите пароль">
+                                    placeholder="введите пароль"
+                                    onfocus="bMap.keyboardnav.deactivate();"
+                                    onblur="bMap.keyboardnav.activate();" />
                         </td>
                     </tr>
                     <tr>
                         <td class="sw-btn-cell-3254" style="background-color:#FFFFFF;">
-                            <input type="submit" name="sw-btn" class="sw-btn-3254" value="Войти">
+                            <input type="submit" name="sw-btn" class="sw-btn-3254" value="Войти" />
                         </td>
                         <td class="link-cell-3254" style="background-color:#FFFFFF;">
                             <a href="http://un.barabashovo.ua:8080/index.authentication.restorepass">Забыли пароль?</a>

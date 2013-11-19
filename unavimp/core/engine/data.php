@@ -107,15 +107,23 @@ class data
 		// JS source output
 		foreach ($base as $key=>$own) 
 			print "<script type=\"text/javascript\" src=\"".(($own)?self::$traddr."js/$key.js":$key)."\"></script>\n";
-		// U Navigator JS libraries output
-        $libraries = array(
-//            'body'
-//            , 'pathfinder'
-//            , 'header'
-            'body' . $_SESSION['release'] . '.min'
-            , 'pathfinder' . $_SESSION['release'] . '.min'
-            , 'header' . $_SESSION['release'] . '.min'
-        );
+		// U Navigator JS libraries output.
+        $serverName = $_SERVER['SERVER_NAME'];
+        $libraries = null;
+        if ($serverName === 'localhost' // Deafault development address.
+                || $serverName === '192.167.1.2') { // Local network (virtual machines, etc.).
+            $libraries = array(
+                'body'
+                , 'pathfinder'
+                , 'header'
+            );
+        } else {
+            $libraries = array(
+                'body' . $_SESSION['release'] . '.min'
+                , 'pathfinder' . $_SESSION['release'] . '.min'
+                , 'header' . $_SESSION['release'] . '.min'
+            );
+        }
         foreach ($libraries as $val) {
             print '<script type="text/javascript" src="js/'
                     . $_SESSION['mode'] . '/' . $val . '.js"></script>' . "\n";

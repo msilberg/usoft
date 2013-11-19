@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/chosen.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/antiscroll.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/tooltipster.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/jquery-ui.min.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/".$build->browser.".css" ?>" />
 <?php } ?>
 <?php $build->js_otp() ?>

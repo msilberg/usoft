@@ -3,14 +3,14 @@
 	require_once("core/loader.inc");
 	$build = new data(null, null);
 ?>
-<link rel="stylesheet" type="text/css"
-        href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<!--<link rel="stylesheet" type="text/css"
+        href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
 <link rel="stylesheet" type="text/css"
         href="<?php echo "styles/".$build->mode."/".$build->cbrws."/pathfinder.css" ?>" />
 <div id="pathfinder">
     <table class="pf-header">
         <tr>
-            <td class="pf-header-title">Маршрут</td>
+            <td class="pf-header-title"><?php data::lbl_otp(143); ?></td>
 <!--
             <td id="pf-print" class="clickable"></td>
             <td class="clickable">Link</td>
@@ -21,12 +21,20 @@
     <table class="pf-transport">
         <tr>
             <td class="pf-transport-cell"></td>
-            <!--<td class="pf-transport-cell clickable" id="pf-pedestrian"></td>-->
-            <td class="pf-transport-cell clickable" id="pf-car"></td>
-            <td class="pf-transport-cell clickable" id="pf-marshrutka"></td>
-            <td class="pf-transport-cell clickable" id="pf-bus"></td>
-            <td class="pf-transport-cell clickable" id="pf-tram"></td>
-            <td class="pf-transport-cell clickable" id="pf-metro"></td>
+            <!--
+            <td class="pf-transport-cell clickable pf-transport-active" id="pf-pedestrian"
+                     title="<?php data::lbl_otp(144); ?>"></td>
+            -->
+            <td class="pf-transport-cell clickable pf-transport-active" id="pf-car"
+                    title="<?php data::lbl_otp(145); ?>"></td>
+            <td class="pf-transport-cell clickable" id="pf-marshrutka"
+                    title="<?php data::lbl_otp(146); ?>"></td>
+            <td class="pf-transport-cell clickable" id="pf-bus"
+                     title="<?php data::lbl_otp(147); ?>"></td>
+            <td class="pf-transport-cell clickable" id="pf-tram"
+                      title="<?php data::lbl_otp(148); ?>"></td>
+            <td class="pf-transport-cell clickable" id="pf-metro"
+                       title="<?php data::lbl_otp(149); ?>"></td>
             <td class="pf-transport-cell"></td>
         </tr>
     </table>
@@ -49,7 +57,7 @@
     <table class="pf-calculate">
         <tr>
             <td id="pf-calculate">
-                Проложить маршрут
+                <?php data::lbl_otp(151); ?>
             </td>
         </tr>
     </table>

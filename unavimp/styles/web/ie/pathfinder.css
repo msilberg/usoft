@@ -11,6 +11,13 @@
     padding: 0px !important;
     border: none !important;
 }
+.pf-tooltip {
+    color: #ffffff;
+    background: #717171;
+    box-shadow: none;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+}
 .ui-dialog-titlebar {
     display: none !important;
 }
@@ -22,6 +29,7 @@
     margin: 0px;
     padding: 0px;
     cursor: move;
+    background-color: #ffffff;
     -webkit-box-shadow:  3px 3px 5px 5px rgba(0, 0, 0, 0.5);
     box-shadow:  3px 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -73,11 +81,16 @@
     background-color: #dddddd;
 }
 .pf-transport-cell {
-    border: none;
+    border: 1px transparent;
     margin: 0px;
     padding: 0px;
     /*width: 12.5%;*/
     width: 14.285%;
+}
+.pf-transport-active {
+    border: 1px solid #aaaaaa;
+    -webkit-box-shadow: inset 0px 0px 3px 2px #cccccc;
+    box-shadow: inset 0px 0px 3px 2px #cccccc;
 }
 #pf-pedestrian {
     background-image: url(../../../graphics/pathfinder/pedestrian.png);
