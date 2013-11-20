@@ -1,10 +1,7 @@
-<!-- TODO: Replace all text with DB-labels <?php //data::lbl_otp(ID) ?> -->
 <?php 
 	require_once("core/loader.inc");
 	$build = new data(null, null);
 ?>
-<!--<link rel="stylesheet" type="text/css"
-        href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
 <link rel="stylesheet" type="text/css"
         href="<?php echo "styles/".$build->mode."/".$build->cbrws."/pathfinder.css" ?>" />
 <div id="pathfinder">

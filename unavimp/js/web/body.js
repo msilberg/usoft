@@ -1085,9 +1085,13 @@ bMap.storeOnMap = function() {
         uServe.addNewMarker(bMap.stCoords[0], 2);
         uServe.showHiddenMarker({x: bMap.stCoords[0]["x"], y: bMap.stCoords[0]["y"]});
         uServe.markerAboveBckgr();
+        // Removes pathfinder layer.
+        if (bMap.layerPath !== null) {
+            bMap.map.removeLayer(bMap.layerPath);
+            bMap.layerPath = null;
+        }
         // Shows a pathfinder dialog.
         var destName = $('.info-text span b').text();
-        console.debug(destName);
         pathfinder.show(destName, a[0]['x'], a[0]['y']);
     });
 };

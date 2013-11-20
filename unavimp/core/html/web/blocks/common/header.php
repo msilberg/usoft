@@ -9,7 +9,7 @@
         <tr>
             <td class="sh1 top_menu_item">
                 <a href="http://barabashovo.ua/">
-                    <img src="http://barabashovo.ua/wp-content/uploads/2013/09/tcb-logo.png">
+                    <img src="graphics/button_bar.jpg">
                 </a>
             </td>
             <td class="top_menu_item lang-btn lang-btn-pass" id="sh2"><?php data::lbl_otp(135) ?></td>
