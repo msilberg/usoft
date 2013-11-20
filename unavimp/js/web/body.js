@@ -94,7 +94,7 @@ bMap.mFullBounds = {
 };
 // Server addressing variables
 var addrUrl = {};
-addrUrl.base = "http://un.barabashovo.ua/";
+addrUrl.base = "http://localhost/public_html/unavimp/";
 addrUrl.baseL = "http://un.barabashovo.ua:8080/";
 //addrUrl.base = "http://192.167.1.2/unavimp/";
 //addrUrl.baseL = "http://192.167.1.2:8080/";
