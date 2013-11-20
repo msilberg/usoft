@@ -44,7 +44,7 @@
 			break;
 			case 20: $build->scrs_stores_otp();
 			break;
-			case 21: $build->scrs_num_otp();
+			case 21: $build->scrs_num_otp(); 
 			break;
 			case 22: $build->content_check_otp();
 			break;
@@ -57,7 +57,7 @@
 	}
 	elseif (isset($_GET['var']))
 	{
-		// get variable
+		// get variable 222
 		foreach (explode(",",$_GET['var']) as $val) $arr[$val]=$build->$val;
 		print json_encode($arr);
 	}

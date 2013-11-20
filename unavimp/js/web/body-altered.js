@@ -1,24 +1,16 @@
-/**
- * @author Mike Silberg
- */
-
 var bVars = {};
 var bMap = {};
 var uServe = {};
 var uBody = {};
 var uElem = {};
-
-// Base Variables
 uBody.langSwitcher = null;
 bVars.cat = null;
 bVars.store = null;
 bVars.divcbtnNo = null;
 bVars.prevBann = null;
-
-// Sliding the stores wall
 bVars.countSlide = 0;
 bVars.slType = null;
-bVars.ssCorrVal = 0
+bVars.ssCorrVal = 0;
 bVars.slideLimit = null;
 bVars.gsLimit = null;
 bVars.slideBegPos = null;
@@ -36,7 +28,7 @@ bVars.tLoadSlider = null;
 bVars.thSclHnt = null;
 bVars.tshSclHnt = null;
 bVars.ttglBtn = null;
-bVars.pmType = null;  // promotion type (top 10): 1 -  2nd level catalogue, 2 - search results, 3 - stand-by 
+bVars.pmType = null;
 bVars.prevCountSlide = 0;
 bVars.slBtnStepCount = 0;
 bVars.infoStepCount = 0;
@@ -45,28 +37,26 @@ bVars.allowInfoMove = false;
 bVars.moveLsBtnLimiter = false;
 bVars.maxScale = 4;
 bVars.rootScale = 0;
-bVars.tbToRoot = null; // back to Root Timer
+bVars.tbToRoot = null;
 bVars.bgThreshold = 3;
 bVars.bgPointer = 0;
 bVars.bgTail = 0;
 bVars.specCat = [342];
-bVars.pBtnNo = null; // price button number
-bVars.omSize = {'w':22,'h':32};
-bVars.chmSize = {'w':28,'h':44};
-bVars.catChmSize = {'w':28,'h':44};
-bVars.flagSize = {'w':52,'h':45};
+bVars.pBtnNo = null;
+bVars.omSize = {w: 22, h: 32};
+bVars.chmSize = {w: 28, h: 44};
+bVars.catChmSize = {w: 28, h: 44};
+bVars.flagSize = {w: 52, h: 45};
 bVars.singleTrailer = false;
 bVars.showTTS = true;
-// Screensaver vars
 bVars.atClick = false;
 bVars.makeAtClickFalse = null;
 bVars.runScrs = null;
 bVars.runScrsQueue = null;
 bVars.startScrs = null;
 bVars.scrsRunInterval = 120000;
-bVars.ocrLimiter = false; // open call request limiter
+bVars.ocrLimiter = false;
 bVars.scrsStore = null;
-// Mapping vars
 bVars.somCrit = false;
 bVars.somNo = 0;
 bVars.mIdArr = [];
@@ -74,34 +64,21 @@ bVars.chsmIdArr = [];
 bVars.mArr = [];
 bVars.openStore = true;
 bVars.showStSw = false;
-bVars.mlAlrClsd = false; // measurement line has been already closed
+bVars.mlAlrClsd = false;
 bVars.tOpnSt = null;
 bVars.tMapMove = null;
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
-bMap.mSmBounds = {
-    lbx: 36.28508
-    , lby: 49.99170
-    , rtx: 36.31534
-    , rty: 50.01756
-};
-bMap.mFullBounds = {
-    lbx: 36.28508
-    , lby: 49.99170
-    , rtx: 36.31534
-    , rty: 50.01756
-};
-// Server addressing variables
+bMap.mSmBounds = {lbx: 36.28508, lby: 49.99170, rtx: 36.31534, rty: 50.01756};
+bMap.mFullBounds = {lbx: 36.28508, lby: 49.99170, rtx: 36.31534, rty: 50.01756};
 var addrUrl = {};
-addrUrl.base = "http://un.barabashovo.ua/";
-addrUrl.baseL = "http://un.barabashovo.ua:8080/";
-//addrUrl.base = "http://192.167.1.2/unavimp/";
-//addrUrl.baseL = "http://192.167.1.2:8080/";
+addrUrl.base = "http://localhost/public_html/unavimp/";
+addrUrl.baseL = "http://uadmin.no-ip.biz:8080/";
 addrUrl.body = addrUrl.base + "core/html/web/body.php";
 addrUrl.html = addrUrl.base + "core/html/web/blocks/common/";
-addrUrl.startApi = addrUrl.base + "api.php";
-addrUrl.urlBckgr = addrUrl.base + "config/1003/web/bismall.txt";
+addrUrl.startApi = addrUrl.base + "core/interface/api.php";
+addrUrl.urlBckgr = addrUrl.base + "config/35/web/bismall.txt";
 addrUrl.api = addrUrl.startApi + "?query=";
 addrUrl.vapi = addrUrl.startApi + "?var=";
 addrUrl.getFile = addrUrl.baseL + "getfile/";
@@ -573,7 +550,6 @@ uServe.loadTopTen = function(a) {
             });
         });
         webWall(12, 57, "en", "uadmin.no-ip.biz:8080", a);
-//        webWall(12, 57, "en", "192.167.1.2:8080", a);
         $("div.cls-wall-btn").on("click", uBody.closeTopTen);
     });
 };
@@ -1080,14 +1056,6 @@ bMap.storeOnMap = function() {
         uServe.addNewMarker(bMap.stCoords[0], 2);
         uServe.showHiddenMarker({x: bMap.stCoords[0]["x"], y: bMap.stCoords[0]["y"]});
         uServe.markerAboveBckgr();
-        // Removes pathfinder layer.
-        if (bMap.layerPath !== null) {
-            bMap.map.removeLayer(bMap.layerPath);
-            bMap.layerPath = null;
-        }
-        // Shows a pathfinder dialog.
-        var destName = $('.info-text span b').text();
-        pathfinder.show(destName, a[0]['x'], a[0]['y']);
     });
 };
 bMap.clearStore = function() {
@@ -1226,13 +1194,13 @@ uBody.toggleMapBtn = function(a) {
         var b = bVars.somCrit || typeof bMap.ppm != "undefined" || $("div.olPopup").length > 0 || uServe.chmEx() && bVars.pmType != 3 || $("div.list-cont").length > 0 || $("div.minisite-cont").length > 0 || bMap.map.getZoom() > bVars.rootScale;
         if (a && b) {
             $.get(addrUrl.getLbl(112), function(c) {
-                $(".map-btn").removeClass("map-btn-act").addClass("map-btn-pass").on("click", uBody.back2root);
+                $("div.map-btn").removeClass("map-btn-act").addClass("map-btn-pass").on("click", uBody.back2root);
                 uElem.mBtnCont.text(c);
             });
         } else {
             if (!b) {
                 $.get(addrUrl.getLbl(108), function(c) {
-                    $(".map-btn").removeClass("map-btn-pass").addClass("map-btn-act").off("click", uBody.back2root);
+                    $("div.map-btn").removeClass("map-btn-pass").addClass("map-btn-act").off("click", uBody.back2root);
                     uElem.mBtnCont.text(c);
                     uServe.setUpElems();
                     if (uElem.schField.length > 0) {
@@ -1242,7 +1210,7 @@ uBody.toggleMapBtn = function(a) {
                                 uServe.add_placeholder("sch-field", d);
                             });
                         } else {
-                            $("input#sch-field").val("")
+                            $("input.sch-field").val("")
                         }
                     }
                 });
@@ -2198,10 +2166,10 @@ uServe.setBrwsPref = function() {
 };
 uServe.setUpElems = function() {
     uElem.measureCont = [];
-    if ($.browser.msie) {
+    if ($.browser.msie && parseFloat($.browser.version) < 10){
         bVars.slideStep = 702;
         uElem.siBtnName = $("span.siname");
-        uElem.mBtnCont = $(".map-btn");
+        uElem.mBtnCont = $("div.map-btn>div>span");
         uElem.cnCont = $("div.cn-cont-bckgr");
         uElem.scName = "<div id='scname-cell'><span id='scname'></span></div>";
         uElem.schField = encodeURIComponent(document.getElementById("sch-field").value);
@@ -2212,10 +2180,10 @@ uServe.setUpElems = function() {
         bVars.slideStep = 689;
         bVars.ssCorr = 2;
         uElem.siBtnName = $("div.sibtn-name");
-        uElem.mBtnCont = $(".map-btn");
+        uElem.mBtnCont = $("div.map-btn>div");
         uElem.cnCont = $("div.cn-cont" + bVars.cat);
         uElem.scName = "<span id='scname'></span>";
-        uElem.schField = $("input#sch-field").val();
+        uElem.schField = $("input.sch-field").val();
         uElem.measureCont.x = 20;
         uElem.measureCont.y = 0
     }
@@ -2507,11 +2475,12 @@ $(document).ready(function() {
             window.location.href = a
         }
     });
-    $(".search-image").click(function() {
+    $("div.sch-btn").click(function() {
+        uServe.setUpElems();
         bVars.pmType = 2;
         uBody.showSpm(uElem.schField)
     });
-    $("input#sch-field").on("keypress", function(a) {
+    $("input.sch-field").on("keypress", function(a) {
         if (a.keyCode === 13) {
             uServe.setUpElems();
             bVars.pmType = 2;
@@ -2542,20 +2511,20 @@ $(document).ready(function() {
     }).mouseleave(function() {
         uBody.hideScaleHint()
     });
-    $(".lang-btn").click(function() {
+    $("div.lang-btn").click(function() {
         uBody.openLangPanel()
     });
     $("div.measure-switch").on("click", bMap.setMeasure);
-    $(".drum-btn").click(function() {
+    $("div.drum-btn").click(function() {
         uBody.openMsgBox(124)
     });
-    $(".lott-btn").click(function() {
+    $("div.lott-btn").click(function() {
         uBody.openMsgBox(124)
     });
-    $(".hot-deal-btn").click(function() {
+    $("div.hot-deal-btn").click(function() {
         uBody.openMsgBox(124)
     });
-    $(".login-btn").on("click", uBody.openLoginWindow);
+    $("div.login-btn").on("click", uBody.openLoginWindow);
     uBody.setUpAddCbtn();
     // TODO: Uncomment to enable banners cycling.
 //    uBody.bannRenewal();
