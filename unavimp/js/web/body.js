@@ -80,11 +80,6 @@ bVars.tMapMove = null;
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
-/**
- * Layer that is used to display shortest path between two points (module and store usually).
- * @type @exp;OpenLayers@pro;Layer@call;Vector
- */
-bMap.layerPath = null;
 bMap.mSmBounds = {
     lbx: 36.28508
     , lby: 49.99170
@@ -99,7 +94,7 @@ bMap.mFullBounds = {
 };
 // Server addressing variables
 var addrUrl = {};
-addrUrl.base = "http://un.barabashovo.ua/";
+addrUrl.base = "http://localhost/public_html/unavimp/";
 addrUrl.baseL = "http://un.barabashovo.ua:8080/";
 //addrUrl.base = "http://192.167.1.2/unavimp/";
 //addrUrl.baseL = "http://192.167.1.2:8080/";
