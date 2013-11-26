@@ -96,6 +96,8 @@ bMap.mFullBounds = {
 var addrUrl = {};
 addrUrl.base = "http://localhost/public_html/unavimp/";
 addrUrl.baseL = "http://un.barabashovo.ua:8080/";
+//addrUrl.base = "http://192.167.1.2/unavimp/";
+//addrUrl.baseL = "http://192.167.1.2:8080/";
 addrUrl.body = addrUrl.base + "core/html/web/body.php";
 addrUrl.html = addrUrl.base + "core/html/web/blocks/common/";
 addrUrl.startApi = addrUrl.base + "api.php";
@@ -571,6 +573,7 @@ uServe.loadTopTen = function(a) {
             });
         });
         webWall(12, 57, "en", "uadmin.no-ip.biz:8080", a);
+//        webWall(12, 57, "en", "192.167.1.2:8080", a);
         $("div.cls-wall-btn").on("click", uBody.closeTopTen);
     });
 };
@@ -1077,6 +1080,14 @@ bMap.storeOnMap = function() {
         uServe.addNewMarker(bMap.stCoords[0], 2);
         uServe.showHiddenMarker({x: bMap.stCoords[0]["x"], y: bMap.stCoords[0]["y"]});
         uServe.markerAboveBckgr();
+        // Removes pathfinder layer.
+        if (bMap.layerPath !== null) {
+            bMap.map.removeLayer(bMap.layerPath);
+            bMap.layerPath = null;
+        }
+        // Shows a pathfinder dialog.
+        var destName = $('.info-text span b').text();
+        pathfinder.show(destName, a[0]['x'], a[0]['y']);
     });
 };
 bMap.clearStore = function() {
@@ -1231,7 +1242,7 @@ uBody.toggleMapBtn = function(a) {
                                 uServe.add_placeholder("sch-field", d);
                             });
                         } else {
-                            $("input.sch-field").val("")
+                            $("input#sch-field").val("")
                         }
                     }
                 });
@@ -2204,7 +2215,7 @@ uServe.setUpElems = function() {
         uElem.mBtnCont = $(".map-btn");
         uElem.cnCont = $("div.cn-cont" + bVars.cat);
         uElem.scName = "<span id='scname'></span>";
-        uElem.schField = $("input.sch-field").val();
+        uElem.schField = $("input#sch-field").val();
         uElem.measureCont.x = 20;
         uElem.measureCont.y = 0
     }
@@ -2496,11 +2507,11 @@ $(document).ready(function() {
             window.location.href = a
         }
     });
-    $("div.sch-btn").click(function() {
+    $(".search-image").click(function() {
         bVars.pmType = 2;
         uBody.showSpm(uElem.schField)
     });
-    $("input.sch-field").on("keypress", function(a) {
+    $("input#sch-field").on("keypress", function(a) {
         if (a.keyCode === 13) {
             uServe.setUpElems();
             bVars.pmType = 2;

@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/chosen.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/antiscroll.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/tooltipster.css" ?>" />
+<link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/jquery-ui.min.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/".$build->browser.".css" ?>" />
 <?php } ?>
 <?php $build->js_otp() ?>
@@ -47,7 +48,6 @@
 					<td class="mw">
 						<div class="go-fscr" title="<?php $build->lbl_otp(95) ?>"></div>
 						<div class="show-st-list show-st-list-pass"><div><div></div></div></div>
-						<div class="measure-switch measure-pass"></div>
 						<?php $build->loadblock(array("addcbtns","hints")) ?>
 						<div class="measure-cont"><?php $build->lbl_otp(136) ?>: <span id="measure-otp"></span><div class="measure-cls"></div></div>
 						<div id="smap" class="smallmap"></div>
@@ -58,5 +58,9 @@
 		</div>
 		<?php $build->loadblock(array("bottstrip","footer","fader","langpanel","msgbox","login","prodinfo")) ?>
 	</center>
+	<?php
+        // Pathfinder dialog block.
+        $build->loadblock('pathfinder');
+    ?>
 </body>
 </html>

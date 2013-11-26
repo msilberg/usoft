@@ -28,7 +28,7 @@ a{
 }
 .mbody{
 	display: inline-block;
-	position: relative; top: 175px;
+	position: relative;
 	max-width: 1197px;
 	max-height: 628px;
 	overflow: hidden;
@@ -84,7 +84,7 @@ a{
 }
 .bottom-bckgr{
 	display: inline-table;
-	position: relative; top: 180px;
+	position: relative;
 	width: 100%;
 	height: 275px;
 }
@@ -1603,7 +1603,7 @@ a.a-partn-cont:hover div{
 	behavior: url(PIE.htc);
 }
 .lang-panel ul{
-	position: absolute; top: 75px; left: -22px;
+	position: absolute; top: 75px; left: 23px;
 	list-style-type: none;
 }
 .lang-panel li{

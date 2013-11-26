@@ -8,7 +8,9 @@ var pathfinder = {
             , width: 410
             , height: 210
             , position: {
-                my: "left top"
+                my: "center"
+                , at: "top"
+                , of: window
             }
         });
         $(id).data('dialog').uiDialog.draggable('option', {
@@ -23,6 +25,10 @@ var pathfinder = {
         pathfinder.fillSourceSelect();
         $('.clickable').click(pathfinder.onButtonClicked);
         $('#pf-calculate').click(pathfinder.onCalculateClick);
+        $(document).tooltip({
+            track: true
+            , tooltipClass: 'pf-tooltip'
+        });
     }
 
     , fillSourceSelect: function() {
@@ -35,7 +41,10 @@ var pathfinder = {
     , onButtonClicked: function(event) {
         var button = $(event.currentTarget);
         if (button.is('.pf-transport-cell')) {
-            pathfinder.mode = button.attr('id').replace('pf-', '');
+            button.addClass('pf-transport-active');
+            var id = button.attr('id');
+            $('.pf-transport-cell:not(#' + id + ')').removeClass('pf-transport-active');
+            pathfinder.mode = id.replace('pf-', '');
             pathfinder.fillSourceSelect();
         }
     }
@@ -142,5 +151,5 @@ var pathfinder = {
         }
     }
     , host: 'uadmin.no-ip.biz:8080'
-//    , host: 'localhost:8080'
+//    , host: '192.167.1.2:8080'
 };
