@@ -549,3 +549,15 @@ a img {
 	background-image: -webkit-linear-gradient(bottom, #e91c24, #b11117);
 	background-image: -o-linear-gradient(bottom, #e91c24, #b11117);
 }
+
+
+
+/* hide buttons temp */
+
+.drum-btn, .lott-btn, .hot-deal-btn {
+	display: none !important;
+}
+
+.search_top {
+	display: none !important;
+}
