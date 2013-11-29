@@ -58,7 +58,7 @@
 		</div>
 		<?php $build->loadblock(array("bottstrip","footer","fader","langpanel","msgbox","login","prodinfo")) ?>
 	</center>
-    <?php
+	<?php
         // Pathfinder dialog block.
         $build->loadblock('pathfinder');
     ?>

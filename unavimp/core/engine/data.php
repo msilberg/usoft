@@ -107,6 +107,7 @@ class data
 		// JS source output
 		foreach ($base as $key=>$own) 
 			print "<script type=\"text/javascript\" src=\"".(($own)?self::$traddr."js/$key.js":$key)."\"></script>\n";
+		
 		// U Navigator JS libraries output.
         $serverName = $_SERVER['SERVER_NAME'];
         $libraries = null;
