@@ -65,7 +65,7 @@ textarea:focus{
 	position: relative; top: 0px; left: -2px;
 	width: 1169px;
 	height: 820px;
-	background-color: #000000;
+	background-color: #000c15;
 	overflow: hidden;
 	z-index: 1;
 }
