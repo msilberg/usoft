@@ -1009,7 +1009,7 @@ bMap.setMap = function(e) {
     };
     bMap.map = new OpenLayers.Map(e, t);
     bMap.map.addLayer(new OpenLayers.Layer.WMS("Barabashovo"
-        , "http://uadmin.no-ip.biz:8080/geoserver/uniqoom/wms?BGCOLOR=0x4f5458"
+        , "http://uadmin.no-ip.biz:8080/geoserver/uniqoom/wms?BGCOLOR=0x000000"
         , {layers: "2013-07-14-kiosk", format: "image/png"}
     ));
     uBody.setOverview();
