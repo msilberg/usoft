@@ -114,15 +114,15 @@ class data
         if ($serverName === 'localhost' // Deafault development address.
                 || $serverName === '192.167.1.2') { // Local network (virtual machines, etc.).
             $libraries = array(
-                'body'
-                , 'pathfinder'
-                , 'header'
+                'body',
+                'pathfinder',
+                'header'
             );
         } else {
             $libraries = array(
-                'body' . $_SESSION['release'] . '.min'
-                , 'pathfinder' . $_SESSION['release'] . '.min'
-                , 'header' . $_SESSION['release'] . '.min'
+                'body' . $_SESSION['release'] . '.min',
+                'pathfinder' . $_SESSION['release'] . '.min',
+                'header' . $_SESSION['release'] . '.min'
             );
         }
         foreach ($libraries as $val) {
@@ -355,9 +355,10 @@ class data
 	{
 		return service::detect_ie_version();
 	}
-	public function test_otp()
+	public function show_store($crit)
 	{
-		print json_encode(db::make_search());
-    }
+		$_SESSION['shwst']=$crit;
+		if ($crit) $_SESSION['store']=db::get_store_id_by_name($_POST['store']);
+	}
 }
 ?>

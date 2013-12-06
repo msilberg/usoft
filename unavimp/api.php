@@ -52,7 +52,10 @@
 			break;
 			case 24: $build->ssi_otp(intval($_GET['sich']));
 			break;
-			default: $build->test_otp();
+			default:
+				header("HTTP/1.0 404 Not Found");
+				print "<h1>404 Not Found</h1>The page that you have requested could not be found.";
+				exit();
 		}
 	}
 	elseif (isset($_GET['var']))

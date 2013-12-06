@@ -334,6 +334,12 @@ class db extends service
 			WHERE stores.tc_id=".$_SESSION['tc']." && stores.id IN (".implode(",",$arr).
 			") && stores.id=store_cat.store_id && catalogue.parent IS NOT NULL && store_cat.cat_id=catalogue.id ORDER BY stores.id"));
 	}
+	protected function get_store_id_by_name($name)
+	{
+		$res=mysql_query(sprintf("SELECT id FROM stores WHERE name LIKE '%s'",$name));
+		if (mysql_num_rows($res)==0) return false;
+		return service::res2val($res);
+	}
 	protected function get_si()
 	{ 
 		return service::make_unique_marr(service::res2karr(mysql_query("SELECT service_icons.name_".$_SESSION['lang'].",service_icons.id 
