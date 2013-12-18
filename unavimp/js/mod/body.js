@@ -73,6 +73,21 @@ bVars.mIdArr = [];
 bVars.chsmIdArr = [];
 bVars.mArr = [];
 bVars.tMapMove = null;
+/**
+ * Contains current module ID.
+ * @type Number
+ */
+bVars.moduleId = 0;
+/**
+ * Contains array of modules coordinate pairs.
+ * @type Array
+ */
+bVars.moduleCoords = {
+    35: {x: 36.304408555408, y: 50.003896349536}
+    , 36: {x: 36.308293281479, y: 50.004126987207}
+    , 37: {x: 36.310059173938, y: 50.006908617281}
+    , 39: {x: 36.297443416462, y: 50.001083268871}
+};
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
@@ -81,6 +96,7 @@ bMap.path = null;
 // Server addressing variables
 var addrUrl = {};
 addrUrl.base = "http://uadmin.no-ip.biz/";
+//addrUrl.base = "http://192.167.1.2/unavimp/";
 addrUrl.startApi = addrUrl.base + "api.php";
 addrUrl.urlBckgr = addrUrl.base + "config/1003/mod/bismall.txt";
 addrUrl.api = addrUrl.startApi + "?query=";
@@ -88,6 +104,7 @@ addrUrl.vapi = addrUrl.startApi + "?var=";
 addrUrl.markers = function() {
     var e = bMap.map.getExtent();
     return"http://uadmin.no-ip.biz:8080/geo?SERVICE=UniqoomAPI&REQUEST=milestone&TCID=1003&X1="
+//    return"http://192.167.1.2:8080/geo?SERVICE=UniqoomAPI&REQUEST=milestone&TCID=1003&X1="
             + e["left"] + "&X2=" + e["right"] + "&Y1=" + e["bottom"] + "&Y2=" + e["top"]
             + "&jsoncallback=?"
 };
@@ -1085,13 +1102,9 @@ bMap.storeOnMap = function() {
             uServe.showHiddenMarker({x: bMap.stCoords[0]["x"], y: bMap.stCoords[0]["y"]});
             uServe.markerAboveBckgr();
             uri = 'http://uadmin.no-ip.biz:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
-//            uri = 'http://localhost:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
-//                + '&X1=' + 36.304408555408 // logitute of module #35
-//                + '&Y1=' + 50.003896349536 // latitude of module #35
-//                + '&X1=' + 36.308293281479 // logitute of module #36
-//                + '&Y1=' + 50.004126987207 // latitude of module #36
-                + '&X1=' + 36.310059173938 // logitute of module #37
-                + '&Y1=' + 50.006908617281 // latitude of module #37
+//            uri = 'http://192.167.1.2:8080/geo?SERVICE=UniqoomAPI&REQUEST=path'
+                + '&X1=' + bVars.moduleCoords[bVars.moduleId]['x']
+                + '&Y1=' + bVars.moduleCoords[bVars.moduleId]['y']
                 + '&X2=' + e[0]["x"]
                 + '&Y2=' + e[0]["y"]
                 + '&jsoncallback=?';
@@ -2151,10 +2164,12 @@ $(document).ready(function() {
     });
     $("div.sibtn").on("mousedown", uBody.showSi);
     $("div.drum-btn").mousedown(function() {
-        uBody.openMsgBox(124)
+        webLotteryHide();
+        webDrumShow();
     });
     $("div.lott-btn").mousedown(function() {
-        uBody.openMsgBox(124)
+        webDrumHide();
+        webLotteryShow();
     });
     $("div.hot-btn").mousedown(function() {
         uBody.openMsgBox(124)

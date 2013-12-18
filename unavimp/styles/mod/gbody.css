@@ -178,7 +178,7 @@ textarea:focus{
 }
 .mbtns table{
 	margin-left: 7px;
-	width: 725px; /*1929px;*/
+	width: 1450px; /*1929px;*/
 	height: 65px;
 }
 .mbtns div{
@@ -203,7 +203,7 @@ textarea:focus{
 .map-btn{
 	
 }
-.drum-btn, .lott-btn, .hot-btn{
+.hot-btn {
 	display: none !important;
 }
 .lang-pass, .map-pass, .drum-pass, .lott-pass, .hot-pass{

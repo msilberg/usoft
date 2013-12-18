@@ -13,6 +13,11 @@
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/jquery-ui.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/keyboard.css" ?>" />
 <?php $build->js_otp() ?>
+<script>
+    $(function() {
+        bVars.moduleId = <?php echo $_SESSION['modid']; ?>;
+    });
+</script>
 </head>
 	<body class="body-bckgr-act">
 		<div class="mbody">
@@ -53,6 +58,8 @@
 			$build->loadblock("fader");
 			$build->loadblock("langpanel");
 			$build->loadblock("msgbox");
+            $build->loadblock("web-drum");
+            $build->loadblock("web-lottery");
 		?>
 	</body>
 </html>
