@@ -77,6 +77,16 @@ bVars.showStSw = false;
 bVars.mlAlrClsd = false; // measurement line has been already closed
 bVars.tOpnSt = null;
 bVars.tMapMove = null;
+/**
+ * Defines an ID value for Catalogue controller.
+ * @type Integer.
+ */
+bVars.controlInitialCategory = null;
+/**
+ * Defines if finance controller should be executed.
+ * @type Boolean.
+ */
+bVars.controlFinance = false;
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
@@ -94,7 +104,7 @@ bMap.mFullBounds = {
 };
 // Server addressing variables
 var addrUrl = {};
-addrUrl.base = "http://localhost/public_html/unavimp/";
+addrUrl.base = "http://un.barabashovo.ua/";
 addrUrl.baseL = "http://un.barabashovo.ua:8080/";
 //addrUrl.base = "http://192.167.1.2/unavimp/";
 //addrUrl.baseL = "http://192.167.1.2:8080/";
@@ -899,6 +909,11 @@ bMap.setPopupMarkers = function(d) {
     bMap.map.addLayer(bMap.ppm);
     bMap.ppm.setZIndex(752);
     $.getJSON(addrUrl.api + 3, function(g) {
+        // Removes "favourites" icons as a part of the "finance" controller execution.
+        if (bVars.controlFinance) {
+            bVars.controlFinance = false;
+            bMap.clearChsMarkers();
+        }
         $.each(g, function(i, h) {
             b = (new OpenLayers.LonLat(h.x, h.y)).transform(new OpenLayers.Projection("EPSG:4326"), bMap.map.getProjectionObject());
             f = new OpenLayers.Size(120, 97);
@@ -2559,5 +2574,11 @@ $(document).ready(function() {
     uBody.setUpAddCbtn();
     // TODO: Uncomment to enable banners cycling.
 //    uBody.bannRenewal();
-    uBody.showSt()
+    uBody.showSt();
+    // Performs controllers execution.
+    if (bVars.controlInitialCategory !== null) {
+        uBody.scatsWall(bVars.controlInitialCategory);
+    } else if (bVars.controlFinance) {
+        bMap.setPopupMarkers(bVars.specCat[0]);
+    }
 }).on("click", uServe.respiteSCS);

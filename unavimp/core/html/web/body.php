@@ -61,6 +61,15 @@
 	<?php
         // Pathfinder dialog block.
         $build->loadblock('pathfinder');
+        // Performs controllers initialization.
+        if (gettype($_REQUEST['catalog']) !== 'NULL') {
+            echo '<script type="text/javascript">bVars.controlInitialCategory = '
+                    . intval($_REQUEST['catalog'])
+                    . ';</script>';
+        } else if (gettype($_REQUEST['finance']) !== 'NULL') {
+            echo '<script type="text/javascript">bVars.controlFinance = true;</script>';
+        }
+        return;
     ?>
 </body>
 </html>
