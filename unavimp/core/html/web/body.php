@@ -68,6 +68,8 @@
                     . ';</script>';
         } else if (gettype($_REQUEST['finance']) !== 'NULL') {
             echo '<script type="text/javascript">bVars.controlFinance = true;</script>';
+        } else if (gettype($_REQUEST['services']) !== 'NULL') {
+            echo '<script type="text/javascript">bVars.controlServices = true;</script>';
         }
         return;
     ?>

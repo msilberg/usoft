@@ -87,6 +87,11 @@ bVars.controlInitialCategory = null;
  * @type Boolean.
  */
 bVars.controlFinance = false;
+/**
+ * Defines if services controller should be executed.
+ * @type Boolean.
+ */
+bVars.controlServices = false;
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
@@ -1817,6 +1822,10 @@ uBody.showSi = function() {
             uServe.loadSlider();
             $("div.close-wall").on("click", uBody.closeSi)
         })
+        if (bVars.controlServices) {
+            bVars.controlServices = false;
+            bMap.clearChsMarkers();
+        }
     })
 };
 uBody.showSpm = function(b, a) {
@@ -2580,5 +2589,7 @@ $(document).ready(function() {
         uBody.scatsWall(bVars.controlInitialCategory);
     } else if (bVars.controlFinance) {
         bMap.setPopupMarkers(bVars.specCat[0]);
+    } else if (bVars.controlServices) {
+        uBody.showSi();
     }
 }).on("click", uServe.respiteSCS);
