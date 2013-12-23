@@ -1392,24 +1392,14 @@ a.a-partn-cont:hover div{
 	font-size: 13px;
 }
 /* Bankers and currency exchange */
-.cit{
-	display: inline-block;
-	position: absolute; left: 24px;
-	width: 94px;
-	font-size: 8pt;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-align: center;
-	overflow: hidden;
-}
-.usd{
-	top: 18px;
-}
-.eur{
-	top: 35px;
-}
-.rur{  
-	top: 52px;
+.cit {
+    position: absolute;
+    left: 17px;
+    top: 3px;
+    font-size: 6pt;
+    font-weight: normal;
+    color: black;
+    text-align: left;
 }
 /* Scale hint */
 .scale-hint{

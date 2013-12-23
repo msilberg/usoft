@@ -896,8 +896,7 @@ bMap.setPopupMarkers = function(d) {
     if (typeof bMap.ppm !== "undefined") {
         return false;
     }
-    var b, f, c;
-    var a = "df";
+    var languageCode = "df";
     uBody.closeWall(true, true);
     uBody.closeMinisite();
     uBody.closeTopTen(true);
@@ -919,23 +918,42 @@ bMap.setPopupMarkers = function(d) {
             bVars.controlFinance = false;
             bMap.clearChsMarkers();
         }
-        $.each(g, function(i, h) {
-            b = (new OpenLayers.LonLat(h.x, h.y)).transform(new OpenLayers.Projection("EPSG:4326"), bMap.map.getProjectionObject());
-            f = new OpenLayers.Size(120, 97);
-            c = new OpenLayers.Icon(addrUrl.base + "graphics/cmi/banker.png", f, new OpenLayers.Pixel(-(f.w / 2), -f.h));
-            bMap.ppCoords.push({id: h.id, x: h.x, y: h.y, icat: bMap.varsArr.bankers});
-            var j = new OpenLayers.Marker(b, c);
-            j.events.register("mouseup", bMap.ppm, function(k) {
+        $.each(g, function(i, mapObject) {
+            var layer = (new OpenLayers.LonLat(mapObject.x, mapObject.y))
+                    .transform(new OpenLayers.Projection("EPSG:4326"), bMap.map.getProjectionObject());
+            var parsedJson = $.parseJSON(mapObject["descr_" + languageCode]);
+            if (parsedJson === null
+                    || typeof(parsedJson.type) === 'undefined'
+                    || typeof(parsedJson.name) === 'undefined') {
+                return true;
+            }
+            var dimensions = null;
+            var icon = null;
+            if (parsedJson.type === 'bank') {
+                dimensions = new OpenLayers.Size(86, 16);
+                icon = new OpenLayers.Icon(addrUrl.base + "graphics/cmi/icon-bank.png"
+                        , dimensions, new OpenLayers.Pixel(-(dimensions.w / 2), -dimensions.h));
+            } else if (parsedJson.type === 'exchange') {
+                dimensions = new OpenLayers.Size(77, 16);
+                icon = new OpenLayers.Icon(addrUrl.base + "graphics/cmi/icon-exchange.png"
+                        , dimensions, new OpenLayers.Pixel(-(dimensions.w / 2), -dimensions.h));
+            }
+            bMap.ppCoords.push({
+                id: mapObject.id
+                , x: mapObject.x
+                , y: mapObject.y
+                , icat: bMap.varsArr.bankers
+            });
+            var marker = new OpenLayers.Marker(layer, icon);
+            marker.events.register("mouseup", bMap.ppm, function(k) {
                 if (bVars.openStore) {
-                    uBody.openMinisite(h.id, true);
+                    uBody.openMinisite(mapObject.id, true);
                 }
-                j.mouseup();
                 OpenLayers.Event.stop(k);
             });
-            bMap.ppm.addMarker(j);
-            $.each(jQuery.parseJSON(h["descr_" + a]), function(e, k) {
-                $(bMap.ppm.markers[i]["events"]["element"]).append("<span class='cit " + e + "'>" + k + "</span><br/>");
-            });
+            bMap.ppm.addMarker(marker);
+            $(bMap.ppm.markers[i]["events"]["element"])
+                    .append("<span class='cit " + i + "'>" + parsedJson.name + "</span><br/>");
         });
     });
 };
