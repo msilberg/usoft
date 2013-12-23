@@ -922,6 +922,7 @@ bMap.setPopupMarkers = function(d) {
             bVars.controlFinance = false;
             bMap.clearChsMarkers();
         }
+        var markersCount = 0;
         $.each(g, function(i, mapObject) {
             var layer = (new OpenLayers.LonLat(mapObject.x, mapObject.y))
                     .transform(new OpenLayers.Projection("EPSG:4326"), bMap.map.getProjectionObject());
@@ -956,8 +957,9 @@ bMap.setPopupMarkers = function(d) {
                 OpenLayers.Event.stop(k);
             });
             bMap.ppm.addMarker(marker);
-            $(bMap.ppm.markers[i]["events"]["element"])
+            $(bMap.ppm.markers[markersCount]["events"]["element"])
                     .append("<span class='cit " + i + "'>" + parsedJson.name + "</span><br/>");
+            markersCount++;
         });
     });
 };

@@ -65,13 +65,7 @@
 					<?php
 						if (!empty($info['descr']))
 						{
-							if (in_array($_SESSION['cat'],array_values(data::$spec_cat)))
-							{
-								data::lbl_otp(113);
-								print "&nbsp;<br/>";
-								foreach (json_decode($info['descr']) as $key=>$val) print "<b>".strtoupper($key)."</b>:&nbsp;$val<br/>";
-							}
-							else
+							if (!in_array($_SESSION['cat'],array_values(data::$spec_cat)))
 							{
 								data::lbl_otp(94);
 								print ":&nbsp;".$info['descr'];
