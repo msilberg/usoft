@@ -20,7 +20,7 @@ var pathfinder = {
         pathfinder.source = $('#pf-a-select');
         pathfinder.destination = $('#pf-b-select');
         $('#pf-close').click(function(event) {
-            $('#pathfinder').dialog('close');
+            pathfinder.hide();
         });
         pathfinder.fillSourceSelect();
         $('.clickable').click(pathfinder.onButtonClicked);
@@ -94,6 +94,10 @@ var pathfinder = {
 
     , hide: function() {
         $('#pathfinder').dialog('close');
+        if (bMap.layerPath !== null) {
+            bMap.map.removeLayer(bMap.layerPath);
+            bMap.layerPath = null;
+        }
     }
 
     , reset: function() {

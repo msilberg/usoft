@@ -95,6 +95,11 @@ bVars.controlServices = false;
 bMap.stCoords = [];
 bMap.chmCoords = [];
 bMap.ppCoords = [];
+/**
+ * Layer that is used to display shortest path between two points (module and store usually).
+ * @type @exp;OpenLayers@pro;Layer@call;Vector
+ */
+bMap.layerPath = null;
 bMap.mSmBounds = {
     lbx: 36.28508
     , lby: 49.99170
@@ -326,7 +331,6 @@ uServe.addNewMarker = function(m, w) {
         if (bVars.openStore) {
             uBody.openMinisite(j, v);
         } else {
-            marker.mouseup();
             uServe.respiteSCS();
             return true;
         }
@@ -1958,7 +1962,10 @@ uBody.back2root = function() {
     bMap.clearBckgrIcons();
     uServe.resetSomNo();
     uBody.showStandByStores();
-    uBody.closeSi()
+    uBody.closeSi();
+    // Resets pathfinder dialog.
+    pathfinder.hide();
+    pathfinder.reset();
 };
 uBody.bannRenewal = function() {
     var b = 0;
