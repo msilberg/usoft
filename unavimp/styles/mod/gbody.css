@@ -1807,3 +1807,6 @@ div#si>div>table>tbody>tr>td>div>table{
 .overview-map-minus{
 	background-image: url(http://uadmin.no-ip.biz/graphics/minus.png);
 }
+.wall-container {
+    border-radius: 0px 0px 20px 0px !important;
+}

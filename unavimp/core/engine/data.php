@@ -85,7 +85,6 @@ class data
 			"jquery.utils.min"=>TRUE,
 			"jquery-css-transform.min"=>TRUE,
 			"rotate3Di.min"=>TRUE,
-			"wall.min"=>TRUE
 		);
 		// JS libraries customization depending on the mode
 		switch ($_SESSION['mode'])
@@ -115,15 +114,23 @@ class data
                 || $serverName === '192.167.1.2') { // Local network (virtual machines, etc.).
             $libraries = array(
                 'body',
-                'pathfinder',
-                'header'
             );
+            if ($_SESSION['mode'] === 'web') {
+                array_push($libraries
+                    , 'pathfinder'
+                    , 'header'
+                );
+            }
         } else {
             $libraries = array(
                 'body' . $_SESSION['release'] . '.min',
-                'pathfinder' . $_SESSION['release'] . '.min',
-                'header' . $_SESSION['release'] . '.min'
             );
+            if ($_SESSION['mode'] === 'web') {
+                array_push($libraries
+                    , 'pathfinder' . $_SESSION['release'] . '.min'
+                    , 'header' . $_SESSION['release'] . '.min'
+                );
+            }
         }
         foreach ($libraries as $val) {
             print '<script type="text/javascript" src="js/'

@@ -12,6 +12,8 @@
 <link rel="stylesheet" type="text/css" href="<?php print "js/theme/default/style.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/jquery-ui.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/keyboard.css" ?>" />
+<link rel="stylesheet" type="text/css" href="http://uadmin.no-ip.biz/miniapps/wall-web/theme/default/style.css" />
+<script type="text/javascript" src="http://uadmin.no-ip.biz/miniapps/wall-web/js/wall-web.js"></script>
 <?php $build->js_otp() ?>
 <script>
     $(function() {
