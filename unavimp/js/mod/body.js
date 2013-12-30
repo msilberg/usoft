@@ -720,7 +720,7 @@ uBody.openTopTen = function() {
         $("div.top10-btn").removeClass("sm-btn-pass").addClass("sm-btn-act").off("mousedown", uBody.openTopTen).on("mousedown", uBody.closeTopTen);
         $("td.mw").append("<div class='tt-cont'></div>");
         $("div.tt-cont").load(addrUrl.loadBlock("wall"), function() {
-            webWall("50px", "50px", "he", "uadmin.no-ip.biz:8080", parseFloat(e));
+            webWall.initV2(0, 63, "ru", "uadmin.no-ip.biz:8080", parseInt(e), 789, 522, 5, 2);
             if ($("div.ttcat-btn-header").attr("id") == "ttbh-bckgr-pass") {
                 $("div.ttcat-btn-header").mousedown(function() {
                     uBody.showDDList("ttcat")
@@ -1955,7 +1955,90 @@ uBody.clsVKbd = function() {
     uBody.togglePB()
 };
 uBody.vKbd = function() {
-    $("textarea#sch-area-txt").keyboard({layout: "qwerty-russian", customLayout: {"default": ["ё 1 2 3 4 5 6 7 8 9 0 - = {bksp}", "й ц у к е н г ш щ з х ъ \\", "ф ы в а п р о л д ж э", "{shift} я ч с м и т ь б ю . {shift}", "{cancel} {alt} {space} {accept} {meta1} {meta2}"], meta1: [], meta2: [], shift: ['Ё ! " № ; % : ? * ( ) _ + {bksp}', "Й Ц У К Е Н Г Ш Щ З Х Ъ |", "Ф Ы В А П Р О Л Д Ж Э", "{shift} Я Ч С М И Т Ь Б Ю , {shift}", "{cancel} {alt} {space} {accept} {meta1} {meta2}"], "alt-shift": ["~ ! @ # $ % ^ & * ( ) _ + {bksp}", "Q W E R T Y U I O P { } |", 'A S D F G H J K L : "', "{shift} Z X C V B N M < > ? {shift}", "{cancel} {alt} {space} {accept} {meta1} {meta2}"], alt: ["` 1 2 3 4 5 6 7 8 9 0 - = {bksp}", "q w e r t y u i o p [ ] \\", "a s d f g h j k l ; '", "{shift} z x c v b n m , . / {shift}", "{cancel} {alt} {space} {accept} {meta1} {meta2}"]}, position: {of: null, my: "center top", at: "center top", at2: "center bottom"}, usePreview: true, alwaysOpen: false, stayOpen: false, display: {a: "✔:", accept: "Найти:", alt: "English:", b: "←:", bksp: "\b⟵\b:", c: "✖:", cancel: "Закрыть:", clear: "C:Clear", combo: "ö:", dec: ".:", e: "↵:Enter", enter: "Enter:Enter", lock: "⇪ Lock:", next: "Next", prev: "Prev", s: "⇧:", shift: "⇧:", sign: "±:", space: "", t: "⇥:", tab: "⇥ Tab:"}, wheelMessage: "", css: {input: "sch-field", container: "kb-bckgr ui-widget ui-helper-clearfix", buttonDefault: "kb-btn-pass", buttonHover: "kb-btn-act", buttonAction: "kb-btn-act2", buttonDisabled: "kb-btn-pass"}, autoAccept: false, lockInput: false, restrictInput: false, acceptValid: true, tabNavigation: false, enterNavigation: true, enterMod: "altKey", stopAtEnd: true, appendLocally: false, stickyShift: true, preventPaste: false, maxLength: 50, repeatDelay: 500, repeatRate: 20, resetDefault: false, openOn: "focus", keyBinding: "mousedown", useCombos: true, initialized: function(e, t, n) {
+    $("textarea#sch-area-txt").keyboard({
+        layout: "qwerty-russian"
+        , customLayout: {
+            "default": [
+                "ё 1 2 3 4 5 6 7 8 9 0 - = {bksp}"
+                , "й ц у к е н г ш щ з х ъ \\"
+                , "ф ы в а п р о л д ж э"
+                , "{shift} я ч с м и т ь б ю . {shift}"
+                , "{cancel} {alt} {space} {accept} {meta1} {meta2}"
+            ], meta1: []
+            , meta2: []
+            , shift: [
+                'Ё ! " № ; % : ? * ( ) _ + {bksp}', "Й Ц У К Е Н Г Ш Щ З Х Ъ |"
+                , "Ф Ы В А П Р О Л Д Ж Э"
+                , "{shift} Я Ч С М И Т Ь Б Ю , {shift}"
+                , "{cancel} {alt} {space} {accept} {meta1} {meta2}"
+            ], "alt-shift": [
+                "~ ! @ # $ % ^ & * ( ) _ + {bksp}"
+                , "Q W E R T Y U I O P { } |"
+                , 'A S D F G H J K L : "'
+                , "{shift} Z X C V B N M < > ? {shift}"
+                , "{cancel} {alt} {space} {accept} {meta1} {meta2}"
+            ], alt: [
+                "` 1 2 3 4 5 6 7 8 9 0 - = {bksp}"
+                , "q w e r t y u i o p [ ] \\", "a s d f g h j k l ; '"
+                , "{shift} z x c v b n m , . / {shift}"
+                , "{cancel} {alt} {space} {accept} {meta1} {meta2}"
+            ]}
+        , position: {
+            of: null
+            , my: "center top"
+            , at: "center top"
+            , at2: "center bottom"
+        }, usePreview: true
+        , alwaysOpen: false
+        , stayOpen: false
+        , display: {
+            a: "✔:"
+            , accept: "Найти:"
+            , alt: "English:"
+            , b: "←:"
+            , bksp: "\b⟵\b:"
+            , c: "✖:"
+            , cancel: "Закрыть:"
+            , clear: "C:Clear"
+            , combo: "ö:"
+            , dec: ".:"
+            , e: "↵:Enter"
+            , enter: "Enter:Enter"
+            , lock: "⇪ Lock:"
+            , next: "Next"
+            , prev: "Prev"
+            , s: "⇧:"
+            , shift: "⇧:"
+            , sign: "±:"
+            , space: "", t: "⇥:"
+            , tab: "⇥ Tab:"}
+        , wheelMessage: ""
+        , css: {
+            input: "sch-field"
+            , container: "kb-bckgr ui-widget ui-helper-clearfix"
+            , buttonDefault: "kb-btn-pass"
+            , buttonHover: "kb-btn-act"
+            , buttonAction: "kb-btn-act2"
+            , buttonDisabled: "kb-btn-pass"
+        }, autoAccept: false
+        , lockInput: false
+        , restrictInput: false
+        , acceptValid: true
+        , tabNavigation: false
+        , enterNavigation: true
+        , enterMod: "altKey"
+        , stopAtEnd: true
+        , appendLocally: false
+        , stickyShift: true
+        , preventPaste: false
+        , maxLength: 50
+        , repeatDelay: 500
+        , repeatRate: 20
+        , resetDefault: false
+        , openOn: "focus"
+        , keyBinding: "mousedown"
+        , useCombos: true
+        , initialized: function(e, t, n) {
         }, visible: function(e, t, n) {
             uServe.moveCaret2End()
         }, change: function(e, t, n) {
