@@ -1992,3 +1992,7 @@ div.wall-back-rotate {
 	border-radius: 10px;
 	cursor: pointer;
 }
+.wall-container {
+    border-radius: 0px 0px 13px 13px !important;
+    border-width: 2px !important;
+}

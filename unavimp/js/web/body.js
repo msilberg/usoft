@@ -588,11 +588,11 @@ uServe.loadTopTen = function(a) {
         }
         $.get(addrUrl.getLbl(118), function(b) {
             $(".ttcat-list").chosen({no_results_text: b}).change(function() {
-                webWallSelectCatalogue(parseFloat($(".ttcat-list option:selected").val()));
+                webWall.webWallSelectCatalogue(parseInt($(".ttcat-list option:selected").val()));
             });
         });
-        webWall(12, 57, "en", "uadmin.no-ip.biz:8080", a);
-//        webWall(12, 57, "en", "192.167.1.2:8080", a);
+        webWall.initV2(12, 57, "ru", "uadmin.no-ip.biz:8080", parseInt(a), 705, 545, 5, 2);
+//        webWall.initV2(12, 57, "ru", "192.167.1.2:8080", parseInt(a), 705, 545, 5, 2);
         $("div.cls-wall-btn").on("click", uBody.closeTopTen);
     });
 };

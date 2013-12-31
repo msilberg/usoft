@@ -16,6 +16,8 @@
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/tooltipster.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/jquery-ui.min.css" ?>" />
 <link rel="stylesheet" type="text/css" href="<?php print "styles/".$build->mode."/".$build->cbrws."/".$build->browser.".css" ?>" />
+<link rel="stylesheet" type="text/css" href="http://uadmin.no-ip.biz/miniapps/wall-web/theme/default/style.css" />
+<script type="text/javascript" src="http://uadmin.no-ip.biz/miniapps/wall-web/js/wall-web.js"></script>
 <?php } ?>
 <?php $build->js_otp() ?>
 <script type="text/javascript">

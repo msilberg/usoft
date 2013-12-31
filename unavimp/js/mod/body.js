@@ -688,7 +688,7 @@ uBody.showDDList = function(e) {
             var e = (window.innerHeight - $("div.ddl-layer").height()) / 2;
             $("div.ddl-layer").css({left: (window.innerWidth - $("div.ddl-layer").width()) / 2 + "px", top: e + "px"});
             $("div.ddl-layer-frame>ul>li").mousedown(function() {
-                webWallSelectCatalogue(parseFloat($(this).attr("id")));
+                webWall.webWallSelectCatalogue(parseInt($(this).attr("id")));
                 $("div.ddl-layer-frame>ul>li>div").removeClass("ddl-act");
                 $(this).children("div").addClass("ddl-act");
                 $("div.ttbh-frame>div").text($(this).children("div").attr("id"));
