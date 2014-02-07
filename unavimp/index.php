@@ -23,6 +23,6 @@
 		print "Authorization error";
 		return false;
 	}
-	$obj->show_store(isset($_POST['store']));
+	$obj->show_store(isset($_REQUEST['store']));
     $obj->showie=isset($_GET['showie']);
 ?>

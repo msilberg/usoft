@@ -365,7 +365,7 @@ class data
 	public function show_store($crit)
 	{
 		$_SESSION['shwst']=$crit;
-		if ($crit) $_SESSION['store']=db::get_store_id_by_name($_POST['store']);
+		if ($crit) $_SESSION['store']=db::get_store_id_by_name($_REQUEST['store']);
 	}
 }
 ?>
