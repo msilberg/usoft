@@ -18,7 +18,7 @@ function getScript(url, success) {
 function hoverBtnStyle() {
     var btnNo;
     var btnAct = {
-        'background-image': "url(http://barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png)"
+        'background-image': "url(http://info.barabashovo.ua/wp-content/uploads/2013/02/active_btn_prim_men.png)"
         , color: "#ffffff"
         , 'box-shadow': '-1px 0 0 rgba(255,255,255,.15), inset 0 0 1px rgba(6,54,95,0.4), inset 1px 0 1px rgba(6,54,95,0.4)'
     };

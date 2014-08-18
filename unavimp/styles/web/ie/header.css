@@ -7,7 +7,7 @@
         , -webkit-linear-gradient(top, #517fa4, #306088);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     background: top left repeat-x;
-    background-image: url("http://barabashovo.ua/wp-content/uploads/2013/09/mm-btn.png");
+    background-image: url("http://info.barabashovo.ua/wp-content/uploads/2013/09/mm-btn.png");
     text-align: left;
 }
 
@@ -45,7 +45,7 @@
 #top_menu tr td:hover {
     background-image: url("//d36xtkk24g8jdx.cloudfront.net/bluebar/ea1e093/images/shared/noise-1.png")
         , -webkit-linear-gradient(top, #6095C0, #3E77A7);
-    background: url("http://barabashovo.ua/wp-content/uploads/2013/09/mm-btn-hvr.png")repeat-x;
+    background: url("http://info.barabashovo.ua/wp-content/uploads/2013/09/mm-btn-hvr.png")repeat-x;
 }
 #menu2 {
     width: 100%;
@@ -126,7 +126,7 @@
     margin-top: 0px;
     line-height: 275px;
     color: white;
-    background: url('http://barabashovo.ua/wp-content/uploads/2013/09/tcb-map.png') no-repeat 50%;
+    background: url('http://info.barabashovo.ua/wp-content/uploads/2013/09/tcb-map.png') no-repeat 50%;
 }
 #menu_karti_sxemi .maps a:hover {
     width: 100%;
@@ -138,7 +138,7 @@
     line-height: 275px;
     color: white;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
-    background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/tcb-map.png') no-repeat 50%;
+    background: #757575 url('http://info.barabashovo.ua/wp-content/uploads/2013/09/tcb-map.png') no-repeat 50%;
 }
 #menu_karti_sxemi li {
     text-align: center;
@@ -157,7 +157,7 @@
     line-height: 275px;
     color: white;
     font-size: 12px;
-    background: url('http://barabashovo.ua/wp-content/uploads/2013/09/parking.png') no-repeat 50%;
+    background: url('http://info.barabashovo.ua/wp-content/uploads/2013/09/parking.png') no-repeat 50%;
 }
 #menu_karti_sxemi .parking a:hover {
     width: 100%;
@@ -171,7 +171,7 @@
     color: white;
     font-size: 12px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
-    background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/parking.png') no-repeat 50%;
+    background: #757575 url('http://info.barabashovo.ua/wp-content/uploads/2013/09/parking.png') no-repeat 50%;
 }
 #menu_karti_sxemi .bank a {
     width: 100%;
@@ -183,7 +183,7 @@
     line-height: 275px;
     color: white;
     font-size: 12px;
-    background: url('http://barabashovo.ua/wp-content/uploads/2013/09/money.png') no-repeat 50%;
+    background: url('http://info.barabashovo.ua/wp-content/uploads/2013/09/money.png') no-repeat 50%;
 }
 #menu_karti_sxemi .bank a:hover {
     width: 100%;
@@ -196,7 +196,7 @@
     color: white;
     font-size: 12px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
-    background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/money.png') no-repeat 50%;
+    background: #757575 url('http://info.barabashovo.ua/wp-content/uploads/2013/09/money.png') no-repeat 50%;
 }
 #menu_karti_sxemi .medical a {
     width: 100%;
@@ -209,7 +209,7 @@
     line-height: 275px;
     color: white;
     font-size: 12px;
-    background: url('http://barabashovo.ua/wp-content/uploads/2013/09/red-cross.png') no-repeat 50%;
+    background: url('http://info.barabashovo.ua/wp-content/uploads/2013/09/red-cross.png') no-repeat 50%;
 }
 #menu_karti_sxemi .medical a:hover {
     width: 100%;
@@ -223,7 +223,7 @@
     color: white;
     font-size: 12px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
-    background: #757575 url('http://barabashovo.ua/wp-content/uploads/2013/09/red-cross.png') no-repeat 50%;
+    background: #757575 url('http://info.barabashovo.ua/wp-content/uploads/2013/09/red-cross.png') no-repeat 50%;
 }
 #menu2_cont {
     width: 100%;
@@ -354,7 +354,7 @@ ul#vhod_registracia li {
 ul#vhod_registracia li:hover {
     display: inline-block;
     background-image: -webkit-linear-gradient(top, #6095C0, #3E77A7);
-    background: url("http://barabashovo.ua/wp-content/uploads/2013/09/mm-btn-hvr.png")repeat-x;
+    background: url("http://info.barabashovo.ua/wp-content/uploads/2013/09/mm-btn-hvr.png")repeat-x;
 }
 #vhod_registracia a {
     color: white;
@@ -450,7 +450,7 @@ menu-widget-wrap #search .search-image {
     position: relative;
     z-index: 10;
     background: top left repeat-x;
-    background-image: url("http://barabashovo.ua/wp-content/uploads/2013/09/mm-btn.png");
+    background-image: url("http://info.barabashovo.ua/wp-content/uploads/2013/09/mm-btn.png");
 }
 #top_menu tr td:first-child {
     width: 180px;

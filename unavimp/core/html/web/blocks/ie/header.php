@@ -8,7 +8,7 @@
     <table id="top_menu">
         <tr>
             <td class="sh1 top_menu_item">
-                <a href="http://barabashovo.ua/">
+                <a href="http://info.barabashovo.ua/">
                     <img src="graphics/button_bar.jpg">
                 </a>
             </td>
@@ -22,7 +22,7 @@
     <div class="vhod_registracia">
         <ul id="vhod_registracia">
             <li class="search_top">
-                <a href="http://barabashovo.ua/?s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">
+                <a href="http://info.barabashovo.ua/?s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">
                     <?php data::lbl_otp(142)?>
                 </a>
             </li>
@@ -36,7 +36,7 @@
                 <input type="text" id="sch-field" placeholder="<?php data::lbl_otp(105) ?>"
                         onfocus="bMap.keyboardnav.deactivate();"
                         onblur="bMap.keyboardnav.activate();" />
-                <input type="image" src="http://barabashovo.ua/wp-content/themes/NewsSlide/images/search.png"
+                <input type="image" src="http://info.barabashovo.ua/wp-content/themes/NewsSlide/images/search.png"
                         title="<?php data::lbl_otp(106) ?>" class="search-image" /> 
             </div>
         </li>
